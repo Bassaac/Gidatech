@@ -1,0 +1,292 @@
+$col1: #0cb2c1;
+$col1: #037c84;
+$drk: #4a5764;
+$lig: #919191;
+$sdrk: #616161;
+$lin-g: linear-gradient(90deg, #a49058, #473b1b);
+$lin-g2: linear-gradient(
+  90deg,
+  #0cb2c1 10%,
+  #09a489 25%,
+  #09a489 40%,
+  #ffae00 60%,
+  #ffae00 80%,
+  #0cb2c1 95%,
+  #0cb2c1
+);
+$gil: Gilroy;
+@import url(./3A0445_0_0.woff2);
+@import url(./3A0445_2_0.woff2);
+@import url(./3A0445_3_0.woff2);
+@import url(./3A0445_4_0.woff2);
+@import url(./fontsstyle.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: gilroy, sans-serif;
+}
+
+.icon {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  justify-content: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  align-items: center;
+  .icon-btn {
+    width: 20px;
+    background-color: white;
+    height: 4px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+    transform: all 0.5s ease-in-out;
+    transform: rotateX(180deg);
+  }
+}
+
+.icon-btn::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background-color: white;
+  transform: translateY(-10px);
+  align-items: center;
+  justify-items: center;
+  border-radius: 5px;
+  transform: all 0.5s ease-in-out;
+}
+
+.icon-btn::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background-color: white;
+  transform: translateY(10px);
+  align-items: center;
+  justify-items: center;
+  border-radius: 5px;
+  transform: all 0.5s ease-in-out;
+}
+
+.icon-btn:hover {
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon-btn:hover::after {
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon-btn:hover::before {
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon.open .icon-btn {
+  transform: translateX(-40px);
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  //   background-color: white;
+}
+
+.icon.open .icon-btn::after {
+  transform: rotate(-45deg) translate(30px, 30px);
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+}
+
+.icon.open .icon-btn::before {
+  transform: rotate(45deg) translate(30px, -30px);
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+}
+
+.content {
+  position: relative;
+  // display: flex;
+  padding: 20px;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.712);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  transition: 1s all ease-in-out;
+  // z-index: 0;
+  backdrop-filter: blur(30px);
+  opacity: 0;
+  // visibility: collapse;
+  display: none;
+}
+
+.content.active {
+  opacity: 1;
+  // visibility: visible;
+  display: flex;
+  position: absolute;
+  // left: 0;
+  // top: 0;
+}
+
+// End of imported styles........................................................................................................///
+
+.menu {
+  height: auto;
+  width: 25vw;
+  display: flex;
+  overflow: hidden;
+  @media (max-width: 960px) {
+    width: 45vw;
+  }
+  @media (max-width: 410px) {
+    width: 65vw;
+  }
+  ul {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // overflow: hidden;
+    text-align: right;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 3em;
+        font-weight: 700;
+        transition: all 0.4s ease;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0px;
+          height: 3px;
+          background-color: #0cb2c1;
+          transform: translate(0, 0);
+          top: 50%;
+          transition: all 0.3s ease;
+        }
+        &:hover {
+          color: #0cb2c1;
+        }
+        &:hover::after {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+// End of Navbar.........................................................................................................//////
+
+// Welcome to gidatech...................................................................................................//////
+
+section.home {
+  height: 130vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)),
+    url(./img/Home.jpg);
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  .text-over-wr {
+    height: 80vh;
+    width: 90vw;
+
+    .text-over {
+      height: 65vh;
+      background-color: rgba(0, 0, 0, 0.781);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      color: white;
+      h1 {
+        width: 60%;
+        font-weight: 500;
+        font-size: calc(6vw + 10px);
+
+        span {
+          color: transparent;
+          font-size: 14vw;
+          background: $lin-g2;
+          -webkit-background-clip: text;
+          font-weight: 600;
+          background-size: 300%;
+          animation: bmove 20s linear infinite;
+
+          @keyframes bmove {
+            0% {
+            }
+            100% {
+              background-position-x: 100%;
+            }
+          }
+        }
+      }
+      .aaa {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 1;
+        width: 50%;
+        align-self: revert;
+        justify-content: left;
+        transition: all 0.3s ease;
+
+        p:nth-child(4) {
+          border: none;
+        }
+
+        p {
+          padding: 2px 20px 5px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-right: 3px solid white;
+          transition: all 0.2s ease;
+          &:hover {
+            color: #0cb2c1;
+            border-color: #0cb2c1;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .menu ul li a {
+    font-size: 2.5em;
+  }
+  section.home .text-over-wr .text-over {
+    height: 50vh;
+  }
+  section.home .text-over-wr .text-over .aaa p {
+    padding: 5px 5px;
+    border: none;
+  }
+}
+// @media (max-width: 450px) {
+//   .text-over {
+//     .aaa {
+//       display: none;
+//     }
+//   }
+// }
