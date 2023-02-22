@@ -364,7 +364,8 @@ section.bbb {
   }
 }
 section.ccc {
-  height: 90vh;
+  
+  height: auto;
   width: 100%;
   background: linear-gradient(
       100deg,
@@ -380,6 +381,7 @@ section.ccc {
   .ctext {
     width: 100%;
     position: relative;
+
     h2 {
       display: flex;
       flex-direction: column;
@@ -387,6 +389,7 @@ section.ccc {
       color: rgb(24, 22, 22);
       span:not(:nth-child(4)) {
         font-weight: 200;
+        z-index: 1;
       }
       span:nth-child(4) {
         font-weight: 600;
@@ -402,19 +405,19 @@ section.ccc {
       }
     }
     .rect {
-      position: absolute
-      rr;
-      width: 30vw;
-      height: 20vw;
-      top: -50px;
-      right: -300px;
-      background: linear-gradient(#1b1b1b, #1b1b1b),
+      position: relative;
+      width: 35vw;
+      height: 25vw;
+      top: 10vw;
+      right: 10vw;
+      background: linear-gradient(#1b1b1bb0, #1b1b1bbd),
         url(./img/Woman-with-smarthome.jpg);
+      background-size: cover;
     }
     .cir {
       position: absolute;
-      width: 15vw;
-      height: 15vw;
+      width: 200px;
+      height: 200px;
       top: -250px;
       left: 10px;
       border-radius: 50vw;
@@ -423,13 +426,13 @@ section.ccc {
       background-size: cover;
       .bcir {
         position: relative;
-        width: 20vw;
-        height: 20vw;
+        width: 250px;
+        height: 250px;
         transform: translate(-50px, -50px);
-        top: 20px;
-        left: 20px;
+        top: 25px;
+        left: 23px;
 
-        border: 2px solid white;
+        border: 2px dashed white;
         mix-blend-mode: difference;
         border-radius: 50vw;
       }

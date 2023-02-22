@@ -468,7 +468,7 @@ section.bbb .bimg img {
 }
 
 section.ccc {
-  height: 90vh;
+  height: auto;
   width: 100%;
   background: linear-gradient(100deg, rgba(255, 255, 255, 0.842), rgba(255, 255, 255, 0.26)), url(./img/street-cctv2.jpg);
   display: -webkit-box;
@@ -502,6 +502,7 @@ section.ccc .ctext h2 {
 
 section.ccc .ctext h2 span:not(:nth-child(4)) {
   font-weight: 200;
+  z-index: 1;
 }
 
 section.ccc .ctext h2 span:nth-child(4) {
@@ -518,19 +519,20 @@ section.ccc .ctext h2 span .und {
 }
 
 section.ccc .ctext .rect {
-  position: absolute rr;
-  width: 30vw;
-  height: 20vw;
-  top: -50px;
-  right: -300px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1b1b1b), to(#1b1b1b)), url(./img/Woman-with-smarthome.jpg);
-  background: linear-gradient(#1b1b1b, #1b1b1b), url(./img/Woman-with-smarthome.jpg);
+  position: relative;
+  width: 35vw;
+  height: 25vw;
+  top: 10vw;
+  right: 10vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1b1b1bb0), to(#1b1b1bbd)), url(./img/Woman-with-smarthome.jpg);
+  background: linear-gradient(#1b1b1bb0, #1b1b1bbd), url(./img/Woman-with-smarthome.jpg);
+  background-size: cover;
 }
 
 section.ccc .ctext .cir {
   position: absolute;
-  width: 15vw;
-  height: 15vw;
+  width: 200px;
+  height: 200px;
   top: -250px;
   left: 10px;
   border-radius: 50vw;
@@ -541,13 +543,13 @@ section.ccc .ctext .cir {
 
 section.ccc .ctext .cir .bcir {
   position: relative;
-  width: 20vw;
-  height: 20vw;
+  width: 250px;
+  height: 250px;
   -webkit-transform: translate(-50px, -50px);
           transform: translate(-50px, -50px);
-  top: 20px;
-  left: 20px;
-  border: 2px solid white;
+  top: 25px;
+  left: 23px;
+  border: 2px dashed white;
   mix-blend-mode: difference;
   border-radius: 50vw;
 }
