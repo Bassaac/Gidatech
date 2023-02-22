@@ -1,0 +1,10 @@
+# Set caching on images and videos for 1 hour
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 20 minutes"
+  ExpiresByType image/jpg "access plus 20 minutes"
+  ExpiresByType image/png "access plus 20 minutes"
+  ExpiresByType video/mp4 "access plus 20 minutes"
+  ExpiresByType video/avi "access plus 20 minutes"
+  ExpiresByType video/quicktime "access plus 20 minutes"
+</IfModule>

@@ -232,8 +232,8 @@ body {
 
 section.home {
   height: 130vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.575)), to(rgba(0, 0, 0, 0.575))), url(./img/Home.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(./img/Home.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0.575)), color-stop(black), to(black)), url(./img/Home.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.575) 50%, black, black), url(./img/Home.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,6 +357,78 @@ section.home .text-over-wr .text-over .aaa p:hover {
   section.home .text-over-wr .text-over .aaa p {
     padding: 5px 5px;
     border: none;
+  }
+}
+
+section.bbb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 130px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.973)), color-stop(rgba(0, 0, 0, 0.966)), to(rgba(0, 0, 0, 0.945))), url(./img/Lens.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.973), rgba(0, 0, 0, 0.966), rgba(0, 0, 0, 0.945)), url(./img/Lens.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 600px) {
+  section.bbb {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+section.bbb .b1 {
+  position: relative;
+}
+
+section.bbb .b1 h2 {
+  font-size: 2.7em;
+  color: white;
+}
+
+section.bbb .b1::after {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: -30px;
+  width: 2px;
+  background-color: white;
+  height: 600px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+section.bbb .bimg img {
+  width: 500px;
+  mix-blend-mode: color-dodge;
+  -webkit-filter: hue-rotate(19deg) brightness(1);
+          filter: hue-rotate(19deg) brightness(1);
+  -webkit-animation: change 4s linear infinite;
+          animation: change 4s linear infinite;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+@-webkit-keyframes change {
+  100% {
+    -webkit-filter: hue-rotate(55deg) brightness(1);
+            filter: hue-rotate(55deg) brightness(1);
+    scale: 1.1;
+  }
+}
+
+@keyframes change {
+  100% {
+    -webkit-filter: hue-rotate(55deg) brightness(1);
+            filter: hue-rotate(55deg) brightness(1);
+    scale: 1.1;
   }
 }
 /*# sourceMappingURL=style.css.map */

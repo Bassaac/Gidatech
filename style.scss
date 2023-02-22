@@ -199,7 +199,11 @@ body {
 
 section.home {
   height: 130vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)),
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.575) 50%,
+      rgb(0, 0, 0),
+      rgb(0, 0, 0)
+    ),
     url(./img/Home.jpg);
   background-size: cover;
 
@@ -290,3 +294,51 @@ section.home {
 //     }
 //   }
 // }
+section.bbb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // flex-wrap: wrap;
+  padding: 30px 130px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.973),
+      rgba(0, 0, 0, 0.966),
+      rgba(0, 0, 0, 0.945)
+    ),
+    url(./img/Lens.jpg);
+  background-size: cover;
+  background-position: center;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+  .b1 {
+    position: relative;
+    h2 {
+      font-size: 2.7em;
+      color: white;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -200px;
+      left: -30px;
+      width: 2px;
+      background-color: white;
+      height: 600px;
+      transform: translate(50%, -50%);
+    }
+  }
+  .bimg img {
+    width: 500px;
+    mix-blend-mode: color-dodge;
+    filter: hue-rotate(19deg) brightness(1);
+    animation: change 4s linear infinite;
+    transition: all 0.5s linear;
+    @keyframes change {
+      100% {
+        filter: hue-rotate(55deg) brightness(1);
+        scale: 1.1;
+      }
+    }
+  }
+}
