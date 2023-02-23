@@ -14,6 +14,7 @@ $lin-g2: linear-gradient(
   #0cb2c1 95%,
   #0cb2c1
 );
+
 $gil: Gilroy;
 @import url(./3A0445_0_0.woff2);
 @import url(./3A0445_2_0.woff2);
@@ -28,10 +29,33 @@ $gil: Gilroy;
 body {
   font-family: gilroy, sans-serif;
 }
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.158);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 0 0 0 10px;
+  z-index: 10000000000000000000000;
+  a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+    &:hover {
+      color: #0cd2e4;
+    }
+  }
+}
 
 .icon {
-  position: absolute;
-  z-index: 1000;
+  position: relative;
+  z-index: 100000;
   top: 0;
   right: 10px;
   justify-content: center;
@@ -45,12 +69,13 @@ body {
   .icon-btn {
     width: 20px;
     background-color: white;
-    height: 4px;
+    height: 2px;
     align-items: center;
     justify-items: center;
     border-radius: 5px;
     transform: all 0.5s ease-in-out;
     transform: rotateX(180deg);
+    // z-index: 10000000;
   }
 }
 
@@ -58,7 +83,7 @@ body {
   content: "";
   position: absolute;
   width: 28px;
-  height: 4px;
+  height: 2px;
   background-color: white;
   transform: translateY(-10px);
   align-items: center;
@@ -71,7 +96,7 @@ body {
   content: "";
   position: absolute;
   width: 28px;
-  height: 4px;
+  height: 2px;
   background-color: white;
   transform: translateY(10px);
   align-items: center;
@@ -118,7 +143,7 @@ body {
 }
 
 .content {
-  position: relative;
+  position: fixed;
   // display: flex;
   padding: 20px;
   justify-content: flex-end;
@@ -139,9 +164,10 @@ body {
   opacity: 1;
   // visibility: visible;
   display: flex;
-  position: absolute;
+  position: fixed;
   // left: 0;
   // top: 0;
+  z-index: 100;
 }
 
 // End of imported styles........................................................................................................///
@@ -198,7 +224,7 @@ body {
 // Welcome to gidatech...................................................................................................//////
 
 section.home {
-  height: 110vh;
+  height: 90vh;
   background: linear-gradient(
       rgba(0, 0, 0, 0.575) 50%,
       rgb(0, 0, 0),
@@ -212,7 +238,7 @@ section.home {
   justify-content: left;
 
   .text-over-wr {
-    height: 80vh;
+    height: auto;
     width: 90vw;
 
     .text-over {
@@ -248,12 +274,11 @@ section.home {
       }
       .aaa {
         display: flex;
-        flex-wrap: wrap;
         flex-basis: 1;
         width: 50%;
-        align-self: revert;
-        justify-content: left;
         transition: all 0.3s ease;
+        flex-direction: column;
+        align-items: flex-start;
 
         p:nth-child(4) {
           border: none;
@@ -281,6 +306,9 @@ section.home {
   }
   section.home .text-over-wr .text-over {
     height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
   }
   section.home .text-over-wr .text-over .aaa p {
     padding: 5px 5px;
@@ -299,7 +327,7 @@ section.bbb {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 30px 100px;
+  padding: 28px 32px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.973),
       rgba(0, 0, 0, 0.966),
@@ -314,9 +342,10 @@ section.bbb {
   .b1 {
     position: relative;
     h2 {
-      width: calc(35vw + 100px);
-      font-size: 3.2em;
+      width: calc(43vw + 109px);
+      font-size: 1.9em;
       color: white;
+      text-align: center;
     }
     &::after {
       content: "";
@@ -338,19 +367,20 @@ section.bbb {
       }
       @media (max-width: 1000px) {
         top: -9vw;
-        left: -8vw;
+        left: -6vw;
         width: 2px;
         background-color: white;
-        height: 464px;
+        height: 270px;
       }
     }
   }
   .bimg img {
-    width: 40vw;
-    mix-blend-mode: color-dodge;
+    width: calc(40vw + 107px);
+    mix-blend-mode: hard-light;
     filter: hue-rotate(19deg) brightness(1);
     animation: change 4s linear infinite;
     transition: all 0.5s linear;
+    margin-top: 20px;
     @keyframes change {
       70% {
         filter: hue-rotate(55deg) brightness(1);
@@ -364,37 +394,42 @@ section.bbb {
   }
 }
 section.ccc {
-  
   height: auto;
   width: 100%;
   background: linear-gradient(
-      100deg,
-      rgba(255, 255, 255, 0.842),
-      rgba(255, 255, 255, 0.26)
+      0deg,
+      rgba(255, 255, 255, 0.897),
+      rgba(255, 255, 255, 0.719)
     ),
     url(./img/street-cctv2.jpg);
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 10px 90px;
+  padding: 70px 37px;
 
   .ctext {
     width: 100%;
     position: relative;
 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     h2 {
       display: flex;
       flex-direction: column;
-      font-size: 3em;
+      font-size: 2em;
+      margin-bottom: 20px;
       color: rgb(24, 22, 22);
       span:not(:nth-child(4)) {
         font-weight: 200;
         z-index: 1;
+        text-align: center;
       }
       span:nth-child(4) {
         font-weight: 600;
         font-size: 1.3em;
         color: #1b1b1b;
+        text-align: center;
       }
       span {
         .und {
@@ -406,36 +441,219 @@ section.ccc {
     }
     .rect {
       position: relative;
-      width: 35vw;
-      height: 25vw;
-      top: 10vw;
-      right: 10vw;
-      background: linear-gradient(#1b1b1bb0, #1b1b1bbd),
-        url(./img/Woman-with-smarthome.jpg);
+      width: 64vw;
+      height: 55vw;
+      // top: 10vw;
+      // right: 10vw;
+      background: url(./gida/smart3.jpg);
       background-size: cover;
+      // border: 1px solid black;
+      padding: 20px;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        // padding: 20px;
+        position: absolute;
+        align-self: center;
+        // border: 0 2px 2px 0 dashed rgba(0, 0, 0, 0.712);
+        border-right: 2px dashed black;
+        border-bottom: 2px dashed black;
+        border-spacing: 10;
+        mix-blend-mode: hard-light;
+      }
     }
     .cir {
       position: absolute;
-      width: 200px;
-      height: 200px;
-      top: -250px;
-      left: 10px;
+      width: 160px;
+      height: 160px;
+      top: -91px;
+      left: -147px;
       border-radius: 50vw;
 
       background: linear-gradient(#0cb2c1bb, #0cb2c175), url(./img/lock.jpg);
-      background-size: cover;
+      background-size: contain;
+      background-position: right;
+      animation: rot2 7s linear infinite forwards normal;
+      @keyframes rot2 {
+        0% {
+          box-shadow: none;
+        }
+        99% {
+          box-shadow: 1px 2px 8px white;
+        }
+        100% {
+          box-shadow: 1px 2px 10px white;
+        }
+      }
       .bcir {
         position: relative;
-        width: 250px;
-        height: 250px;
-        transform: translate(-50px, -50px);
-        top: 25px;
-        left: 23px;
+        width: 190px;
+        height: 190px;
+        transform: translate(-38px, -39px);
+        top: -14px;
+        left: -13px;
 
         border: 2px dashed white;
         mix-blend-mode: difference;
         border-radius: 50vw;
+        animation: rot 15s linear infinite;
+
+        @keyframes rot {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            // transform: translate3d(0px, 0px, 0px) rotateX(0deg)
+            //   rotateY(0deg) rotateZ(360deg);
+            transform: rotate(-360deg);
+          }
+        }
       }
+    }
+  }
+}
+section.ddd {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.719)),
+    url(./img/street-cctv2.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 70px 37px;
+
+  .dtext {
+    width: 100%;
+    position: relative;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      display: flex;
+      flex-direction: column;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: rgb(255, 255, 255);
+      span:not(:nth-child(4)) {
+        font-weight: 200;
+        z-index: 1;
+        text-align: center;
+      }
+      span:nth-child(4) {
+        font-weight: 600;
+        font-size: 1.3em;
+        color: #1b1b1b;
+        text-align: center;
+      }
+      span {
+        .und {
+          text-decoration: underline;
+          text-decoration-color: #0cd2e4;
+          text-underline-offset: 5px;
+        }
+      }
+    }
+    .rect {
+      position: relative;
+      width: 64vw;
+      height: 55vw;
+      // top: 10vw;
+      // right: 10vw;
+      background: url(./gida/darkliving.jpg);
+      background-size: cover;
+      background-position: center;
+      // border: 1px solid black;
+      padding: 20px 0;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        // padding: 20px;
+        position: absolute;
+        align-self: center;
+        margin-left: -24px;
+        // border: 0 2px 2px 0 dashed rgba(0, 0, 0, 0.712);
+        border-left: 2px dashed #0cd2e4;
+        // border-bottom: 2px dashed black;
+        // border-spacing: 10;
+        // mix-blend-mode: hard-light;
+      }
+    }
+  }
+}
+footer.faa {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(rgb(44, 44, 44), rgba(41, 41, 41, 0.938)),
+    url(./gida/darkliving.jpg);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  padding: 50px 20px;
+  text-align: center;
+  color: #dfdfdf;
+  .addr {
+    p {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.8em;
+      word-spacing: 1px;
+      letter-spacing: 0.6px;
+    
+    }
+  }
+  .hr {
+    height: 1.5px;
+    width: 90%;
+    background-color: #dfdfdf;
+  }
+  .phone {
+    // gap: 30px;
+
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: #dfdfdf;
+      font-size: 0.8em;
+      word-spacing: 1px;
+      letter-spacing: 0.6px;
+    }
+  }
+  .copywr {
+    font-size: 0.8em;
+    word-spacing: 1px;
+    letter-spacing: 0.6px;
+    a {
+      text-decoration: none;
+      color: #dfdfdf;
+      &:hover{
+        color: #0cd2e4;
+      }
+    }
+  }
+  .iconswr {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    a {
+      font-size: 13px;
+      text-decoration: none;
+      color: #dfdfdf;
+      transition: all 0.2s ease;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+    .icons {
+      width: 70%;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
     }
   }
 }
