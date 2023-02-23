@@ -251,15 +251,17 @@ section.home {
       color: white;
       h1 {
         width: 60%;
-        font-weight: normal !important;
+        font-weight: 100 !important;
         font-size: calc(6vw + 10px);
+        font-family: Roboto;
 
         span {
           color: transparent;
           font-size: 14vw;
           background: $lin-g2;
-          font-weight: 700 !important;
+          font-weight: 900 !important;
           -webkit-background-clip: text;
+          font-family: Roboto;
 
           background-size: 300%;
           animation: bmove 20s linear infinite;
@@ -280,8 +282,8 @@ section.home {
         transition: all 0.3s ease;
         flex-direction: column;
         align-items: flex-start;
-        font-family: $gil !important;
-        font-weight: normal !important;
+        font-family: roboto !important;
+        font-weight: 100 !important;
 
         p:nth-child(4) {
           border: none;
@@ -345,6 +347,8 @@ section.bbb {
   .b1 {
     position: relative;
     h2 {
+      font-family: roboto;
+      font-weight: 400;
       width: calc(43vw + 109px);
       font-size: 1.9em;
       color: white;
@@ -429,8 +433,9 @@ section.ccc {
         text-align: center;
       }
       span:nth-child(4) {
-        font-weight: 600;
-        font-size: 1.3em;
+        font-family: roboto;
+        font-size: 1.2em;
+        font-weight: 400;
         color: #1b1b1b;
         text-align: center;
       }

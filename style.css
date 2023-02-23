@@ -307,8 +307,9 @@ section.home .text-over-wr .text-over {
 
 section.home .text-over-wr .text-over h1 {
   width: 60%;
-  font-weight: normal !important;
+  font-weight: 100 !important;
   font-size: calc(6vw + 10px);
+  font-family: Roboto;
 }
 
 section.home .text-over-wr .text-over h1 span {
@@ -316,8 +317,9 @@ section.home .text-over-wr .text-over h1 span {
   font-size: 14vw;
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0cb2c1), color-stop(25%, #09a489), color-stop(40%, #09a489), color-stop(60%, #ffae00), color-stop(80%, #ffae00), color-stop(95%, #0cb2c1), to(#0cb2c1));
   background: linear-gradient(90deg, #0cb2c1 10%, #09a489 25%, #09a489 40%, #ffae00 60%, #ffae00 80%, #0cb2c1 95%, #0cb2c1);
-  font-weight: 700 !important;
+  font-weight: 900 !important;
   -webkit-background-clip: text;
+  font-family: Roboto;
   background-size: 300%;
   -webkit-animation: bmove 20s linear infinite;
           animation: bmove 20s linear infinite;
@@ -355,8 +357,8 @@ section.home .text-over-wr .text-over .aaa {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  font-family: Gilroy !important;
-  font-weight: normal !important;
+  font-family: roboto !important;
+  font-weight: 100 !important;
 }
 
 section.home .text-over-wr .text-over .aaa p:nth-child(4) {
@@ -435,6 +437,8 @@ section.bbb .b1 {
 }
 
 section.bbb .b1 h2 {
+  font-family: roboto;
+  font-weight: 400;
   width: calc(43vw + 109px);
   font-size: 1.9em;
   color: white;
@@ -565,8 +569,9 @@ section.ccc .ctext h2 span:not(:nth-child(4)) {
 }
 
 section.ccc .ctext h2 span:nth-child(4) {
-  font-weight: 600;
-  font-size: 1.3em;
+  font-family: roboto;
+  font-size: 1.2em;
+  font-weight: 400;
   color: #1b1b1b;
   text-align: center;
 }
