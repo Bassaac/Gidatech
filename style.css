@@ -307,7 +307,7 @@ section.home .text-over-wr .text-over {
 
 section.home .text-over-wr .text-over h1 {
   width: 60%;
-  font-weight: 500;
+  font-weight: normal !important;
   font-size: calc(6vw + 10px);
 }
 
@@ -316,8 +316,8 @@ section.home .text-over-wr .text-over h1 span {
   font-size: 14vw;
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0cb2c1), color-stop(25%, #09a489), color-stop(40%, #09a489), color-stop(60%, #ffae00), color-stop(80%, #ffae00), color-stop(95%, #0cb2c1), to(#0cb2c1));
   background: linear-gradient(90deg, #0cb2c1 10%, #09a489 25%, #09a489 40%, #ffae00 60%, #ffae00 80%, #0cb2c1 95%, #0cb2c1);
+  font-weight: 700 !important;
   -webkit-background-clip: text;
-  font-weight: 600;
   background-size: 300%;
   -webkit-animation: bmove 20s linear infinite;
           animation: bmove 20s linear infinite;
@@ -355,6 +355,8 @@ section.home .text-over-wr .text-over .aaa {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  font-family: Gilroy !important;
+  font-weight: normal !important;
 }
 
 section.home .text-over-wr .text-over .aaa p:nth-child(4) {
