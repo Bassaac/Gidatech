@@ -3,7 +3,8 @@ $col1: #037c84;
 $drk: #4a5764;
 $lig: #919191;
 $sdrk: #616161;
-$lin-g: linear-gradient(90deg, #a49058, #473b1b);
+$font-family: lato;
+$lin-g: linear-gradient(90deg, #29292963, #473b1b62);
 $lin-g2: linear-gradient(
   90deg,
   #0cb2c1 10%,
@@ -14,6 +15,9 @@ $lin-g2: linear-gradient(
   #0cb2c1 95%,
   #0cb2c1
 );
+p {
+  font-family: $font-family;
+}
 
 $gil: Gilroy;
 @import url(./3A0445_0_0.woff2);
@@ -961,7 +965,7 @@ section.security {
     z-index: 100;
   }
   video {
-    width: 300px;
+    width: 70vw;
     position: relative;
     height: 210px;
   }
@@ -1062,15 +1066,18 @@ section.automation {
 
 section.intercom {
   background: rgb(20, 17, 17);
-  padding: 40px 20px;
+  padding: 70px 20px;
   color: white;
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: $gil, montserrat, poppins;
   p:nth-child(1) {
     color: #0cd2e4;
     position: relative;
+    z-index: 100;
+    filter: drop-shadow(1), blur(5px);
     &::after {
       content: "";
       top: 10px;
@@ -1091,16 +1098,32 @@ section.intercom {
       url(./img/intercom-door.jpg);
     background-size: cover;
     padding: 40px 25px;
+    height: 40vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     text-align: left;
+    z-index: 10;
+    h2 {
+      width: 70%;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 32vw;
+        right: 0;
+        background-color: white;
+      }
+    }
   }
   img {
     width: 70vw;
     margin-bottom: 20px;
     position: relative;
+    top: -170px;
     &::after {
       content: "";
       top: 50%;
@@ -1117,6 +1140,169 @@ section.intercom {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-family: $gil, montserrat, poppins;
+    position: relative;
+    top: -20px;
+  }
+}
+
+section.electrical {
+  background: linear-gradient(90deg rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.692)),
+    url(./img/ElectricslTool.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 40px 20px;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    position: absolute;
+    left: 15px;
+    top: -20px;
+    transform: rotate(90deg);
+    padding: 10px;
+    font-family: gilroy, poppins;
+    font-weight: 600;
+    font-size: 0.8em;
+    transform-origin: left;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid white;
+    color: #dddddd;
+    z-index: 100;
+  }
+  h3 {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  h3:nth-child(3) {
+    color: #ee9700;
+    position: relative;
+    &::after {
+      content: "";
+      height: 50px;
+      width: 2px;
+      position: absolute;
+      transform: translateY(60%);
+      right: 50%;
+      background-color: #ee9700;
+      z-index: 10;
+    }
+    &::before {
+      content: "";
+      height: 50px;
+      width: 2px;
+      position: absolute;
+      transform: translateY(-100%);
+      right: 50%;
+      background-color: #ee9700;
+    }
+  }
+  .img {
+    background-color: #b87605c4;
+    padding: 10px 0px 0px 10px;
+    display: flex;
+    position: relative;
+    &::after {
+      width: 98%;
+      height: 98%;
+      content: " ";
+      position: absolute;
+      background: $lin-g;
+      top: 20px;
+      left: 20px;
+      mix-blend-mode: hard-light;
+    }
+
+    img {
+      width: 70vw;
+      // margin-bottom: 20px;
+      // margin-top: 20px;
+      position: relative;
+
+      right: -10px;
+      top: 10px;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     font-family: $gil, montserrat;
+    text-align: left;
+    position: relative;
+    &::after {
+      content: "";
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      height: 2px;
+      width: 180px;
+      background-color: #754d08;
+    }
+  }
+}
+section.solar {
+  // background: rgb(0, 0, 0)
+  //   url(./img/solar-cell-farm-power-station-alternative-energy-from-sun-removebg.png);
+  background: linear-gradient(rgba(0, 0, 0, 0), black),
+    url(./img/solar-cell-farm-power-station-alternative-energy-from-sun-removebg.png);
+  background-size: cover;
+  background-position: top;
+
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  // flex-direction: column;
+  height: 50vh;
+
+  .solarimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-family: gilroy, montserrat;
+      width: 70%;
+      text-align: center !important;
+      font-size: 1.35em;
+      position: relative;
+      &::after {
+        content: "";
+        height: 70px;
+        width: 2px;
+        position: absolute;
+        transform: translateY(60%);
+        right: 50%;
+        background-color: #ffaa00;
+        z-index: 10;
+        box-shadow: 0px -1px 7px 0px white;
+      }
+      &::before {
+        content: "";
+        height: 70px;
+        width: 2px;
+        position: absolute;
+        transform: translateY(-100%);
+        right: 50%;
+        background-color: #ffffff;
+        box-shadow: 0px -1px 7px 0px white;
+      }
+    }
+    padding: 40px 20px;
+
+    // p {
+    //   font-size: 15px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   text-align: center;
+    //   font-family: $gil, montserrat;
+    // }
   }
 }

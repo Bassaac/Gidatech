@@ -3,6 +3,10 @@
 @import url(./3A0445_3_0.woff2);
 @import url(./3A0445_4_0.woff2);
 @import url(./fontsstyle.css);
+p {
+  font-family: lato;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1256,7 +1260,7 @@ section.security h1 {
 }
 
 section.security video {
-  width: 300px;
+  width: 70vw;
   position: relative;
   height: 210px;
 }
@@ -1391,7 +1395,7 @@ section.automation p {
 
 section.intercom {
   background: #141111;
-  padding: 40px 20px;
+  padding: 70px 20px;
   color: white;
   position: relative;
   display: -webkit-box;
@@ -1404,11 +1408,15 @@ section.intercom {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: Gilroy, montserrat, poppins;
 }
 
 section.intercom p:nth-child(1) {
   color: #0cd2e4;
   position: relative;
+  z-index: 100;
+  -webkit-filter: drop-shadow(1), blur(5px);
+          filter: drop-shadow(1), blur(5px);
 }
 
 section.intercom p:nth-child(1)::after {
@@ -1432,6 +1440,7 @@ section.intercom .img {
   background: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.849)), url(./img/intercom-door.jpg);
   background-size: cover;
   padding: 40px 25px;
+  height: 40vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1443,12 +1452,29 @@ section.intercom .img {
       -ms-flex-pack: start;
           justify-content: flex-start;
   text-align: left;
+  z-index: 10;
+}
+
+section.intercom .img h2 {
+  width: 70%;
+  position: relative;
+}
+
+section.intercom .img h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 32vw;
+  right: 0;
+  background-color: white;
 }
 
 section.intercom img {
   width: 70vw;
   margin-bottom: 20px;
   position: relative;
+  top: -170px;
 }
 
 section.intercom img::after {
@@ -1473,6 +1499,199 @@ section.intercom p {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  font-family: Gilroy, montserrat, poppins;
+  position: relative;
+  top: -20px;
+}
+
+section.electrical {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.692))), url(./img/ElectricslTool.jpg);
+  background: linear-gradient(90deg rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.692)), url(./img/ElectricslTool.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 40px 20px;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.electrical h1 {
+  position: absolute;
+  left: 15px;
+  top: -20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  padding: 10px;
+  font-family: gilroy, poppins;
+  font-weight: 600;
+  font-size: 0.8em;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: black;
+  border-top: 1px solid white;
+  color: #dddddd;
+  z-index: 100;
+}
+
+section.electrical h3 {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+section.electrical h3:nth-child(3) {
+  color: #ee9700;
+  position: relative;
+}
+
+section.electrical h3:nth-child(3)::after {
+  content: "";
+  height: 50px;
+  width: 2px;
+  position: absolute;
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+  right: 50%;
+  background-color: #ee9700;
+  z-index: 10;
+}
+
+section.electrical h3:nth-child(3)::before {
+  content: "";
+  height: 50px;
+  width: 2px;
+  position: absolute;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  right: 50%;
+  background-color: #ee9700;
+}
+
+section.electrical .img {
+  background-color: #b87605c4;
+  padding: 10px 0px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+section.electrical .img::after {
+  width: 98%;
+  height: 98%;
+  content: " ";
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#29292963), to(#473b1b62));
+  background: linear-gradient(90deg, #29292963, #473b1b62);
+  top: 20px;
+  left: 20px;
+  mix-blend-mode: hard-light;
+}
+
+section.electrical .img img {
+  width: 70vw;
+  position: relative;
+  right: -10px;
+  top: 10px;
+}
+
+section.electrical p {
+  margin-top: 20px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   font-family: Gilroy, montserrat;
+  text-align: left;
+  position: relative;
+}
+
+section.electrical p::after {
+  content: "";
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  height: 2px;
+  width: 180px;
+  background-color: #754d08;
+}
+
+section.solar {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)), url(./img/solar-cell-farm-power-station-alternative-energy-from-sun-removebg.png);
+  background: linear-gradient(rgba(0, 0, 0, 0), black), url(./img/solar-cell-farm-power-station-alternative-energy-from-sun-removebg.png);
+  background-size: cover;
+  background-position: top;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+}
+
+section.solar .solarimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 20px;
+}
+
+section.solar .solarimg h3 {
+  font-family: gilroy, montserrat;
+  width: 70%;
+  text-align: center !important;
+  font-size: 1.35em;
+  position: relative;
+}
+
+section.solar .solarimg h3::after {
+  content: "";
+  height: 70px;
+  width: 2px;
+  position: absolute;
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+  right: 50%;
+  background-color: #ffaa00;
+  z-index: 10;
+  -webkit-box-shadow: 0px -1px 7px 0px white;
+          box-shadow: 0px -1px 7px 0px white;
+}
+
+section.solar .solarimg h3::before {
+  content: "";
+  height: 70px;
+  width: 2px;
+  position: absolute;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  right: 50%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px -1px 7px 0px white;
+          box-shadow: 0px -1px 7px 0px white;
 }
 /*# sourceMappingURL=style.css.map */
