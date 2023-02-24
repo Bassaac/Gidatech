@@ -1183,4 +1183,281 @@ section.val .valtxt2 p {
   font-size: 1em;
   text-align: left;
 }
+
+section.service {
+  height: auto;
+  padding: 70px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.507))), url(./img/lens2.jpg);
+  background: linear-gradient(black, rgba(0, 0, 0, 0.507)), url(./img/lens2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+section.service .saaa {
+  margin-bottom: 20px;
+}
+
+section.service p {
+  font-family: gilroy, montserrat;
+  font-size: 0.97em;
+}
+
+section.service .secp {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+}
+
+section.service .secp a {
+  text-decoration: none;
+  color: #0cd2e4;
+}
+
+section.security {
+  height: auto;
+  padding: 50px 25px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+section.security h1 {
+  position: absolute;
+  left: 15px;
+  top: -20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  padding: 10px;
+  font-family: gilroy, poppins;
+  font-weight: 600;
+  font-size: 0.8em;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: black;
+  border-top: 1px solid white;
+  color: #dddddd;
+  z-index: 100;
+}
+
+section.security video {
+  width: 300px;
+  position: relative;
+  height: 210px;
+}
+
+section.security .vidabs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  background: rgba(0, 0, 0, 0.651);
+  padding: 25px 20px;
+}
+
+section.security .vidabs p {
+  margin-top: 20px;
+  font-family: gilroy, montserrat;
+  font-size: 14px;
+  width: 80%;
+}
+
+section.security .lensec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.493)), to(rgba(0, 0, 0, 0.514))), url(./img/lens2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.514)), url(./img/lens2.jpg);
+  background-size: 90%;
+  background-attachment: fixed;
+  padding: 70px 20px;
+  background-position: center;
+}
+
+section.security .lensec h3 {
+  width: 90%;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: montserrat, gilroy, poppins;
+}
+
+section.security .lensec h3::after {
+  content: "";
+  top: 50%;
+  height: 2px;
+  width: 40px;
+  left: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  background-color: #0cd2e4;
+  position: absolute;
+}
+
+section.security .lensec h3::before {
+  content: "";
+  bottom: 50%;
+  height: 2px;
+  width: 40px;
+  right: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  background-color: #0cd2e4;
+  position: absolute;
+}
+
+section.automation {
+  background: #2c2c2c;
+  padding: 40px 20px;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.automation h1 {
+  position: absolute;
+  left: 15px;
+  top: -20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  padding: 10px;
+  font-family: gilroy, poppins;
+  font-weight: 600;
+  font-size: 0.8em;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: black;
+  border-top: 1px solid white;
+  color: #dddddd;
+  z-index: 100;
+}
+
+section.automation img {
+  width: 70vw;
+  margin-bottom: 20px;
+}
+
+section.automation p {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: Gilroy, montserrat;
+}
+
+section.intercom {
+  background: #141111;
+  padding: 40px 20px;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.intercom img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+
+section.intercom .img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.89)), to(rgba(0, 0, 0, 0.849))), url(./img/intercom-door.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.849)), url(./img/intercom-door.jpg);
+  background-size: cover;
+  padding: 40px 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+}
+
+section.intercom img {
+  width: 70vw;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section.intercom img::after {
+  content: "";
+  top: 50%;
+  height: 2px;
+  width: 40px;
+  left: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  background-color: #0cd2e4;
+  position: absolute;
+}
+
+section.intercom p {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: Gilroy, montserrat;
+}
 /*# sourceMappingURL=style.css.map */
