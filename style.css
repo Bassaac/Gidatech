@@ -908,10 +908,15 @@ section.about .abtext {
   gap: 20px;
 }
 
+section.about .abtext p {
+  font-family: montserrat;
+  font-weight: 400;
+}
+
 section.about .abtext p:nth-child(1) {
   font-family: poppins;
   font-weight: 700;
-  line-height: 0.97;
+  line-height: 1.2;
   font-size: 1.1em;
   letter-spacing: -0.9px;
   word-spacing: 2px;
@@ -920,7 +925,8 @@ section.about .abtext p:nth-child(1) {
 }
 
 section.about .abtext p:nth-child(1) p:nth-child(2) {
-  font-family: Gilroy;
+  font-family: poppins;
+  font-weight: 300;
 }
 
 section.about .abtext p:nth-child(1)::after {
@@ -1076,7 +1082,7 @@ section.about2 .abtext2 {
 }
 
 section.about2 .abtext2 p {
-  font-family: Gilroy;
+  font-family: poppins;
   line-height: 1;
   font-size: 1.1em;
   letter-spacing: -0.8px;

@@ -682,10 +682,16 @@ section.about {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    p {
+      font-family:  montserrat;
+      // line-height: 1.1;
+      font-weight: 400;
+
+    }
     p:nth-child(1) {
       font-family: poppins;
       font-weight: 700;
-      line-height: 0.97;
+      line-height: 1.2;
       font-size: 1.1em;
       letter-spacing: -0.9px;
       word-spacing: 2px;
@@ -693,7 +699,8 @@ section.about {
       margin-bottom: 20px;
 
       p:nth-child(2) {
-        font-family: $gil;
+        font-family: poppins;
+        font-weight: 300;
       }
       &::after {
         content: "";
@@ -815,7 +822,7 @@ section.about2 {
     flex-direction: column;
     gap: 20px;
     p {
-      font-family: $gil;
+      font-family: poppins;
 
       line-height: 1;
       font-size: 1.1em;
