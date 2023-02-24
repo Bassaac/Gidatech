@@ -919,6 +919,10 @@ section.about .abtext p:nth-child(1) {
   margin-bottom: 20px;
 }
 
+section.about .abtext p:nth-child(1) p:nth-child(2) {
+  font-family: Gilroy;
+}
+
 section.about .abtext p:nth-child(1)::after {
   content: "";
   position: absolute;
@@ -1168,7 +1172,7 @@ section.val .valtxt2 {
 }
 
 section.val .valtxt2 p {
-  font-family: Gilroy;
+  font-family: poppins;
   width: 90%;
   font-size: 1em;
   text-align: left;

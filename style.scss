@@ -691,6 +691,10 @@ section.about {
       word-spacing: 2px;
       position: relative;
       margin-bottom: 20px;
+
+      p:nth-child(2) {
+        font-family: $gil;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -885,7 +889,7 @@ section.val {
   }
   .valtxt2 {
     p {
-      font-family: $gil;
+      font-family: poppins;
       width: 90%;
       font-size: 1em;
       text-align: left;
