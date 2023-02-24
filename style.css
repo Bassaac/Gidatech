@@ -1406,6 +1406,21 @@ section.intercom {
           flex-direction: column;
 }
 
+section.intercom p:nth-child(1) {
+  color: #0cd2e4;
+  position: relative;
+}
+
+section.intercom p:nth-child(1)::after {
+  content: "";
+  top: 10px;
+  left: -25px;
+  background-color: #0cd2e4;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+}
+
 section.intercom img {
   -o-object-fit: cover;
      object-fit: cover;
