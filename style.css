@@ -374,6 +374,7 @@ section.home .text-over-wr .text-over .aaa p:nth-child(4) {
 }
 
 section.home .text-over-wr .text-over .aaa p {
+  font-weight: 400;
   padding: 2px 20px 5px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
