@@ -2032,6 +2032,21 @@ section.projectl .cardwr .card {
   }
 }
 
+section.projectl .cardwr .card1 {
+  background: url(./gida/military2.png);
+  background-size: cover;
+  height: 650px;
+  width: 400px;
+  background-position: left;
+}
+
+@media (max-width: 425px) {
+  section.projectl .cardwr .card1 {
+    height: 60vw;
+    width: 80vw;
+  }
+}
+
 section.projectl .cardwr .cardtxt {
   color: white;
   padding-left: 40px;

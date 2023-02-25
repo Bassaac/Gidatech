@@ -1570,9 +1570,22 @@ section.projectl {
       background-position: left;
       @media (max-width: 425px) {
         height: 60vw;
-       width: 80vw;
+        width: 80vw;
       }
     }
+
+    .card1 {
+      background: url(./gida/military2.png);
+      background-size: cover;
+      height: 650px;
+      width: 400px;
+      background-position: left;
+      @media (max-width: 425px) {
+        height: 60vw;
+        width: 80vw;
+      }
+    }
+
     .cardtxt {
       color: white;
       padding-left: 40px;
