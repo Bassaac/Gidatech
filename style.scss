@@ -15,6 +15,10 @@ $lin-g2: linear-gradient(
   #0cb2c1 95%,
   #0cb2c1
 );
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-family: $font-family;
 }

@@ -3,6 +3,10 @@
 @import url(./3A0445_3_0.woff2);
 @import url(./3A0445_4_0.woff2);
 @import url(./fontsstyle.css);
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-family: lato;
 }
