@@ -1932,18 +1932,31 @@ section.form form .btn button {
 }
 
 section.project {
-  height: auto;
-  padding: 100px 90px;
-  height: 90vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.753)), color-stop(rgba(0, 0, 0, 0.445)), to(rgba(0, 0, 0, 0.993))), url(./img/Home2.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.993)), url(./img/Home2.jpg);
   background-size: cover;
   color: white;
+  background-position: center;
+  background-attachment: fixed;
+  height: auto;
+  padding: 130px 90px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.753)), color-stop(rgba(0, 0, 0, 0.445)), to(rgba(0, 0, 0, 0.993))), url(./img/lamp.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.993)), url(./img/lamp.jpg);
+}
+
+@media (max-width: 600px) {
+  section.project {
+    padding: 100px 40px;
+  }
 }
 
 section.project h1 {
   margin-bottom: 20px;
   font-size: 3em;
+}
+
+@media (max-width: 600px) {
+  section.project h1 {
+    font-size: 1.8em;
+  }
 }
 
 section.project a {
@@ -1968,5 +1981,74 @@ section.project p {
   font-weight: 300;
   margin-bottom: 40px;
   line-height: 1.3;
+}
+
+@media (max-width: 600px) {
+  section.project p {
+    font-size: 1.1em;
+  }
+}
+
+section.projectl {
+  height: auto;
+  background-color: black;
+  padding: 100px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+}
+
+section.projectl .cardwr {
+  height: auto;
+  width: 400px;
+}
+
+@media (max-width: 425px) {
+  section.projectl .cardwr {
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+
+section.projectl .cardwr .card {
+  background: url(./gida/military1.png);
+  background-size: cover;
+  height: 650px;
+  width: 400px;
+  background-position: left;
+}
+
+@media (max-width: 425px) {
+  section.projectl .cardwr .card {
+    height: 60vw;
+    width: 80vw;
+  }
+}
+
+section.projectl .cardwr .cardtxt {
+  color: white;
+  padding-left: 40px;
+}
+
+section.projectl .cardwr .cardtxt p {
+  width: 70%;
+  position: relative;
+}
+
+section.projectl .cardwr .cardtxt p::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  height: 150px;
+  width: 2px;
+  left: -20px;
+  top: -40px;
 }
 /*# sourceMappingURL=style.css.map */
