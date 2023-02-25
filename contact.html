@@ -69,7 +69,174 @@
     </head>
 
     <body>
+        <nav>
+            <a href="">
+                <h2 class="logo" title="Gidatech">Gidatech</h2>
+            </a>
+            <div title="menu" class="icon" onclick="toggle()">
+                <div class="icon-btn"></div>
+            </div>
+        </nav>
+        <div class="content" id="contents">
+
+            <div class="menu">
+                <ul>
+                    <li title="home"><a href="index.html">Home</a> </li>
+                    <li title="about"><a href="about.html">About</a></li>
+                    <li title="services"><a href="services.html">Services</a></li>
+                    <li title="Projects"><a href="projects.html">Projects</a></li>
+                    <li title="Contact"><a href="contact.html">Contact</a></li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+        <section class="form">
+            <div class="hp">
+                <h1>Let's talk.</h1>
+                <p>we're here to help!</p>
+            </div>
+            <form action="#" method="post">
+                <div class="mainwr">
+                    <div class="wr1">
+                        <div class="form-group">
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company*</label>
+                            <input type="text" name="company" id="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country*</label>
+                            <input type="text" name="country" id="country" required>
+                        </div>
+                    </div>
+                    <div class="wr2">
+                        <div class="form-group">
+                            <label for="state">State/Province</label>
+                            <input type="text" name="state" id="state">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City*</label>
+                            <input type="text" name="city" id="city" required>
+                        </div>
+                        <div class="form-group ">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">Zip/Postal Code</label>
+                            <input type="text" name="zipcode" id="zipcode">
+                        </div>
+                        <div class="form-group ">
+                            <label for=" subject">Subject</label>
+                            <input type="text" name="subject" id="subject">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group " style="display: flex; flex-direction: column; width: 80%; margin-left: 30px;">
+                    <label for="message" ;>Message*</label>
+                    <textarea name=" message" id="message" required rows="4"></textarea>
+
+                </div>
+
+                <div class="check">
+                    <div class="form-group">
+                        <p>Interested in:</p>
+                        <input type="checkbox" name="interested[]" id="interested1" value="Home Automation">
+                        <label for="interested1">Home Automation</label><br>
+                        <input type="checkbox" name="interested[]" id="interested2" value="Building Automation">
+                        <label for="interested2">Building Automation</label><br>
+                        <input type="checkbox" name="interested[]" id="interested3" value="Smart Lighting">
+                        <label for="interested3">Smart Lighting</label><br>
+                    </div>
+                    <div class="form-group">
+                        <p>How did you find us?</p>
+                        <input type="radio" name="found_us" id="search_engine" value="Search Engine">
+                        <label for="search_engine">Search Engine</label><br>
+                        <input type="radio" name="found_us" id="social_media" value="Social Media">
+                        <label for="social_media">Social Media</label><br>
+                        <input type="radio" name="found_us" id="referral" value="Referral">
+                        <label for="referral">Referral</label><br>
+                        <!-- <input type="radio" name="found_us" id="other" value="Other"> -->
+                    </div>
+                    <div class="form-group">
+                        <p>Subscribe to our newsletter:</p>
+                        <input type="radio" name="newsletter" id="yes" value="Yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="newsletter" id="no" value="No">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+
+
+        </section>
+
+
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script src="./script.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        </form>
+        </section>
+        <footer class="faa">
+            <div class="gida" title="gidatech">
+                <h2 style="font-weight: 800; font-family:gilroy ; font-size: 2.6em; color: rgb(255, 255, 255);">
+                    Gidatech</h2>
+            </div>
+            <div class="addr">
+                <p><span>Plot 1074 Lugbe Kapwa</span>
+                    <span> Extension Road FHA Lugbe Abuja</span>
+                </p>
+            </div>
+            <div class="phone">
+
+                <a href="" title="number:08135936909">08135936909</a>
+                <a href="mailto:info@gidatech.com">info@gidatech.com</a>
+            </div>
+            <div class="iconswr">
+                <div class="icons">
+
+                    <a href="https://ng.linkedin.com/in/gidatech-nigeria-limited-31804816b"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/gidatechnigeria/?hl=en"> <i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/gidatechnigeria/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/gidatecheng?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/gidatech/"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="ftxt">
+                <h5>Smart technology for smarter living.</h5>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="copywr">
+                <p>&copy;2023 Gidatech &hyphen; website by <a href="#">Bassaacdev</a></p>
+            </div>
+        </footer>
 
     </body>
 
-    </html>
+</html>
