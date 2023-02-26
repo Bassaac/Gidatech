@@ -1570,7 +1570,7 @@ section.projectl {
   .cardwr {
     height: auto;
     width: 400px;
-    @media (max-width: 425px) {
+    @media (max-width: 455px) {
       height: auto;
       margin-bottom: 50px;
     }
@@ -1582,7 +1582,7 @@ section.projectl {
       width: 430px;
       background-position: center;
       margin-bottom: 12px;
-      @media (max-width: 425px) {
+      @media (max-width: 455px) {
         height: 60vw;
         width: 80vw;
       }
@@ -1596,7 +1596,7 @@ section.projectl {
     .two {
       background-size: cover;
       background: url(./gida/katsina.png);
-      @media (max-width: 425px) {
+      @media (max-width: 455px) {
         background-position: center;
       }
     }

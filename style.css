@@ -2027,7 +2027,7 @@ section.projectl .cardwr {
   width: 400px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 455px) {
   section.projectl .cardwr {
     height: auto;
     margin-bottom: 50px;
@@ -2043,7 +2043,7 @@ section.projectl .cardwr .card {
   margin-bottom: 12px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 455px) {
   section.projectl .cardwr .card {
     height: 60vw;
     width: 80vw;
@@ -2061,7 +2061,7 @@ section.projectl .cardwr .two {
   background: url(./gida/katsina.png);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 455px) {
   section.projectl .cardwr .two {
     background-position: center;
   }
