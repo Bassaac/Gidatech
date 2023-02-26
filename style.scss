@@ -380,6 +380,10 @@ section.bbb {
       font-size: 1.9em;
       color: white;
       text-align: center;
+      transition: all 0.4s ease;
+      @media (min-width: 1000px) {
+        font-size: 3.2em;
+      }
     }
     &::after {
       content: "";
@@ -392,6 +396,7 @@ section.bbb {
       transform-origin: bottom;
 
       transform: translate(50%, -50%);
+
       @media (max-width: 1184px) {
         top: -10vw;
         left: 12vw;
@@ -405,6 +410,13 @@ section.bbb {
         width: 2px;
         background-color: white;
         height: 270px;
+      }
+      @media (min-width: 1000px) {
+        left: -62px;
+        top: -37px;
+        width: 2px;
+        background-color: white;
+        height: 444px;
       }
     }
   }
@@ -438,7 +450,7 @@ section.ccc {
     url(./img/street-cctv2.jpg);
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   padding: 70px 37px;
 
   .ctext {
@@ -448,16 +460,26 @@ section.ccc {
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media (min-width: 900px) {
+      flex-direction: row-reverse;
+    }
     h2 {
       display: flex;
       flex-direction: column;
       font-size: 2em;
       margin-bottom: 20px;
       color: rgb(24, 22, 22);
+      @media (min-width: 900px) {
+        text-align: left;
+        margin-left: 10px;
+      }
       span:not(:nth-child(4)) {
         font-weight: 200;
         z-index: 1;
         text-align: center;
+        @media (min-width: 900px) {
+          text-align: left;
+        }
       }
       span:nth-child(4) {
         font-family: roboto;
@@ -465,6 +487,9 @@ section.ccc {
         font-weight: 400;
         color: #1b1b1b;
         text-align: center;
+        @media (min-width: 900px) {
+          text-align: left;
+        }
       }
       span {
         .und {
@@ -484,6 +509,11 @@ section.ccc {
       background-size: cover;
       // border: 1px solid black;
       padding: 20px;
+      @media (min-width: 900px) {
+        width: 44vw;
+        height: 35vw;
+        margin-right: 35px;
+      }
       &::after {
         content: "";
         width: 100%;
@@ -555,7 +585,7 @@ section.ddd {
     url(./img/street-cctv2.jpg);
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   padding: 70px 37px;
 
   .dtext {
@@ -565,12 +595,18 @@ section.ddd {
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media (min-width: 800px) {
+      flex-direction: row-reverse;
+    }
     h2 {
       display: flex;
       flex-direction: column;
       font-size: 2em;
       margin-bottom: 20px;
       color: rgb(255, 255, 255);
+      @media (min-width: 850px) {
+        font-size: 2.5em;
+      }
       span:not(:nth-child(4)) {
         font-weight: 200;
         z-index: 1;
@@ -601,6 +637,12 @@ section.ddd {
       background-position: center;
       // border: 1px solid black;
       padding: 20px 0;
+      @media (min-width: 800px) {
+        width: 44vw;
+        height: 35vw;
+        margin-left: 10px;
+      }
+
       &::after {
         content: "";
         width: 100%;
@@ -720,10 +762,17 @@ section.about {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    transition: all 0.4s ease;
+    @media (min-width: 850px) {
+      padding: 40px 80px;
+    }
     p {
       font-family: montserrat;
       // line-height: 1.1;
       font-weight: 400;
+      @media (min-width: 850px) {
+        font-size: 1.1em;
+      }
     }
     p:nth-child(1) {
       font-family: poppins;
@@ -734,6 +783,10 @@ section.about {
       word-spacing: 2px;
       position: relative;
       margin-bottom: 20px;
+      @media (min-width: 850px) {
+        font-size: 2em;
+        width: 70%;
+      }
 
       p:nth-child(2) {
         font-family: poppins;
@@ -770,6 +823,10 @@ section.abbb {
   flex-direction: column;
   justify-content: center;
   padding: 40px 30px;
+  @media (min-width: 700px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   h3 {
     color: white;
     font-family: poppins;
@@ -779,6 +836,11 @@ section.abbb {
     display: flex;
     position: relative;
     flex-direction: column;
+    @media (min-width: 700px) {
+      font-size: 3vw;
+      justify-content: center;
+    }
+
     ::after {
       content: " '' ";
       position: absolute;
@@ -786,6 +848,11 @@ section.abbb {
       left: -20px;
       // width: 30px;
       font-size: 4em;
+      @media (min-width: 700px) {
+        top: 30px;
+        left: -40px;
+        font-size: 4.1em;
+      }
     }
   }
   .abbbimg {
