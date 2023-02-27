@@ -36,6 +36,9 @@ $lin-g2: linear-gradient(
 html {
   scroll-behavior: smooth;
 }
+body{
+  background-color: black;
+}
 
 p {
   font-family: $font-family;
@@ -68,7 +71,7 @@ nav {
   backdrop-filter: blur(10px);
   color: white;
   padding: 0 0 0 10px;
-  z-index: 10000000000000000000000;
+  z-index: 1000;
   a {
     text-decoration: none;
     color: white;
@@ -252,16 +255,21 @@ nav {
 section.home {
   height: 90vh;
   background: linear-gradient(
-      rgba(0, 0, 0, 0.575) 50%,
+      rgba(0, 0, 0, 0.575) 70%,
       rgb(0, 0, 0),
       rgb(0, 0, 0)
-    ),
-    url(./img/Home.jpg);
+    );
   background-size: cover;
 
   display: flex;
   align-items: center;
   justify-content: left;
+  z-index: 100;
+  video {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
 
   .text-over-wr {
     height: auto;
@@ -269,12 +277,14 @@ section.home {
 
     .text-over {
       height: 65vh;
-      background-color: rgba(0, 0, 0, 0.781);
+      background-color: rgba(0, 0, 0, 0.623);
+
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
       color: white;
+      position: relative;
       h1 {
         width: 60%;
         font-weight: 100 !important;

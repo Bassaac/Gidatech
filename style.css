@@ -25,6 +25,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: black;
+}
+
 p {
   font-family: lato;
 }
@@ -60,7 +64,7 @@ nav {
           backdrop-filter: blur(10px);
   color: white;
   padding: 0 0 0 10px;
-  z-index: 10000000000000000000000;
+  z-index: 1000;
 }
 
 nav a {
@@ -293,8 +297,8 @@ nav a:hover {
 
 section.home {
   height: 90vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0.575)), color-stop(black), to(black)), url(./img/Home.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.575) 50%, black, black), url(./img/Home.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(0, 0, 0, 0.575)), color-stop(black), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0.575) 70%, black, black);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,6 +309,13 @@ section.home {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  z-index: 100;
+}
+
+section.home video {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 section.home .text-over-wr {
@@ -314,7 +325,7 @@ section.home .text-over-wr {
 
 section.home .text-over-wr .text-over {
   height: 65vh;
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: rgba(0, 0, 0, 0.623);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,6 +340,7 @@ section.home .text-over-wr .text-over {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   color: white;
+  position: relative;
 }
 
 section.home .text-over-wr .text-over h1 {
