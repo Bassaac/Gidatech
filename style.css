@@ -60,8 +60,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   color: white;
   padding: 0 0 0 10px;
   z-index: 1000;
@@ -2158,8 +2158,8 @@ section.form form .check .form-group {
 }
 
 section.form form .check .form-group [type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   margin-right: 10px;
   border-radius: 2px;
   border: 1px solid white;
@@ -2176,9 +2176,16 @@ section.form form .check .form-group [type="checkbox"]:checked {
   background-size: contain;
 }
 
+@media (max-width: 500px) {
+  section.form form .check .form-group [type="checkbox"] {
+    width: 15px;
+    height: 15px;
+  }
+}
+
 section.form form .check .form-group [type="radio"] {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   margin-right: 10px;
   border-radius: 50%;
   border: 1px solid white;
@@ -2196,6 +2203,13 @@ section.form form .check .form-group [type="radio"]:checked {
   background: white;
   background-size: contain;
   padding: 10px;
+}
+
+@media (max-width: 500px) {
+  section.form form .check .form-group [type="radio"] {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 section.form form .mainwr {
