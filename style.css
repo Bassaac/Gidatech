@@ -1479,7 +1479,8 @@ section.service p {
 
 @media (min-width: 650px) {
   section.service p {
-    font-size: 1em;
+    padding: 20px 30px;
+    font-size: 1.15em;
   }
 }
 
@@ -1810,6 +1811,16 @@ section.intercom .img {
 section.intercom .img h2 {
   width: 70%;
   position: relative;
+  padding-bottom: 15px;
+  z-index: 10;
+  color: white;
+  text-shadow: -2px 0px 1px black, 2px 0px 1px #0cd2e4;
+}
+
+@media (min-width: 700px) {
+  section.intercom .img h2 {
+    font-size: 2.2em;
+  }
 }
 
 section.intercom .img h2::after {
@@ -1823,10 +1834,19 @@ section.intercom .img h2::after {
 }
 
 section.intercom img {
-  width: 70vw;
+  width: 50vw;
   margin-bottom: 20px;
   position: relative;
   top: -170px;
+  -o-object-position: top;
+     object-position: top;
+}
+
+@media (min-width: 800px) {
+  section.intercom img {
+    top: unset;
+    width: 30vw;
+  }
 }
 
 section.intercom img::after {
@@ -1854,6 +1874,15 @@ section.intercom p {
   font-family: Gilroy, montserrat, poppins;
   position: relative;
   top: -20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 700px) {
+  section.intercom p {
+    padding: 70px 40px;
+    font-size: 1.3em;
+  }
 }
 
 section.electrical {
@@ -1899,6 +1928,13 @@ section.electrical h3 {
   width: 80%;
   text-align: center;
   margin-bottom: 70px;
+}
+
+@media (min-width: 700px) {
+  section.electrical h3 {
+    font-size: 1.6em;
+    width: 70%;
+  }
 }
 
 section.electrical h3:nth-child(3) {
@@ -1955,6 +1991,13 @@ section.electrical .img img {
   position: relative;
   right: -10px;
   top: 10px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 750px) {
+  section.electrical .img img {
+    width: 45vw;
+  }
 }
 
 section.electrical p {
@@ -1973,6 +2016,13 @@ section.electrical p {
   position: relative;
 }
 
+@media (min-width: 750px) {
+  section.electrical p {
+    padding: 70px 50px;
+    font-size: 1.3em;
+  }
+}
+
 section.electrical p::after {
   content: "";
   bottom: 0;
@@ -1987,7 +2037,7 @@ section.solar {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)), url(./img/solar-cell-farm-power-station-alternative-energy-from-sun-removebg.png);
   background: linear-gradient(rgba(0, 0, 0, 0), black), url(./img/solar-cell-farm-power-station-alternative-energy-from-sun-removebg.png);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   color: white;
   position: relative;
   display: -webkit-box;
@@ -1996,7 +2046,10 @@ section.solar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50vh;
+  height: 60vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.solar .solarimg {
@@ -2018,6 +2071,13 @@ section.solar .solarimg h3 {
   text-align: center !important;
   font-size: 1.35em;
   position: relative;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  section.solar .solarimg h3 {
+    font-size: 1.8em;
+  }
 }
 
 section.solar .solarimg h3::after {
@@ -2028,7 +2088,7 @@ section.solar .solarimg h3::after {
   -webkit-transform: translateY(60%);
           transform: translateY(60%);
   right: 50%;
-  background-color: #ffaa00;
+  background-color: #ffffff;
   z-index: 10;
   -webkit-box-shadow: 0px -1px 7px 0px white;
           box-shadow: 0px -1px 7px 0px white;
@@ -2042,7 +2102,7 @@ section.solar .solarimg h3::before {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   right: 50%;
-  background-color: #ffffff;
+  background-color: #ee9700;
   -webkit-box-shadow: 0px -1px 7px 0px white;
           box-shadow: 0px -1px 7px 0px white;
 }

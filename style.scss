@@ -1101,7 +1101,8 @@ section.service {
     font-family: gilroy, montserrat;
     font-size: 0.97em;
     @media (min-width: 650px) {
-      font-size: 1em;
+      padding: 20px 30px;
+      font-size: 1.15em;
     }
   }
 
@@ -1267,7 +1268,7 @@ section.automation {
       border-radius: 50%;
       bottom: 0%;
       right: 0px;
-border: 1px dashed rgb(255, 255, 255);
+      border: 1px dashed rgb(255, 255, 255);
       background-color: rgba(255, 255, 255, 0);
     }
     img {
@@ -1302,6 +1303,9 @@ section.intercom {
   align-items: center;
   flex-direction: column;
   font-family: $gil, montserrat, poppins;
+  @media (min-width: 800px) {
+    //  flex-direction: row;
+  }
   p:nth-child(1) {
     color: #0cd2e4;
     position: relative;
@@ -1334,9 +1338,17 @@ section.intercom {
     justify-content: flex-start;
     text-align: left;
     z-index: 10;
+
     h2 {
       width: 70%;
       position: relative;
+      padding-bottom: 15px;
+      z-index: 10;
+      color: white;
+      text-shadow: -2px 0px 1px black, 2px 0px 1px #0cd2e4;
+      @media (min-width: 700px) {
+        font-size: 2.2em;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -1349,10 +1361,15 @@ section.intercom {
     }
   }
   img {
-    width: 70vw;
+    width: 50vw;
     margin-bottom: 20px;
     position: relative;
     top: -170px;
+    object-position: top;
+    @media (min-width: 800px) {
+      top: unset;
+      width: 30vw;
+    }
     &::after {
       content: "";
       top: 50%;
@@ -1372,6 +1389,11 @@ section.intercom {
     font-family: $gil, montserrat, poppins;
     position: relative;
     top: -20px;
+    transition: all 0.5s ease-in-out;
+    @media (min-width: 700px) {
+      padding: 70px 40px;
+      font-size: 1.3em;
+    }
   }
 }
 
@@ -1406,6 +1428,10 @@ section.electrical {
     width: 80%;
     text-align: center;
     margin-bottom: 70px;
+    @media (min-width: 700px) {
+      font-size: 1.6em;
+      width: 70%;
+    }
   }
   h3:nth-child(3) {
     color: #ee9700;
@@ -1454,6 +1480,10 @@ section.electrical {
 
       right: -10px;
       top: 10px;
+      margin-bottom: 15px;
+      @media (min-width: 750px) {
+        width: 45vw;
+      }
     }
   }
 
@@ -1466,6 +1496,10 @@ section.electrical {
     font-family: $gil, montserrat;
     text-align: left;
     position: relative;
+    @media (min-width: 750px) {
+      padding: 70px 50px;
+      font-size: 1.3em;
+    }
     &::after {
       content: "";
       bottom: 0;
@@ -1483,14 +1517,15 @@ section.solar {
   background: linear-gradient(rgba(0, 0, 0, 0), black),
     url(./img/solar-cell-farm-power-station-alternative-energy-from-sun-removebg.png);
   background-size: cover;
-  background-position: top;
+  background-position: center;
 
   color: white;
   position: relative;
   display: flex;
   align-items: center;
   // flex-direction: column;
-  height: 50vh;
+  height: 60vh;
+  justify-content: center;
 
   .solarimg {
     display: flex;
@@ -1502,6 +1537,10 @@ section.solar {
       text-align: center !important;
       font-size: 1.35em;
       position: relative;
+      text-align: center;
+      @media (min-width: 750px) {
+        font-size: 1.8em;
+      }
       &::after {
         content: "";
         height: 70px;
@@ -1509,7 +1548,7 @@ section.solar {
         position: absolute;
         transform: translateY(60%);
         right: 50%;
-        background-color: #ffaa00;
+        background-color: #ffffff;
         z-index: 10;
         box-shadow: 0px -1px 7px 0px white;
       }
@@ -1520,7 +1559,7 @@ section.solar {
         position: absolute;
         transform: translateY(-100%);
         right: 50%;
-        background-color: #ffffff;
+        background-color: #ee9700;
         box-shadow: 0px -1px 7px 0px white;
       }
     }
