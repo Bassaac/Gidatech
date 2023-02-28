@@ -36,7 +36,7 @@ $lin-g2: linear-gradient(
 html {
   scroll-behavior: smooth;
 }
-body{
+body {
   background-color: black;
 }
 
@@ -255,10 +255,10 @@ nav {
 section.home {
   height: 90vh;
   background: linear-gradient(
-      rgba(0, 0, 0, 0.575) 70%,
-      rgb(0, 0, 0),
-      rgb(0, 0, 0)
-    );
+    rgba(0, 0, 0, 0.575) 70%,
+    rgb(0, 0, 0),
+    rgb(0, 0, 0)
+  );
   background-size: cover;
 
   display: flex;
@@ -321,6 +321,10 @@ section.home {
         font-family: roboto !important;
         font-weight: 100 !important;
 
+        a {
+          text-decoration: none;
+          color: white;
+        }
         p:nth-child(4) {
           border: none;
         }
@@ -673,6 +677,7 @@ section.ddd {
 footer.faa {
   height: auto;
   width: 100%;
+  position: relative;
   background: linear-gradient(rgb(44, 44, 44), rgba(41, 41, 41, 0.938)),
     url(./gida/darkliving.jpg);
   display: flex;
@@ -729,13 +734,25 @@ footer.faa {
     display: flex;
     align-self: center;
     justify-content: center;
+
+    position: relative;
+    @media (min-width: 900px) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 80px;
+    }
+
     a {
       font-size: 13px;
       text-decoration: none;
-      color: #dfdfdf;
+      color: #ffffff;
       transition: all 0.2s ease;
       &:hover {
         scale: 1.1;
+      }
+      @media (min-width: 900px) {
+        color: #1b1b1b;
       }
     }
     .icons {
@@ -743,6 +760,23 @@ footer.faa {
       display: flex;
       gap: 20px;
       justify-content: center;
+      position: relative;
+      @media (min-width: 900px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        top: 0;
+        right: 0;
+        background-color: white;
+        position: absolute;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 397px;
+        justify-content: space-around;
+      }
     }
   }
   .gida {
@@ -922,6 +956,10 @@ section.about2 {
   gap: 15px;
   align-items: center;
   position: relative;
+
+  @media (min-width: 600px) {
+    padding: 10vw 20vw;
+  }
   &::after {
     width: 100%;
     content: "";
@@ -945,6 +983,10 @@ section.about2 {
       position: relative;
       margin-bottom: 20px;
       font-weight: 600;
+      @media (min-width: 600px) {
+        font-size: 1.4em;
+        line-height: 1.3;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -965,13 +1007,16 @@ section.about2 {
         right: 50%;
         transform: translate(0, 220px);
         height: 122px;
+        @media (min-width: 760px) {
+          display: none;
+        }
       }
     }
   }
 }
 section.val {
   height: auto;
-  background: linear-gradient(rgba(56, 56, 56, 0.856), rgba(56, 56, 56, 0.856));
+  background: linear-gradient(rgba(98, 96, 96, 0.856), rgba(56, 56, 56, 0.856));
   width: 100%;
   padding: 40px 10px;
   display: flex;
@@ -985,6 +1030,9 @@ section.val {
     h2 {
       margin-bottom: 20px;
       font-size: 2em;
+      @media (min-width: 600px) {
+        font-size: 2.2em;
+      }
     }
     p {
       display: flex;
@@ -993,17 +1041,17 @@ section.val {
       &::after {
         content: "";
         position: absolute;
-        top: -33px;
-        left: 10px;
+        top: 0;
+        left: 0px;
         height: 2px;
-        width: 50px;
-        background-color: #4a5764;
+        width: 70px;
+        background-color: #ffffff;
       }
 
       span {
         font-family: poppins;
-        font-weight: 700;
-        font-size: 1.3em;
+        font-weight: 300;
+        font-size: 1.4em;
         color: #ffffff;
         line-height: 1.7;
       }
@@ -1033,13 +1081,28 @@ section.service {
   background-size: cover;
   // background-position: top;
   color: white;
+  transition: all 0.4s ease-in-out;
+
+  @media (min-width: 650px) {
+    padding: 70px 40px;
+  }
   .saaa {
     margin-bottom: 20px;
+    transition: all 0.4s ease;
+    h2 {
+      @media (min-width: 650px) {
+        font-size: 1.8em;
+        width: 80%;
+      }
+    }
   }
 
   p {
     font-family: gilroy, montserrat;
     font-size: 0.97em;
+    @media (min-width: 650px) {
+      font-size: 1em;
+    }
   }
 
   .secp {
@@ -1077,10 +1140,10 @@ section.security {
     color: #dddddd;
     z-index: 100;
   }
-  video {
+  img {
     width: 70vw;
     position: relative;
-    height: 210px;
+    // height: 210px;
   }
   .vidabs {
     width: 100%;
@@ -1092,12 +1155,29 @@ section.security {
     top: 25px;
     background: rgba(0, 0, 0, 0.651);
     // height: 100%;
-    padding: 25px 20px;
+    padding: 60px 30px;
+    @media (min-width: 650px) {
+      padding: 15vw 13vw;
+    }
+    @media (max-width: 370px) {
+      padding-bottom: 10px;
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    h2 {
+      @media (min-width: 650px) {
+        font-size: 1.8em;
+      }
+    }
     p {
       margin-top: 20px;
       font-family: gilroy, montserrat;
       font-size: 14px;
       width: 80%;
+      @media (min-width: 650px) {
+        font-size: 2vw;
+      }
     }
   }
   .lensec {
@@ -1149,6 +1229,20 @@ section.automation {
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
+  .lrgh {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    h2 {
+      @media (min-width: 800px) {
+        font-size: 2em;
+      }
+    }
+  }
   h1 {
     position: absolute;
     left: 15px;
@@ -1164,9 +1258,27 @@ section.automation {
     color: #dddddd;
     z-index: 100;
   }
-  img {
-    width: 70vw;
-    margin-bottom: 20px;
+  .img {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      bottom: 0%;
+      right: 0px;
+border: 1px dashed rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0);
+    }
+    img {
+      width: 60vw;
+      z-index: 10;
+      margin-bottom: 20px;
+      position: relative;
+      @media (min-width: 800px) {
+        width: 50vw;
+      }
+    }
   }
   p {
     font-size: 15px;
@@ -1174,6 +1286,10 @@ section.automation {
     flex-direction: column;
     text-align: center;
     font-family: $gil, montserrat;
+    mix-blend-mode: difference;
+    @media (min-width: 650px) {
+      font-size: 18px;
+    }
   }
 }
 
