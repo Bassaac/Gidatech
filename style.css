@@ -33,6 +33,16 @@ p {
   font-family: lato;
 }
 
+a {
+  text-decoration: none;
+  color: #0cd2e4;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -477,10 +487,11 @@ section.bbb {
 
 section.bbb .b1 {
   position: relative;
+  z-index: 10;
 }
 
 section.bbb .b1 h2 {
-  font-family: roboto;
+  font-family: poppins;
   font-weight: 400;
   width: calc(43vw + 109px);
   font-size: 1.9em;
@@ -488,6 +499,12 @@ section.bbb .b1 h2 {
   text-align: center;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+@media (max-width: 800px) {
+  section.bbb .b1 h2 {
+    font-size: 1.5em;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -550,6 +567,12 @@ section.bbb .bimg img {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+  section.bbb .bimg img {
+    width: calc(30vw + 107px);
+  }
 }
 
 @-webkit-keyframes change {

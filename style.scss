@@ -43,6 +43,14 @@ body {
 p {
   font-family: $font-family;
 }
+a {
+  text-decoration: none;
+  color: #0cd2e4;
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+}
 
 $gil: Gilroy;
 @import url(./3A0445_0_0.woff2);
@@ -387,14 +395,18 @@ section.bbb {
   }
   .b1 {
     position: relative;
+    z-index: 10;
     h2 {
-      font-family: roboto;
+      font-family: poppins;
       font-weight: 400;
       width: calc(43vw + 109px);
       font-size: 1.9em;
       color: white;
       text-align: center;
       transition: all 0.4s ease;
+      @media (max-width: 800px) {
+        font-size: 1.5em;
+      }
       @media (min-width: 1000px) {
         font-size: 3.2em;
       }
@@ -441,6 +453,10 @@ section.bbb {
     animation: change 4s linear infinite;
     transition: all 0.5s linear;
     margin-top: 20px;
+    @media (min-width: 800px) {
+      width: calc(30vw + 107px);
+    }
+
     @keyframes change {
       70% {
         filter: hue-rotate(55deg) brightness(1);
