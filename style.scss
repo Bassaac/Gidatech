@@ -324,10 +324,14 @@ section.home {
         flex-basis: 1;
         width: 50%;
         transition: all 0.3s ease;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         font-family: roboto !important;
         font-weight: 100 !important;
+        flex-wrap: wrap;
+        @media (max-width: 500px) {
+          flex-direction: column;
+        }
 
         a {
           text-decoration: none;
@@ -608,17 +612,16 @@ section.ccc {
     }
   }
 }
-section.ddd {
+section.ddd2 {
   height: auto;
   width: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.719)),
-    url(./img/street-cctv2.jpg);
+  background: linear-gradient(0deg, rgb(0, 0, 0), rgb(0, 0, 0));
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 70px 37px;
 
-  .dtext {
+  .dtext2 {
     width: 100%;
     position: relative;
     gap: 50px;
@@ -657,6 +660,81 @@ section.ddd {
       }
     }
     .rect {
+      padding: 20px 0;
+      video {
+        width: 100%;
+      }
+      @media (min-width: 800px) {
+        width: 44vw;
+        height: 35vw;
+        margin-left: 10px;
+      }
+
+      // &::after {
+      //   content: "";
+      //   width: 100%;
+      //   height: 100%;
+      //   // padding: 20px;
+      //   position: absolute;
+      //   align-self: center;
+      //   margin-left: -24px;
+      //   // border: 0 2px 2px 0 dashed rgba(0, 0, 0, 0.712);
+      //   border-left: 2px dashed #0cd2e4;
+      //   // border-bottom: 2px dashed black;
+      //   // border-spacing: 10;
+      //   // mix-blend-mode: hard-light;
+      // }
+    }
+  }
+}
+section.ddd {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(0deg, rgb(36, 36, 36), rgb(36, 35, 35));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 37px;
+
+  .dtext {
+    width: 100%;
+    position: relative;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: 800px) {
+      flex-direction: row-reverse;
+    }
+    h2 {
+      display: flex;
+      flex-direction: column;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: rgb(255, 255, 255);
+      @media (min-width: 850px) {
+        font-size: 2.5em;
+      }
+      span:not(:nth-child(4)) {
+        font-weight: 200;
+        z-index: 1;
+        text-align: right;
+      }
+      span:nth-child(4) {
+        font-weight: 600;
+        font-size: 1.3em;
+        color: #1b1b1b;
+        text-align: right;
+      }
+      span {
+        .und {
+          text-decoration: underline;
+          text-decoration-color: #0cd2e4;
+          text-underline-offset: 5px;
+        }
+      }
+    }
+    .rect {
       position: relative;
       width: 64vw;
       height: 55vw;
@@ -681,8 +759,9 @@ section.ddd {
         position: absolute;
         align-self: center;
         margin-left: -24px;
+        top: 0;
         // border: 0 2px 2px 0 dashed rgba(0, 0, 0, 0.712);
-        border-left: 2px dashed #0cd2e4;
+        border-left: 2px solid #0cd2e4;
         // border-bottom: 2px dashed black;
         // border-spacing: 10;
         // mix-blend-mode: hard-light;
@@ -1133,7 +1212,100 @@ section.service {
     }
   }
 }
+section.homeser {
+  height: 70vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.575) ,
+      rgba(0, 0, 0, 0.589),
+      rgba(0, 0, 0, 0.651)
+    ),
+    url(./img/homesmrt1.png);
+  background-size: cover;
 
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  z-index: 100;
+
+  .text-over-wr {
+    height: auto;
+    width: 80vw;
+
+    .text-over {
+      height: 50vh;
+      background-color: rgba(0, 0, 0, 0.623);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      color: white;
+      position: relative;
+      h1 {
+        width: 60%;
+        font-weight: 800 !important;
+        font-size: calc(6vw + 10px);
+        font-family: $gil;
+
+        span {
+          color: transparent;
+          font-size: 14vw;
+          background: $lin-g2;
+          font-weight: 900 !important;
+          -webkit-background-clip: text;
+          font-family: Roboto;
+
+          background-size: 300%;
+          animation: bmove 20s linear infinite;
+
+          @keyframes bmove {
+            0% {
+            }
+            100% {
+              background-position-x: 100%;
+            }
+          }
+        }
+      }
+      .aaa {
+        display: flex;
+        flex-basis: 1;
+        width: 50%;
+        transition: all 0.3s ease;
+        flex-direction: row;
+        align-items: flex-start;
+        font-family: roboto !important;
+        font-weight: 100 !important;
+        flex-wrap: wrap;
+        @media (max-width: 500px) {
+          flex-direction: column;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        p:nth-child(4) {
+          border: none;
+        }
+
+        p {
+          font-weight: 400;
+          padding: 2px 20px 5px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // border-right: 3px solid white;
+          transition: all 0.2s ease;
+          &:hover {
+            color: #0cb2c1;
+            border-color: #0cb2c1;
+          }
+        }
+      }
+    }
+  }
+}
 section.security {
   height: auto;
   padding: 50px 25px;
@@ -1927,6 +2099,132 @@ section.projectl {
           width: 2px;
           left: -20px;
           top: -50px;
+        }
+      }
+    }
+  }
+}
+
+section.pack {
+  background-color: white;
+  padding: 70px 50px;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    @media (max-width: 700px) {
+      justify-content: center;
+    }
+
+    .leftwr {
+      .left {
+        width: 200px;
+        height: 400px;
+        background: url(./img/accesscnt2blk.png);
+        background-size: cover;
+        background-position: center;
+        @media (max-width: 400px) {
+          width: 80vw;
+        }
+      }
+    }
+    .rightwr {
+      p {
+        text-transform: lowercase;
+        margin-bottom: 5px;
+        &:nth-child(even) {
+          background-color: gray;
+          color: white;
+          padding: 8px;
+        }
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+section.pack2 {
+  background-color: black;
+  padding: 70px 50px;
+  color: white;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    @media (max-width: 700px) {
+      justify-content: center;
+    }
+
+    .leftwr {
+      .left {
+        width: 400px;
+        height: 400px;
+        background: url(./img/smartdrk.png);
+        background-size: cover;
+        background-position: center;
+        @media (max-width: 400px) {
+          width: 80vw;
+        }
+      }
+    }
+    .rightwr {
+      p {
+        text-transform: lowercase;
+        margin-bottom: 5px;
+        color: white;
+        &:nth-child(even) {
+          background-color: gray;
+          color: white;
+          padding: 8px;
+        }
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+section.pack3 {
+  background-color: rgb(236, 236, 236);
+  padding: 70px 50px;
+  color: rgb(0, 0, 0);
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    @media (max-width: 700px) {
+      justify-content: center;
+    }
+
+    .leftwr {
+      .left {
+        width: 300px;
+        height: 400px;
+        background: url(./img/accesscnt.png);
+        background-size: cover;
+        background-position: center;
+        mix-blend-mode: multiply;
+        @media (max-width: 400px) {
+          width: 80vw;
+        }
+      }
+    }
+    .rightwr {
+      p {
+        text-transform: lowercase;
+        margin-bottom: 5px;
+        color: rgb(0, 0, 0);
+        &:nth-child(even) {
+          background-color: #dda481;
+          color: rgb(255, 255, 255);
+          padding: 8px;
+        }
+        i {
+          margin-right: 10px;
         }
       }
     }
