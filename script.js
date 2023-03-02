@@ -11,12 +11,12 @@ menuBtn.addEventListener('click', () => {
 });
 
 function toggle() {
-    const content = document.querySelector('.content')
+    let content = document.querySelector('.content')
     content.classList.toggle('active');
 }
 function toggle2() {
-    let vidover = document.querySelector('.vidover')
-    vidover.classList.toggle('active')
+    const vidover = document.querySelector('.vidover')
+    vidover.classList.toggle('active2')
     console.log('true')
 }
 

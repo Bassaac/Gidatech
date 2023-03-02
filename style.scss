@@ -391,6 +391,7 @@ section.home1 {
       justify-content: center;
       color: white;
       // position: relative;
+
       .vidover {
         width: 100%;
         height: 100vh;
@@ -401,11 +402,22 @@ section.home1 {
         backdrop-filter: blur(15px);
         align-items: center;
         justify-content: center;
-        .active {
+        .active2 {
           visibility: visible;
           justify-content: center;
           align-items: center;
+          z-index: 1000;
+          width: 100%;
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          overflow: hidden;
+          left: 0;
         }
+        // video {
+        //   z-index: 1000000;
+        // }
+
         i {
           position: absolute;
           right: 30px;
@@ -414,9 +426,22 @@ section.home1 {
         }
 
         video {
-          width: 350px;
+          width: 80%;
           height: 400px;
         }
+      }
+      .vidover.active2 {
+        visibility: visible;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        left: 0;
+        display: flex;
       }
       h1 {
         width: 60%;
