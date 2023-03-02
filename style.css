@@ -1156,6 +1156,10 @@ footer.faa .iconswr .icons {
   position: relative;
 }
 
+footer.faa .iconswr .icons a {
+  color: white;
+}
+
 @media (min-width: 900px) {
   footer.faa .iconswr .icons {
     display: -webkit-box;
@@ -1164,7 +1168,7 @@ footer.faa .iconswr .icons {
     width: 100%;
     top: 0;
     right: 0;
-    background-color: white;
+    background-color: black;
     position: absolute;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1178,6 +1182,9 @@ footer.faa .iconswr .icons {
     height: 397px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  footer.faa .iconswr .icons a {
+    color: white;
   }
 }
 
@@ -1682,27 +1689,6 @@ section.homeser .text-over-wr .text-over h1 {
   font-family: Gilroy;
 }
 
-section.homeser .text-over-wr .text-over h1 span {
-  color: transparent;
-  font-size: 14vw;
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0cb2c1), color-stop(25%, #09a489), color-stop(40%, #09a489), color-stop(60%, #ffae00), color-stop(80%, #ffae00), color-stop(95%, #0cb2c1), to(#0cb2c1));
-  background: linear-gradient(90deg, #0cb2c1 10%, #09a489 25%, #09a489 40%, #ffae00 60%, #ffae00 80%, #0cb2c1 95%, #0cb2c1);
-  font-weight: 900 !important;
-  -webkit-background-clip: text;
-  font-family: Roboto;
-  background-size: 300%;
-  -webkit-animation: bmove 20s linear infinite;
-          animation: bmove 20s linear infinite;
-}
-
-@keyframes bmove {
-  0% {
-  }
-  100% {
-    background-position-x: 100%;
-  }
-}
-
 section.homeser .text-over-wr .text-over .aaa {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1736,32 +1722,7 @@ section.homeser .text-over-wr .text-over .aaa {
 
 section.homeser .text-over-wr .text-over .aaa a {
   text-decoration: none;
-  color: white;
-}
-
-section.homeser .text-over-wr .text-over .aaa p:nth-child(4) {
-  border: none;
-}
-
-section.homeser .text-over-wr .text-over .aaa p {
-  font-weight: 400;
-  padding: 2px 20px 5px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-section.homeser .text-over-wr .text-over .aaa p:hover {
-  color: #0cb2c1;
-  border-color: #0cb2c1;
+  color: #0cd2e4;
 }
 
 section.security {

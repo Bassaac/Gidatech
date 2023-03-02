@@ -856,6 +856,9 @@ footer.faa {
       gap: 20px;
       justify-content: center;
       position: relative;
+      a {
+        color: white;
+      }
       @media (min-width: 900px) {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -863,7 +866,7 @@ footer.faa {
         width: 100%;
         top: 0;
         right: 0;
-        background-color: white;
+        background-color: black;
         position: absolute;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -871,6 +874,9 @@ footer.faa {
         justify-content: flex-end;
         height: 397px;
         justify-content: space-around;
+        a {
+          color: white;
+        }
       }
     }
   }
@@ -1215,7 +1221,7 @@ section.service {
 section.homeser {
   height: 70vh;
   background: linear-gradient(
-      rgba(0, 0, 0, 0.575) ,
+      rgba(0, 0, 0, 0.575),
       rgba(0, 0, 0, 0.589),
       rgba(0, 0, 0, 0.651)
     ),
@@ -1246,26 +1252,6 @@ section.homeser {
         font-weight: 800 !important;
         font-size: calc(6vw + 10px);
         font-family: $gil;
-
-        span {
-          color: transparent;
-          font-size: 14vw;
-          background: $lin-g2;
-          font-weight: 900 !important;
-          -webkit-background-clip: text;
-          font-family: Roboto;
-
-          background-size: 300%;
-          animation: bmove 20s linear infinite;
-
-          @keyframes bmove {
-            0% {
-            }
-            100% {
-              background-position-x: 100%;
-            }
-          }
-        }
       }
       .aaa {
         display: flex;
@@ -1283,24 +1269,7 @@ section.homeser {
 
         a {
           text-decoration: none;
-          color: white;
-        }
-        p:nth-child(4) {
-          border: none;
-        }
-
-        p {
-          font-weight: 400;
-          padding: 2px 20px 5px 20px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          // border-right: 3px solid white;
-          transition: all 0.2s ease;
-          &:hover {
-            color: #0cb2c1;
-            border-color: #0cb2c1;
-          }
+          color: #0cd2e4;
         }
       }
     }
