@@ -1219,7 +1219,7 @@ section.service {
   }
 }
 section.homeser {
-  height: 70vh;
+  height: 60vh;
   background: linear-gradient(
       rgba(0, 0, 0, 0.575),
       rgba(0, 0, 0, 0.589),
@@ -1232,13 +1232,14 @@ section.homeser {
   align-items: center;
   justify-content: left;
   z-index: 100;
+  
 
   .text-over-wr {
     height: auto;
     width: 80vw;
 
     .text-over {
-      height: 50vh;
+      height: 40vh;
       background-color: rgba(0, 0, 0, 0.623);
 
       display: flex;
@@ -1261,7 +1262,7 @@ section.homeser {
         flex-direction: row;
         align-items: flex-start;
         font-family: roboto !important;
-        font-weight: 100 !important;
+        font-weight: 200 !important;
         flex-wrap: wrap;
         @media (max-width: 500px) {
           flex-direction: column;

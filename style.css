@@ -1641,7 +1641,7 @@ section.service .secp a {
 }
 
 section.homeser {
-  height: 70vh;
+  height: 60vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.575)), color-stop(rgba(0, 0, 0, 0.589)), to(rgba(0, 0, 0, 0.651))), url(./img/homesmrt1.png);
   background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.651)), url(./img/homesmrt1.png);
   background-size: cover;
@@ -1663,7 +1663,7 @@ section.homeser .text-over-wr {
 }
 
 section.homeser .text-over-wr .text-over {
-  height: 50vh;
+  height: 40vh;
   background-color: rgba(0, 0, 0, 0.623);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1706,7 +1706,7 @@ section.homeser .text-over-wr .text-over .aaa {
       -ms-flex-align: start;
           align-items: flex-start;
   font-family: roboto !important;
-  font-weight: 100 !important;
+  font-weight: 200 !important;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
