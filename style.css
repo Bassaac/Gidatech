@@ -335,7 +335,7 @@ section.home .text-over-wr {
 
 section.home .text-over-wr .text-over {
   height: 65vh;
-  background-color: rgba(0, 0, 0, 0.623);
+  background-color: #0cd2e423;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,7 +361,7 @@ section.home .text-over-wr .text-over h1 {
 }
 
 section.home .text-over-wr .text-over h1 span {
-  color: transparent;
+  color: rgba(255, 255, 255, 0.349);
   font-size: 14vw;
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0cb2c1), color-stop(25%, #09a489), color-stop(40%, #09a489), color-stop(60%, #ffae00), color-stop(80%, #ffae00), color-stop(95%, #0cb2c1), to(#0cb2c1));
   background: linear-gradient(90deg, #0cb2c1 10%, #09a489 25%, #09a489 40%, #ffae00 60%, #ffae00 80%, #0cb2c1 95%, #0cb2c1);
@@ -448,6 +448,126 @@ section.home .text-over-wr .text-over .aaa p {
 section.home .text-over-wr .text-over .aaa p:hover {
   color: #0cb2c1;
   border-color: #0cb2c1;
+}
+
+section.home1 {
+  height: 90vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(0, 0, 0, 0.575)), color-stop(black), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0.575) 70%, black, black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  z-index: 100;
+}
+
+section.home1 video {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+section.home1 .text-over-wr {
+  height: 100vh;
+  width: 100%;
+}
+
+section.home1 .text-over-wr .text-over {
+  padding: 10px 40px;
+  height: 100%;
+  background-color: #00000005;
+  gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+section.home1 .text-over-wr .text-over .vidover {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.home1 .text-over-wr .text-over .vidover .active {
+  visibility: visible;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.home1 .text-over-wr .text-over .vidover i {
+  position: absolute;
+  right: 30px;
+  font-size: 2em;
+  top: 100px;
+}
+
+section.home1 .text-over-wr .text-over .vidover video {
+  width: 350px;
+  height: 400px;
+}
+
+section.home1 .text-over-wr .text-over h1 {
+  width: 60%;
+  font-weight: 800;
+  font-size: calc(6vw + 10px);
+  font-family: Gilroy;
+}
+
+section.home1 .text-over-wr .text-over a {
+  text-decoration: none;
+  color: #0cd2e4;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+section.home1 .text-over-wr .text-over a i {
+  margin-left: 10px;
+}
+
+section.home1 .text-over-wr .text-over a:hover {
+  color: white;
+}
+
+section.home1 .text-over-wr .text-over p:nth-child(4) {
+  border: none;
+}
+
+section.home1 .text-over-wr .text-over p {
+  font-weight: 300;
+  font-family: lato;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 400px) {
@@ -1127,7 +1247,7 @@ footer.faa .iconswr {
 }
 
 footer.faa .iconswr a {
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
   color: #ffffff;
   -webkit-transition: all 0.2s ease;
@@ -1135,7 +1255,8 @@ footer.faa .iconswr a {
 }
 
 footer.faa .iconswr a:hover {
-  scale: 1.1;
+  color: #0cd2e4 !important;
+  scale: 0.9;
 }
 
 @media (min-width: 900px) {

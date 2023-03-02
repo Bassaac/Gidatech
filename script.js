@@ -14,5 +14,9 @@ function toggle() {
     const content = document.querySelector('.content')
     content.classList.toggle('active');
 }
-
+function toggle2() {
+    let vidover = document.querySelector('.vidover')
+    vidover.classList.toggle('active')
+    console.log('true')
+}
 
