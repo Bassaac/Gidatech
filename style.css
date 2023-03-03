@@ -86,6 +86,7 @@ nav a {
 
 nav a:hover {
   color: #0cd2e4;
+  text-decoration: none;
 }
 
 .icon {
@@ -366,6 +367,7 @@ section.home .text-over-wr .text-over h1 span {
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0cb2c1), color-stop(25%, #09a489), color-stop(40%, #09a489), color-stop(60%, #ffae00), color-stop(80%, #ffae00), color-stop(95%, #0cb2c1), to(#0cb2c1));
   background: linear-gradient(90deg, #0cb2c1 10%, #09a489 25%, #09a489 40%, #ffae00 60%, #ffae00 80%, #0cb2c1 95%, #0cb2c1);
   font-weight: 900 !important;
+  background-clip: text;
   -webkit-background-clip: text;
   font-family: Roboto;
   background-size: 300%;
@@ -501,7 +503,7 @@ section.home1 .text-over-wr .text-over {
 section.home1 .text-over-wr .text-over .vidover {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   visibility: hidden;
@@ -513,6 +515,7 @@ section.home1 .text-over-wr .text-over .vidover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 section.home1 .text-over-wr .text-over .vidover .active2 {
@@ -555,7 +558,7 @@ section.home1 .text-over-wr .text-over .vidover.active2 {
   z-index: 1000;
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   overflow: hidden;
   left: 0;
@@ -707,7 +710,7 @@ section.bbb .b1::after {
 
 @media (min-width: 1000px) {
   section.bbb .b1::after {
-    left: -62px;
+    left: -35px;
     top: -37px;
     width: 2px;
     background-color: white;

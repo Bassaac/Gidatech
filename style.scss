@@ -86,6 +86,7 @@ nav {
     transition: all 0.2s ease;
     &:hover {
       color: #0cd2e4;
+      text-decoration: none;
     }
   }
 }
@@ -304,6 +305,7 @@ section.home {
           font-size: 14vw;
           background: $lin-g2;
           font-weight: 900 !important;
+          background-clip: text;
           -webkit-background-clip: text;
           font-family: Roboto;
 
@@ -395,13 +397,14 @@ section.home1 {
       .vidover {
         width: 100%;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         visibility: hidden;
         backdrop-filter: blur(15px);
         align-items: center;
         justify-content: center;
+        overflow: hidden;
         .active2 {
           visibility: visible;
           justify-content: center;
@@ -437,7 +440,7 @@ section.home1 {
         z-index: 1000;
         width: 100%;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         overflow: hidden;
         left: 0;
@@ -559,7 +562,7 @@ section.bbb {
         height: 270px;
       }
       @media (min-width: 1000px) {
-        left: -62px;
+        left: -35px;
         top: -37px;
         width: 2px;
         background-color: white;
