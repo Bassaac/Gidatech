@@ -323,7 +323,7 @@ section.home {
   z-index: 100;
 }
 
-section.home video {
+section.home img {
   position: absolute;
   width: 100%;
   z-index: -1;
@@ -336,7 +336,7 @@ section.home .text-over-wr {
 
 section.home .text-over-wr .text-over {
   height: 65vh;
-  background-color: #0cd2e423;
+  background-color: #ffffff23;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,7 +362,7 @@ section.home .text-over-wr .text-over h1 {
 }
 
 section.home .text-over-wr .text-over h1 span {
-  color: rgba(255, 255, 255, 0.349);
+  color: rgba(0, 0, 0, 0.062);
   font-size: 14vw;
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0cb2c1), color-stop(25%, #09a489), color-stop(40%, #09a489), color-stop(60%, #ffae00), color-stop(80%, #ffae00), color-stop(95%, #0cb2c1), to(#0cb2c1));
   background: linear-gradient(90deg, #0cb2c1 10%, #09a489 25%, #09a489 40%, #ffae00 60%, #ffae00 80%, #0cb2c1 95%, #0cb2c1);
@@ -657,9 +657,10 @@ section.bbb .b1 h2 {
   width: calc(43vw + 109px);
   font-size: 1.9em;
   color: white;
-  text-align: center;
+  text-align: right;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  margin-right: 20px;
 }
 
 @media (max-width: 800px) {
@@ -720,11 +721,6 @@ section.bbb .b1::after {
 
 section.bbb .bimg img {
   width: calc(40vw + 107px);
-  mix-blend-mode: hard-light;
-  -webkit-filter: hue-rotate(19deg) brightness(1);
-          filter: hue-rotate(19deg) brightness(1);
-  -webkit-animation: change 4s linear infinite;
-          animation: change 4s linear infinite;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   margin-top: 20px;
@@ -733,32 +729,6 @@ section.bbb .bimg img {
 @media (min-width: 800px) {
   section.bbb .bimg img {
     width: calc(30vw + 107px);
-  }
-}
-
-@-webkit-keyframes change {
-  70% {
-    -webkit-filter: hue-rotate(55deg) brightness(1);
-            filter: hue-rotate(55deg) brightness(1);
-    scale: 1.1;
-  }
-  100% {
-    -webkit-filter: hue-rotate(55deg) brightness(1);
-            filter: hue-rotate(55deg) brightness(1);
-    scale: 1;
-  }
-}
-
-@keyframes change {
-  70% {
-    -webkit-filter: hue-rotate(55deg) brightness(1);
-            filter: hue-rotate(55deg) brightness(1);
-    scale: 1.1;
-  }
-  100% {
-    -webkit-filter: hue-rotate(55deg) brightness(1);
-            filter: hue-rotate(55deg) brightness(1);
-    scale: 1;
   }
 }
 
@@ -811,9 +781,9 @@ section.ccc .ctext h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 20px;
-  color: #181616;
+  color: #424242;
 }
 
 @media (min-width: 900px) {
@@ -824,7 +794,7 @@ section.ccc .ctext h2 {
 }
 
 section.ccc .ctext h2 span:not(:nth-child(4)) {
-  font-weight: 200;
+  font-weight: 800;
   z-index: 1;
   text-align: center;
 }
@@ -969,6 +939,195 @@ section.ccc .ctext .cir .bcir {
   }
 }
 
+section.ccc2 {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#222122)), url(./img/street-cctv2.jpg);
+  background: linear-gradient(0deg, #000000, #222122), url(./img/street-cctv2.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 70px 37px;
+  position: relative;
+}
+
+section.ccc2 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+}
+
+section.ccc2 .ctext {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  section.ccc2 .ctext {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+section.ccc2 .ctext h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+@media (min-width: 900px) {
+  section.ccc2 .ctext h2 {
+    text-align: center;
+    margin-left: 10px;
+  }
+}
+
+section.ccc2 .ctext h2 span:not(:nth-child(4)) {
+  font-weight: 800;
+  z-index: 1;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  section.ccc2 .ctext h2 span:not(:nth-child(4)) {
+    text-align: center;
+    font-size: 2.1em;
+  }
+}
+
+section.ccc2 .ctext h2 span:nth-child(4) {
+  font-family: roboto;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  section.ccc2 .ctext h2 span:nth-child(4) {
+    text-align: center;
+  }
+}
+
+section.ccc2 .ctext h2 span .und {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #473b1b;
+          text-decoration-color: #473b1b;
+  text-underline-offset: 5px;
+}
+
+section.ccc2 .ctext .rect {
+  position: relative;
+  width: 64vw;
+  height: 55vw;
+  background: url(./gida/smart3.jpg);
+  background-size: cover;
+  padding: 20px;
+}
+
+@media (min-width: 900px) {
+  section.ccc2 .ctext .rect {
+    width: 44vw;
+    height: 35vw;
+    margin-right: 35px;
+  }
+}
+
+section.ccc2 .ctext .rect::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-right: 2px dashed black;
+  border-bottom: 2px dashed black;
+  border-spacing: 10;
+  mix-blend-mode: hard-light;
+}
+
+section.ccc2 .ctext .cir {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: -91px;
+  left: -147px;
+  border-radius: 50vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000bb), to(#2c2c2c75)), url(./gida/speaker.jpg);
+  background: linear-gradient(#000000bb, #2c2c2c75), url(./gida/speaker.jpg);
+  background-size: cover;
+  background-position: right;
+  -webkit-animation: rot2 7s linear infinite forwards normal;
+          animation: rot2 7s linear infinite forwards normal;
+}
+
+@keyframes rot2 {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  99% {
+    -webkit-box-shadow: 1px 2px 8px white;
+            box-shadow: 1px 2px 8px white;
+  }
+  100% {
+    -webkit-box-shadow: 1px 2px 10px white;
+            box-shadow: 1px 2px 10px white;
+  }
+}
+
+section.ccc2 .ctext .cir .bcir {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  -webkit-transform: translate(-38px, -39px);
+          transform: translate(-38px, -39px);
+  top: -14px;
+  left: -13px;
+  border: 2px dashed white;
+  mix-blend-mode: difference;
+  border-radius: 50vw;
+  -webkit-animation: rot 15s linear infinite;
+          animation: rot 15s linear infinite;
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
 section.ddd2 {
   height: auto;
   width: 100%;
@@ -1020,6 +1179,7 @@ section.ddd2 .dtext2 h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 2em;
+  text-align: left;
   margin-bottom: 20px;
   color: white;
 }
@@ -1033,14 +1193,14 @@ section.ddd2 .dtext2 h2 {
 section.ddd2 .dtext2 h2 span:not(:nth-child(4)) {
   font-weight: 200;
   z-index: 1;
-  text-align: center;
+  text-align: left;
 }
 
 section.ddd2 .dtext2 h2 span:nth-child(4) {
   font-weight: 600;
   font-size: 1.3em;
   color: #1b1b1b;
-  text-align: center;
+  text-align: left;
 }
 
 section.ddd2 .dtext2 h2 span .und {
@@ -1055,7 +1215,7 @@ section.ddd2 .dtext2 .rect {
 }
 
 section.ddd2 .dtext2 .rect video {
-  width: 100%;
+  width: 80%;
 }
 
 @media (min-width: 800px) {
@@ -2300,44 +2460,17 @@ section.electrical h1 {
 }
 
 section.electrical h3 {
-  width: 80%;
+  width: 70%;
   text-align: center;
   margin-bottom: 70px;
+  font-size: 1.6em;
 }
 
 @media (min-width: 700px) {
   section.electrical h3 {
-    font-size: 1.6em;
+    font-size: 3em;
     width: 70%;
   }
-}
-
-section.electrical h3:nth-child(3) {
-  color: #ee9700;
-  position: relative;
-}
-
-section.electrical h3:nth-child(3)::after {
-  content: "";
-  height: 50px;
-  width: 2px;
-  position: absolute;
-  -webkit-transform: translateY(60%);
-          transform: translateY(60%);
-  right: 50%;
-  background-color: #ee9700;
-  z-index: 10;
-}
-
-section.electrical h3:nth-child(3)::before {
-  content: "";
-  height: 50px;
-  width: 2px;
-  position: absolute;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  right: 50%;
-  background-color: #ee9700;
 }
 
 section.electrical .img {
@@ -2442,16 +2575,17 @@ section.solar .solarimg {
 
 section.solar .solarimg h3 {
   font-family: gilroy, montserrat;
-  width: 70%;
+  width: 60%;
   text-align: center !important;
-  font-size: 1.35em;
   position: relative;
   text-align: center;
+  text-shadow: 0px -1px 7px rgba(255, 255, 255, 0.658);
 }
 
 @media (min-width: 750px) {
   section.solar .solarimg h3 {
-    font-size: 1.8em;
+    font-size: 2.8em;
+    text-shadow: 0px -1px 7px rgba(255, 255, 255, 0.63);
   }
 }
 
@@ -2460,8 +2594,8 @@ section.solar .solarimg h3::after {
   height: 70px;
   width: 2px;
   position: absolute;
-  -webkit-transform: translateY(60%);
-          transform: translateY(60%);
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
   right: 50%;
   background-color: #ffffff;
   z-index: 10;
