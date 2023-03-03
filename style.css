@@ -3148,6 +3148,116 @@ section.pack2 .flex .rightwr p i {
   margin-right: 10px;
 }
 
+section.packsound {
+  background-color: white;
+  padding: 70px 50px;
+}
+
+section.packsound .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+  section.packsound .flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+section.packsound .flex .leftwr .left {
+  width: 200px;
+  height: 400px;
+  background: url(./gida/speaker.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 400px) {
+  section.packsound .flex .leftwr .left {
+    width: 80vw;
+  }
+}
+
+section.packsound .flex .rightwr p {
+  text-transform: lowercase;
+  margin-bottom: 5px;
+}
+
+section.packsound .flex .rightwr p:nth-child(even) {
+  background-color: gray;
+  color: white;
+  padding: 8px;
+}
+
+section.packsound .flex .rightwr p i {
+  margin-right: 10px;
+}
+
+section.packsound2 {
+  background-color: black;
+  padding: 70px 50px;
+  color: white;
+}
+
+section.packsound2 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+  section.packsound2 .flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+section.packsound2 .flex .leftwr .left {
+  width: 400px;
+  height: 400px;
+  background: url(./gida/curtain.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 400px) {
+  section.packsound2 .flex .leftwr .left {
+    width: 80vw;
+  }
+}
+
+section.packsound2 .flex .rightwr p {
+  text-transform: lowercase;
+  margin-bottom: 5px;
+  color: white;
+}
+
+section.packsound2 .flex .rightwr p:nth-child(even) {
+  background-color: gray;
+  color: white;
+  padding: 8px;
+}
+
+section.packsound2 .flex .rightwr p i {
+  margin-right: 10px;
+}
+
 section.pack3 {
   background-color: #ececec;
   padding: 70px 50px;
