@@ -747,7 +747,7 @@ section.ccc2 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 99vw;
     height: 100%;
   }
 
@@ -2385,6 +2385,14 @@ section.pack {
     }
   }
 }
+section.packf {
+ background: linear-gradient(black, black), url(./);
+
+  padding: 70px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 section.pack2 {
   background-color: black;
   padding: 70px 50px;
@@ -2441,7 +2449,7 @@ section.packsound {
 
     .leftwr {
       .left {
-        width: 200px;
+        width: 210px;
         height: 400px;
         background: url(./gida/speaker.jpg);
         background-size: cover;
@@ -2543,6 +2551,50 @@ section.pack3 {
         &:nth-child(even) {
           background-color: #dda481;
           color: rgb(255, 255, 255);
+          padding: 8px;
+        }
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+section.pack4 {
+  background-color: rgb(0, 0, 0);
+  padding: 70px 50px;
+  color: rgb(255, 255, 255);
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    @media (max-width: 700px) {
+      justify-content: center;
+    }
+
+    .leftwr {
+      .left {
+        width: 400px;
+        height: 400px;
+     background: url(./gida/homebright.png);
+        background-size: cover;
+        background-position: left;
+        margin-bottom: 10px;
+        // mix-blend-mode: multiply;
+        @media (max-width: 400px) {
+          width: 80vw;
+        }
+      }
+    }
+    .rightwr {
+      p {
+        text-transform: lowercase;
+        margin-bottom: 5px;
+        color: rgb(0, 0, 0);
+        &:nth-child(even) {
+          background-color: #ffffff;
+          color: rgb(0, 0, 0);
           padding: 8px;
         }
         i {

@@ -961,7 +961,7 @@ section.ccc2 video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 99vw;
   height: 100%;
 }
 
@@ -3092,6 +3092,21 @@ section.pack .flex .rightwr p i {
   margin-right: 10px;
 }
 
+section.packf {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(black)), url(./);
+  background: linear-gradient(black, black), url(./);
+  padding: 70px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 section.pack2 {
   background-color: black;
   padding: 70px 50px;
@@ -3174,7 +3189,7 @@ section.packsound .flex {
 }
 
 section.packsound .flex .leftwr .left {
-  width: 200px;
+  width: 210px;
   height: 400px;
   background: url(./gida/speaker.jpg);
   background-size: cover;
@@ -3312,6 +3327,63 @@ section.pack3 .flex .rightwr p:nth-child(even) {
 }
 
 section.pack3 .flex .rightwr p i {
+  margin-right: 10px;
+}
+
+section.pack4 {
+  background-color: black;
+  padding: 70px 50px;
+  color: white;
+}
+
+section.pack4 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+  section.pack4 .flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+section.pack4 .flex .leftwr .left {
+  width: 400px;
+  height: 400px;
+  background: url(./gida/homebright.png);
+  background-size: cover;
+  background-position: left;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 400px) {
+  section.pack4 .flex .leftwr .left {
+    width: 80vw;
+  }
+}
+
+section.pack4 .flex .rightwr p {
+  text-transform: lowercase;
+  margin-bottom: 5px;
+  color: black;
+}
+
+section.pack4 .flex .rightwr p:nth-child(even) {
+  background-color: #ffffff;
+  color: black;
+  padding: 8px;
+}
+
+section.pack4 .flex .rightwr p i {
   margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
