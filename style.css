@@ -577,6 +577,7 @@ section.home1 .text-over-wr .text-over h1 {
 section.home1 .text-over-wr .text-over a {
   text-decoration: none;
   color: #0cd2e4;
+  font-size: 1.2em;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -596,6 +597,7 @@ section.home1 .text-over-wr .text-over p:nth-child(4) {
 section.home1 .text-over-wr .text-over p {
   font-weight: 300;
   font-family: lato;
+  font-size: 1.5em;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
