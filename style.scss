@@ -2159,6 +2159,10 @@ section.form {
         font-family: lato;
         font-size: 1em;
         cursor: pointer;
+        &:active{
+          padding: 13px 63px;
+          background-color: rgb(238, 238, 238);
+        }
       }
     }
   }

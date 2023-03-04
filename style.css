@@ -2834,6 +2834,11 @@ section.form form .btn button {
   cursor: pointer;
 }
 
+section.form form .btn button:active {
+  padding: 13px 63px;
+  background-color: #eeeeee;
+}
+
 section.project {
   background-size: cover;
   color: white;
