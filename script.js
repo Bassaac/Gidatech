@@ -38,17 +38,21 @@ function toggle2() {
 // });
 
 
+document.getElementById("submit-button").addEventListener("click", function (event) {
+    // event.preventDefault(); // Prevent the form from submitting normally
+    var form = document.getElementById("formm");
+
+    alert("Thank you for submitting the form. We'll get back to you");
+    window.location.href = "contact.html"; form.submit();
+
+
+});
 // document.getElementById("submit-button").addEventListener("click", function (event) {
 //     event.preventDefault(); // Prevent the form from submitting normally
 //     alert("Thank you for submitting the form. We'll get back to you");
-//     document.getElementById("formm").submit(); // Submit the form normally
+//     var form = document.getElementById("formm"); // Replace "your-form-id" with the actual ID of your form
+//     form.submit(); // Submit the form
+//     window.location.href = "index.html"; // Redirect the user to your index.html page
 // });
-document.getElementById("submit-button").addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent the form from submitting normally
-    alert("Thank you for submitting the form. We'll get back to you");
-    var form = document.getElementById("formm"); // Replace "your-form-id" with the actual ID of your form
-    form.submit(); // Submit the form
-    window.location.href = "index.html"; // Redirect the user to your index.html page
-});
 
 
