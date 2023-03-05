@@ -286,7 +286,7 @@ section.home {
 
     .text-over {
       height: 65vh;
-      background-color: #ffffff23;
+      background-color: #00000023;
 
       display: flex;
       flex-direction: column;
@@ -294,6 +294,10 @@ section.home {
       justify-content: space-evenly;
       color: white;
       position: relative;
+      @media (max-width: 600px) {
+        height: 55vh;
+        justify-content: center;
+      }
       h1 {
         width: 60%;
         font-weight: 100 !important;
@@ -301,12 +305,12 @@ section.home {
         font-family: Roboto;
 
         span {
-          color: rgba(0, 0, 0, 0.062);
+          color: rgb(255, 255, 255);
           font-size: 14vw;
-          background: $lin-g2;
+          // background: $lin-g2;
           font-weight: 900 !important;
-          background-clip: text;
-          -webkit-background-clip: text;
+          // background-clip: text;
+          // -webkit-background-clip: text;
           font-family: Roboto;
 
           background-size: 300%;
@@ -331,8 +335,10 @@ section.home {
         font-family: roboto !important;
         font-weight: 100 !important;
         flex-wrap: wrap;
+
         @media (max-width: 500px) {
           flex-direction: column;
+          line-height: 0.7;
         }
 
         a {
@@ -451,13 +457,19 @@ section.home1 {
         font-weight: 800;
         font-size: calc(6vw + 10px);
         font-family: $gil;
+        @media (max-width: 400px) {
+          font-size: calc(6vw + 15px);
+        }
       }
 
       a {
         text-decoration: none;
         color: #0cd2e4;
-        font-size: 1.2em;
+        font-size: 1.1em;
         transition: all 0.4s ease;
+        @media (max-width: 400px) {
+          font-size: 0.9em;
+        }
         i {
           margin-left: 10px;
         }
@@ -475,6 +487,11 @@ section.home1 {
         font-size: 1.5em;
         // border-right: 3px solid white;
         transition: all 0.2s ease;
+        margin-top: 10px;
+        @media (max-width: 800px) {
+          margin-top: 12px;
+          font-size: 1.1em;
+        }
       }
     }
   }
@@ -558,7 +575,7 @@ section.bbb {
         height: 231px;
       }
       @media (max-width: 1000px) {
-        top: -9vw;
+        top: -10vw;
         left: -6vw;
         width: 2px;
         background-color: white;
@@ -566,7 +583,7 @@ section.bbb {
       }
       @media (min-width: 1000px) {
         left: -35px;
-        top: -37px;
+        top: 43px;
         width: 2px;
         background-color: white;
         height: 444px;
@@ -634,8 +651,8 @@ section.ccc {
         font-weight: 800;
         z-index: 1;
         text-align: center;
-        @media (min-width: 900px) {
-          text-align: left;
+        @media (max-width: 600px) {
+          font-size: 0.8em;
         }
       }
       span:nth-child(4) {
@@ -644,8 +661,9 @@ section.ccc {
         font-weight: 400;
         color: #1b1b1b;
         text-align: center;
-        @media (min-width: 900px) {
-          text-align: left;
+        @media (max-width: 600px) {
+          text-align: center;
+          font-size: 0.7em;
         }
       }
       span {
@@ -736,7 +754,7 @@ section.ccc {
   }
 }
 section.ccc2 {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background: linear-gradient(0deg, #000000, #222122),
     url(./img/street-cctv2.jpg);
@@ -745,11 +763,24 @@ section.ccc2 {
   justify-content: center;
   padding: 70px 37px;
   position: relative;
+  overflow: hidden;
+  .abs {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.692);
+  }
+  @media (max-width: 600px) {
+    padding: 50px 25px;
+  }
   video {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 99vw;
+
+    width: 150vw;
     height: 100%;
   }
 
@@ -770,7 +801,9 @@ section.ccc2 {
       text-align: center;
       margin-bottom: 20px;
       color: rgb(255, 255, 255);
-      @media (min-width: 900px) {
+      font-family: lato;
+      font-weight: 500;
+      @media (max-width: 600px) {
         text-align: center;
         margin-left: 10px;
       }
@@ -778,9 +811,11 @@ section.ccc2 {
         font-weight: 800;
         z-index: 1;
         text-align: center;
-        @media (min-width: 900px) {
+        font-size: 2em;
+
+        @media (max-width: 600px) {
           text-align: center;
-          font-size: 2.1em;
+          font-size: 1.1em;
         }
       }
       span:nth-child(4) {
@@ -789,8 +824,9 @@ section.ccc2 {
         font-weight: 400;
         color: #ffffff;
         text-align: center;
-        @media (min-width: 900px) {
+        @media (max-width: 600px) {
           text-align: center;
+          font-size: 1.1em;
         }
       }
       span {
@@ -804,6 +840,7 @@ section.ccc2 {
     .rect {
       position: relative;
       width: 64vw;
+     
       height: 55vw;
       // top: 10vw;
       // right: 10vw;
@@ -860,7 +897,7 @@ section.ccc2 {
         transform: translate(-38px, -39px);
         top: -14px;
         left: -13px;
-
+        z-index: 10;
         border: 2px dashed white;
         mix-blend-mode: difference;
         border-radius: 50vw;
@@ -906,8 +943,8 @@ section.ddd2 {
       text-align: left;
       margin-bottom: 20px;
       color: rgb(255, 255, 255);
-      @media (min-width: 850px) {
-        font-size: 2.5em;
+      @media (max-width: 600px) {
+        font-size: 1.4em;
       }
       span:not(:nth-child(4)) {
         font-weight: 200;
@@ -930,6 +967,8 @@ section.ddd2 {
     }
     .rect {
       padding: 20px 0;
+      display: flex;
+      justify-content: center;
       video {
         width: 80%;
       }
@@ -978,14 +1017,18 @@ section.ddd {
     h2 {
       display: flex;
       flex-direction: column;
-      font-size: 2.2em;
+      font-size: 2.5em;
       margin-bottom: 20px;
+      font-family: $gil;
+      font-weight: 800;
       color: rgb(255, 255, 255);
-      @media (min-width: 850px) {
-        font-size: 2.5em;
+      @media (max-width: 600px) {
+        font-size: 1.5em;
+        font-weight: 700;
       }
+
       span:not(:nth-child(4)) {
-        font-weight: 200;
+        // font-weight: 400;
         z-index: 1;
         text-align: right;
       }
@@ -2159,7 +2202,7 @@ section.form {
         font-family: lato;
         font-size: 1em;
         cursor: pointer;
-        &:active{
+        &:active {
           padding: 13px 63px;
           background-color: rgb(238, 238, 238);
         }
@@ -2392,7 +2435,7 @@ section.pack {
   }
 }
 section.packf {
- background: linear-gradient(black, black), url(./);
+  background: linear-gradient(black, black), url(./);
 
   padding: 70px 50px;
   display: flex;
@@ -2583,7 +2626,7 @@ section.pack4 {
       .left {
         width: 400px;
         height: 400px;
-     background: url(./gida/homebright.png);
+        background: url(./gida/homebright.png);
         background-size: cover;
         background-position: left;
         margin-bottom: 10px;
