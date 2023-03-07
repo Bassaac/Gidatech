@@ -768,11 +768,12 @@ section.ccc2 .ctext h2 span:not(:nth-child(4)) {
   z-index: 1;
   text-align: center;
   font-size: 2em;
+  color: #cad5d8;
 }
 @media (max-width: 600px) {
   section.ccc2 .ctext h2 span:not(:nth-child(4)) {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 0.8em;
   }
 }
 section.ccc2 .ctext h2 span:nth-child(4) {
@@ -2488,7 +2489,7 @@ section.packsound .flex {
   flex-wrap: wrap;
   margin-top: 15px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   section.packsound .flex {
     justify-content: center;
   }
