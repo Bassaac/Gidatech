@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
     $phone = trim($_POST['phone']);
@@ -20,18 +20,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body = "Name: $name\nEmail: $email\nPhone: $phone\nCompany: $company\nCountry: $country\nState/Province: $state\nCity: $city\nAddress: $address\nZip/Postal Code: $zipcode\nSubject: $subject\nMessage:\n$message\nInterested in: $interested\nHow did you find us?: $found_us\nSubscribe to newsletter?: $newsletter";
     $headers = "From: $email";
 
-      // Redirect to a thank-you page or show a success message
-    header("Location: thanks.html");
-    exit;
+    if (mail($to, $subject, $body, $headers)) {
+        header("Location: thanks.html");
+        exit;
+    } else {
+        echo "There was a problem sending your message.";
+    }
 } else {
     // If the request method is not POST, redirect back to the form page
     header("Location: contact.html");
     exit;
-
-    if(mail($to, $subject, $body, $headers)) {
-        echo "Thank you for your message!";
-    } else {
-        echo "There was a problem sending your message.";
-    }
 }
-?>```
+?>
