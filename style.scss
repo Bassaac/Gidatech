@@ -430,6 +430,23 @@ section.home1 {
         align-items: center;
         justify-content: center;
         overflow: hidden;
+           .visit{
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 13px;
+          background-color: red;
+            border-radius: 10px;
+       
+          a{
+            color: rgb(255, 255, 255);
+            font-family: lato;
+            display: flex;  align-items: center;
+        
+          }
+        }
 
         .active2 {
           visibility: visible;
@@ -448,7 +465,7 @@ section.home1 {
         //   z-index: 1000000;
         // }
 
-        i {
+        i.fa-solid.fa-xmark {
           position: absolute;
           right: 30px;
           font-size: 2em;
@@ -473,6 +490,7 @@ section.home1 {
         overflow: hidden;
         left: 0;
         display: flex;
+     
       }
 
       h1 {

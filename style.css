@@ -371,6 +371,22 @@ section.home1 .text-over-wr .text-over .vidover {
   justify-content: center;
   overflow: hidden;
 }
+section.home1 .text-over-wr .text-over .vidover .visit {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 13px;
+  background-color: red;
+  border-radius: 10px;
+}
+section.home1 .text-over-wr .text-over .vidover .visit a {
+  color: rgb(255, 255, 255);
+  font-family: lato;
+  display: flex;
+  align-items: center;
+}
 section.home1 .text-over-wr .text-over .vidover .active2 {
   visibility: visible;
   justify-content: center;
@@ -383,7 +399,7 @@ section.home1 .text-over-wr .text-over .vidover .active2 {
   overflow: hidden;
   left: 0;
 }
-section.home1 .text-over-wr .text-over .vidover i {
+section.home1 .text-over-wr .text-over .vidover i.fa-solid.fa-xmark {
   position: absolute;
   right: 30px;
   font-size: 2em;
