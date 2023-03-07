@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $headers = "From: $email";
 
       // Redirect to a thank-you page or show a success message
-    header("Location: thank-you.html");
+    header("Location: thanks.html");
     exit;
 } else {
     // If the request method is not POST, redirect back to the form page
