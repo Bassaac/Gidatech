@@ -3199,7 +3199,7 @@ section.form form .error .ctn h2 {
 
 section.form form .error .ctn p {
   color: #222122;
-  font-family: gilroy, Roboto, lato;
+  font-family: gilroy, lato, Roboto;
   font-size: 0.99em;
   text-align: center;
   width: 70%;
@@ -3334,7 +3334,7 @@ section.form form .success .ctn h2 {
 
 section.form form .success .ctn p {
   color: #222122;
-  font-family: gilroy, Roboto, lato;
+  font-family: gilroy, lato, Roboto;
   font-size: 0.99em;
   text-align: center;
   width: 70%;
