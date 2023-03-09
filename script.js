@@ -19,6 +19,19 @@ function toggle2() {
     vidover.classList.toggle('active2')
     console.log('true')
 }
+function toggle3() {
+    const success = document.querySelector('.success')
+   success.style.display = "none";
+    // vidover.classList.toggle('active2')
+    console.log('true')
+}
+function toggle4() {
+    const error = document.querySelector('.error')
+   error.style.display = "none";
+    // vidover.classList.toggle('active2')
+    console.log('true')
+}
+
 // document.getElementById("formm").addEventListener("click", function (event) {
 //     event.preventDefault(); // Prevent the form from submitting normally
 //     var form = document.getElementById("submit-button"); // Replace "your-form-id" with the actual ID of your form
@@ -38,15 +51,15 @@ function toggle2() {
 // });
 
 
-document.getElementById("submit-button").addEventListener("click", function (event) {
-    // event.preventDefault(); // Prevent the form from submitting normally
-    var form = document.getElementById("formm");
+// document.getElementById("submit-button").addEventListener("click", function (event) {
+//     // event.preventDefault(); // Prevent the form from submitting normally
+//     var form = document.getElementById("formm");
 
-    alert("Thank you for submitting the form. We'll get back to you");
-    window.location.href = "contact.html"; form.submit();
+//     alert("Thank you for submitting the form. We'll get back to you");
+//     window.location.href = "contact.html"; form.submit();
 
 
-});
+// });
 // document.getElementById("submit-button").addEventListener("click", function (event) {
 //     event.preventDefault(); // Prevent the form from submitting normally
 //     alert("Thank you for submitting the form. We'll get back to you");
@@ -54,5 +67,8 @@ document.getElementById("submit-button").addEventListener("click", function (eve
 //     form.submit(); // Submit the form
 //     window.location.href = "index.html"; // Redirect the user to your index.html page
 // });
+
+// Replace YOUR_SERVICE_ID and YOUR_USER_ID with your actual service ID and user ID
+
 
 
