@@ -2784,18 +2784,18 @@ section.form {
     }
     .error {
       width: 100%;
-      
+
       background-color: rgba(0, 0, 0, 0.616);
       backdrop-filter: blur(10px);
       height: 100vh;
       display: flex;
       position: fixed;
-      display:none;
+      display: none;
       top: 0;
       left: 0;
       align-items: center;
       justify-content: center;
-     
+
       z-index: 100;
 
       .ctn {
@@ -2808,53 +2808,53 @@ section.form {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-radius: 5px ;
+        border-radius: 5px;
         position: relative;
         gap: 10px;
-        @media (max-width:500px) {
-          width: 7  0%;
-          padding: 13px 12px;
+        @media (max-width: 500px) {
+          width: 80%;
+          padding: 15px 12px;
         }
-        .link{
-          a{
+        .link {
+          a {
             text-decoration: none;
-            h3{
-              font-size: .9em;
+            h3 {
+              font-size: 0.9em;
               color: #616161;
             }
           }
         }
-        .iconswr1{
-            .icons{
-                 display: flex;
-               
-                 gap: 13px;
+        .iconswr1 {
+          .icons {
+            display: flex;
 
-                 i{
-                  color: #222122;
-                 }
+            gap: 13px;
+
+            i {
+              color: #222122;
             }
-         
           }
-        h2{
+        }
+        h2 {
           font-family: gilroy, Roboto, lato;
         }
-        p{
+        p {
           color: #222122;
-        font-family: gilroy, Roboto, lato;
-        font-size: .99em;
-        text-align: center;
-        width: 70%  ;
-         @media (max-width:500px) {
-         width: 85%;
+          font-family: gilroy, Roboto, lato;
+          font-size: 0.99em;
+          text-align: center;
+          width: 70%;
+          @media (max-width: 500px) {
+            width: 85%;
+          }
         }
-        }
-       h5{  font-family:   poppins;
+        h5 {
+          font-family: poppins;
           font-weight: 500;
           color: #000000;
         }
 
-        i.fa-solid{
+        i.fa-solid {
           position: absolute;
           right: -10px;
           top: -10px;
@@ -2864,43 +2864,40 @@ section.form {
           border-radius: 50%;
           padding: 10px 15px;
           cursor: pointer;
-          transition: .3s ease;
-          &:hover{
-            background-color: rgb(192, 4, 4)
-            ;
+          transition: 0.3s ease;
+          &:hover {
+            background-color: rgb(192, 4, 4);
           }
-           @media (max-width:500px) {
-          padding: 7px 10px; 
-          font-size: 1em;
+          @media (max-width: 500px) {
+            padding: 7px 10px;
+            font-size: 1em;
+          }
         }
-        
-        }
-        img{
+        img {
           width: 50%;
           position: relative;
           top: -50px;
-           @media (max-width:500px) {
-          width: 80%;
+          @media (max-width: 500px) {
+            width: 80%;
             top: -30px;
+          }
         }
-        }
-
       }
     }
     .success {
       width: 100%;
-      
+
       background-color: rgba(0, 0, 0, 0.616);
       backdrop-filter: blur(10px);
       height: 100vh;
       display: flex;
       position: fixed;
-      display:none;
+      display: none;
       top: 0;
       left: 0;
       align-items: center;
       justify-content: center;
-     
+
       z-index: 100;
 
       .ctn {
@@ -2913,53 +2910,54 @@ section.form {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-radius: 5px ;
+        border-radius: 5px;
         position: relative;
         gap: 10px;
-        @media (max-width:500px) {
-          width: 7  0%;
-          padding: 13px 12px;
+
+        @media (max-width: 500px) {
+          width: 80%;
+          padding: 15px 12px;
         }
-        .link{
-          a{
+        .link {
+          a {
             text-decoration: none;
-            h3{
-              font-size: .9em;
+            h3 {
+              font-size: 0.9em;
               color: #616161;
             }
           }
         }
-        .iconswr1{
-            .icons{
-                 display: flex;
-               
-                 gap: 13px;
+        .iconswr1 {
+          .icons {
+            display: flex;
 
-                 i{
-                  color: #222122;
-                 }
+            gap: 13px;
+
+            i {
+              color: #222122;
             }
-         
           }
-        h2{
+        }
+        h2 {
           font-family: gilroy, Roboto, lato;
         }
-        p{
+        p {
           color: #222122;
-        font-family: gilroy, Roboto, lato;
-        font-size: .99em;
-        text-align: center;
-        width: 70%  ;
-         @media (max-width:500px) {
-         width: 85%;
+          font-family: gilroy, Roboto, lato;
+          font-size: 0.99em;
+          text-align: center;
+          width: 70%;
+          @media (max-width: 500px) {
+            width: 85%;
+          }
         }
-        }
-       h5{  font-family:   poppins;
+        h5 {
+          font-family: poppins;
           font-weight: 500;
           color: #000000;
         }
 
-        i.fa-solid{
+        i.fa-solid {
           position: absolute;
           right: -10px;
           top: -10px;
@@ -2969,27 +2967,24 @@ section.form {
           border-radius: 50%;
           padding: 10px 15px;
           cursor: pointer;
-          transition: .3s ease;
-          &:hover{
-            background-color: rgb(192, 4, 4)
-            ;
+          transition: 0.3s ease;
+          &:hover {
+            background-color: rgb(192, 4, 4);
           }
-           @media (max-width:500px) {
-          padding: 7px 10px; 
-          font-size: 1em;
+          @media (max-width: 500px) {
+            padding: 7px 10px;
+            font-size: 1em;
+          }
         }
-        
-        }
-        img{
+        img {
           width: 50%;
           position: relative;
           top: -50px;
-           @media (max-width:500px) {
-          width: 80%;
+          @media (max-width: 500px) {
+            width: 80%;
             top: -30px;
+          }
         }
-        }
-
       }
     }
   }

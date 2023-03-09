@@ -3168,8 +3168,8 @@ section.form form .error .ctn {
 
 @media (max-width: 500px) {
   section.form form .error .ctn {
-    width: 7  0%;
-    padding: 13px 12px;
+    width: 80%;
+    padding: 15px 12px;
   }
 }
 
@@ -3178,7 +3178,7 @@ section.form form .error .ctn .link a {
 }
 
 section.form form .error .ctn .link a h3 {
-  font-size: .9em;
+  font-size: 0.9em;
   color: #616161;
 }
 
@@ -3200,7 +3200,7 @@ section.form form .error .ctn h2 {
 section.form form .error .ctn p {
   color: #222122;
   font-family: gilroy, Roboto, lato;
-  font-size: .99em;
+  font-size: 0.99em;
   text-align: center;
   width: 70%;
 }
@@ -3227,8 +3227,8 @@ section.form form .error .ctn i.fa-solid {
   border-radius: 50%;
   padding: 10px 15px;
   cursor: pointer;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 section.form form .error .ctn i.fa-solid:hover {
@@ -3303,8 +3303,8 @@ section.form form .success .ctn {
 
 @media (max-width: 500px) {
   section.form form .success .ctn {
-    width: 7  0%;
-    padding: 13px 12px;
+    width: 80%;
+    padding: 15px 12px;
   }
 }
 
@@ -3313,7 +3313,7 @@ section.form form .success .ctn .link a {
 }
 
 section.form form .success .ctn .link a h3 {
-  font-size: .9em;
+  font-size: 0.9em;
   color: #616161;
 }
 
@@ -3335,7 +3335,7 @@ section.form form .success .ctn h2 {
 section.form form .success .ctn p {
   color: #222122;
   font-family: gilroy, Roboto, lato;
-  font-size: .99em;
+  font-size: 0.99em;
   text-align: center;
   width: 70%;
 }
@@ -3362,8 +3362,8 @@ section.form form .success .ctn i.fa-solid {
   border-radius: 50%;
   padding: 10px 15px;
   cursor: pointer;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 section.form form .success .ctn i.fa-solid:hover {
