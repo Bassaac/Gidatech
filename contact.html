@@ -118,32 +118,22 @@
                             <label for="phone">Phone</label>
                             <input type="tel" name="phone" id="phone">
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="company">Company*</label>
                             <input type="text" name="company" id="company" required>
                         </div>
                         <div class="form-group">
                             <label for="country">Country*</label>
                             <input type="text" name="country" id="country" required>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="wr2">
-                        <div class="form-group">
-                            <label for="state">State/Province</label>
-                            <input type="text" name="state" id="state">
-                        </div>
-                        <div class="form-group">
-                            <label for="city">City*</label>
-                            <input type="text" name="city" id="city" required>
-                        </div>
+
                         <div class="form-group ">
                             <label for="address">Address</label>
                             <input type="text" name="address" id="address">
                         </div>
-                        <div class="form-group">
-                            <label for="zipcode">Zip/Postal Code</label>
-                            <input type="text" name="zipcode" id="zipcode">
-                        </div>
+
                         <div class="form-group ">
                             <label for=" subject">Subject</label>
                             <input type="text" name="subject" id="subject">
@@ -156,7 +146,12 @@
                     <textarea name="message" id="message" required rows="4"></textarea>
 
                 </div>
-
+                <select id="interested" name="interested">
+                    <option value="Home Automation">Home Automation</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="Security">Security</option>
+                    <option value="Theater and sound">Theater and sound</option>
+                </select>
                 <div class="check">
                     <div class="form-group">
                         <p>Interested in:</p>
@@ -167,28 +162,12 @@
                         <input type="checkbox" name="interested3" id="interested3" value="Smart Lighting">
                         <label for="interested3">Smart Lighting</label><br>
                     </div>
-                    <div class="form-group">
-                        <p>How did you find us?</p>
-                        <input type="radio" name="found_us" id="search_engine" value="Search Engine">
-                        <label for="search_engine">Search Engine</label><br>
-                        <input type="radio" name="found_us" id="social_media" value="Social Media">
-                        <label for="social_media">Social Media</label><br>
-                        <input type="radio" name="found_us" id="referral" value="Referral">
-                        <label for="referral">Referral</label><br>
-                        <!-- <input type="radio" name="found_us" id="other" value="Other"> -->
-                    </div>
-                    <div class="form-group">
-                        <p>Subscribe to our newsletter:</p>
-                        <input type="radio" name="newsletter" id="yes" value="Yes">
-                        <label for="yes">Yes</label>
-                        <input type="radio" name="newsletter" id="no" value="No">
-                        <label for="no">No</label>
-                    </div>
+
                 </div>
                 <!-- <input type="submit" value="Send"> -->
                 <div class="btn">
-                    <button type="submit" id="button">Submit</button>
-                    <!-- <input type="submit" id="button" value="Send Email"> -->
+                    <!-- <button type="submit" id="button">Submit</button> -->
+                    <input type="submit" id="button" value="Send Email">
                 </div>
 
                 <div class="success" id="success-message">
@@ -216,21 +195,24 @@
                             </div>
                         </div>
                         <div class="link">
-                            <a href="./index.html"><h3>Gidatech-home</h3></a>
+                            <a href="./index.html">
+                                <h3>Gidatech-home</h3>
+                            </a>
                         </div>
 
                     </div>
                 </div>
                 <div class="error" id="error-message">
-                
+
                     <div class="ctn">
                         <i class="fa-solid fa-xmark" onclick="toggle4()"></i>
                         <img src="./gida/errorlens.gif" alt="">
                         <h2>Oops</h2>
-                        <p>We regret to inform you that there was an error submitting your message. Please check your internet connection and try
-                        again, or reach out to us directly for help.
+                        <p>We regret to inform you that there was an error submitting your message. Please check your
+                            internet connection and try
+                            again, or reach out to us directly for help.
                         </p>
-                
+
                         <!-- <h5>Follow us</h5>
                         <div class="iconswr1">
                             <div class="icons">
@@ -248,7 +230,7 @@
                                 <h3>Gidatech-home</h3>
                             </a>
                         </div>
-                
+
                     </div>
                 </div>
                 <!-- <p style="display: none; font-size: 3em;">Message Submitted</p>
