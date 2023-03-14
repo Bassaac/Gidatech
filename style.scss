@@ -2241,9 +2241,9 @@ section.audio {
   }
 }
 section.automation {
-  background: rgb(0, 0, 0);
+  background: rgb(238, 235, 235);
   padding: 40px 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   position: relative;
   display: flex;
   align-items: center;
@@ -2260,7 +2260,8 @@ section.automation {
     transition: all 0.5s ease-in-out;
 
     h2 {
-      @media (min-width: 800px) {
+ font-size: 3em;
+      @media (max-width: 600px) {
         font-size: 2em;
       }
     }
@@ -2283,12 +2284,16 @@ section.automation {
   }
 
   .img {
+    height: 40vw;
+overflow: hidden;
     img {
       width: 50vw;
       z-index: 10;
       margin-right: 15px;
       margin-bottom: 20px;
       position: relative;
+      object-fit: cover;
+  transform: translateY(-300px);
 
       @media (max-width: 800px) {
         width: 65vw;
@@ -2301,8 +2306,9 @@ section.automation {
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: black;
     font-family: $gil, montserrat;
-    mix-blend-mode: difference;
+    // mix-blend-mode: difference;
 
     @media (min-width: 650px) {
       font-size: 18px;

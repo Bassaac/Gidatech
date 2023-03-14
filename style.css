@@ -2758,9 +2758,9 @@ section.audio p {
 }
 
 section.automation {
-  background: black;
+  background: #eeebeb;
   padding: 40px 20px;
-  color: white;
+  color: black;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2798,7 +2798,11 @@ section.automation .lrgh {
   transition: all 0.5s ease-in-out;
 }
 
-@media (min-width: 800px) {
+section.automation .lrgh h2 {
+  font-size: 3em;
+}
+
+@media (max-width: 600px) {
   section.automation .lrgh h2 {
     font-size: 2em;
   }
@@ -2822,12 +2826,21 @@ section.automation h1 {
   z-index: 100;
 }
 
+section.automation .img {
+  height: 40vw;
+  overflow: hidden;
+}
+
 section.automation .img img {
   width: 50vw;
   z-index: 10;
   margin-right: 15px;
   margin-bottom: 20px;
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
 }
 
 @media (max-width: 800px) {
@@ -2846,8 +2859,8 @@ section.automation p {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  color: black;
   font-family: Gilroy, montserrat;
-  mix-blend-mode: difference;
 }
 
 @media (min-width: 650px) {
