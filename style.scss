@@ -1669,7 +1669,7 @@ section.val {
 
 section.service {
   height: auto;
-  padding: 70px 25px;
+  padding: 70px 95px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(black, rgba(0, 0, 0, 0.507)), url(./img/lens2.jpg);
@@ -1679,29 +1679,32 @@ section.service {
   color: white;
   transition: all 0.4s ease-in-out;
 
-  @media (min-width: 650px) {
+  @media (max-width: 650px) {
     padding: 70px 40px;
   }
 
   .saaa {
     margin-bottom: 20px;
     transition: all 0.4s ease;
-
+   
     h2 {
-      @media (min-width: 650px) {
-        font-size: 1.8em;
-        width: 60%;
+      width: 70%;
+      font-size: 2.9em;
+      @media (max-width: 650px) {
+        font-size: 2.3em;
+        width: 89%;
       }
     }
   }
 
   p {
     font-family: gilroy, montserrat;
-    font-size: 0.97em;
-
-    @media (min-width: 650px) {
-      padding: 20px 30px;
+    font-size: 1.39em;
+ line-height: 1.2;
+    @media (max-width: 500px) {
+      padding: 20px 10px;
       font-size: 1.15em;
+      line-height: 1.3;
     }
   }
 
@@ -1709,11 +1712,11 @@ section.service {
     padding: 10px 0;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 10px;
     a {
       text-decoration: none;
       color: #0cd2e4;
-      font-size: 14px;
+      font-size: 17px;
       i {
         font-size: 14px;
       }
@@ -1898,7 +1901,7 @@ section.security {
 }
 
 section.security {
-  background: rgb(34, 30, 30);
+  background: rgb(0, 0, 0);
   padding: 40px 20px;
   color: white;
   position: relative;
@@ -1917,10 +1920,16 @@ section.security {
     flex-direction: column;
     transition: all 0.5s ease-in-out;
 
-    h2 {
-      @media (min-width: 800px) {
+    h2 { font-size: 3em;
+        width: 70%;
+      @media (max-width: 800px) {
         font-size: 2em;
+        width: 70%;
       }
+    }
+    p{
+      margin-top: 20px;
+      width: 50%;
     }
   }
 
@@ -1941,10 +1950,13 @@ section.security {
   }
 
   .img {
+    height: 65vw;
+    overflow: hidden;
     img {
-      width: 50vw;
+      width: 40vw;
       z-index: 10;
       margin-right: 15px;
+      object-fit: cover;
       margin-bottom: 20px;
       position: relative;
 

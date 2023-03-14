@@ -1983,7 +1983,7 @@ section.val .valtxt2 p {
 
 section.service {
   height: auto;
-  padding: 70px 25px;
+  padding: 70px 95px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2000,7 +2000,7 @@ section.service {
   transition: all 0.4s ease-in-out;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 650px) {
   section.service {
     padding: 70px 40px;
   }
@@ -2012,22 +2012,29 @@ section.service .saaa {
   transition: all 0.4s ease;
 }
 
-@media (min-width: 650px) {
+section.service .saaa h2 {
+  width: 70%;
+  font-size: 2.9em;
+}
+
+@media (max-width: 650px) {
   section.service .saaa h2 {
-    font-size: 1.8em;
-    width: 60%;
+    font-size: 2.3em;
+    width: 89%;
   }
 }
 
 section.service p {
   font-family: gilroy, montserrat;
-  font-size: 0.97em;
+  font-size: 1.39em;
+  line-height: 1.2;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 500px) {
   section.service p {
-    padding: 20px 30px;
+    padding: 20px 10px;
     font-size: 1.15em;
+    line-height: 1.3;
   }
 }
 
@@ -2040,13 +2047,13 @@ section.service .secp {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 7px;
+  gap: 10px;
 }
 
 section.service .secp a {
   text-decoration: none;
   color: #0cd2e4;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 section.service .secp a i {
@@ -2274,7 +2281,7 @@ section.security .lensec h3::before {
 }
 
 section.security {
-  background: #221e1e;
+  background: black;
   padding: 40px 20px;
   color: white;
   position: relative;
@@ -2317,10 +2324,21 @@ section.security .lrgh {
   transition: all 0.5s ease-in-out;
 }
 
-@media (min-width: 800px) {
+section.security .lrgh h2 {
+  font-size: 3em;
+  width: 70%;
+}
+
+@media (max-width: 800px) {
   section.security .lrgh h2 {
     font-size: 2em;
+    width: 70%;
   }
+}
+
+section.security .lrgh p {
+  margin-top: 20px;
+  width: 50%;
 }
 
 section.security h1 {
@@ -2341,10 +2359,17 @@ section.security h1 {
   z-index: 100;
 }
 
+section.security .img {
+  height: 65vw;
+  overflow: hidden;
+}
+
 section.security .img img {
-  width: 50vw;
+  width: 40vw;
   z-index: 10;
   margin-right: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 20px;
   position: relative;
 }
