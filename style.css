@@ -939,36 +939,6 @@ section.ccc .ctext .cir {
           animation: rot2 7s linear infinite forwards normal;
 }
 
-@-webkit-keyframes rot2 {
-  0% {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  99% {
-    -webkit-box-shadow: 1px 2px 8px white;
-            box-shadow: 1px 2px 8px white;
-  }
-  100% {
-    -webkit-box-shadow: 1px 2px 10px white;
-            box-shadow: 1px 2px 10px white;
-  }
-}
-
-@keyframes rot2 {
-  0% {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  99% {
-    -webkit-box-shadow: 1px 2px 8px white;
-            box-shadow: 1px 2px 8px white;
-  }
-  100% {
-    -webkit-box-shadow: 1px 2px 10px white;
-            box-shadow: 1px 2px 10px white;
-  }
-}
-
 section.ccc .ctext .cir .bcir {
   position: relative;
   width: 190px;
@@ -1020,7 +990,7 @@ section.ccc2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 70px 37px;
+  padding: 100px 37px;
   position: relative;
   overflow: hidden;
 }
@@ -1032,7 +1002,7 @@ section.ccc2 .abs {
   height: 100%;
   z-index: 1;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.692);
+  background-color: rgba(0, 0, 0, 0.055);
 }
 
 @media (max-width: 600px) {
@@ -1044,6 +1014,9 @@ section.ccc2 .abs {
 section.ccc2 video {
   position: absolute;
   width: 100vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.ccc2 .ctext {
@@ -1079,8 +1052,9 @@ section.ccc2 .ctext h2 {
   text-align: center;
   margin-bottom: 20px;
   color: white;
-  font-family: lato;
+  font-family: Gilroy, poppins;
   font-weight: 500;
+  z-index: 10;
 }
 
 @media (max-width: 600px) {
@@ -1095,7 +1069,7 @@ section.ccc2 .ctext h2 span:not(:nth-child(4)) {
   z-index: 1;
   text-align: center;
   font-size: 2em;
-  color: #cad5d8;
+  color: #ffffff;
 }
 
 @media (max-width: 600px) {
@@ -1166,26 +1140,17 @@ section.ccc2 .ctext .cir {
   top: -91px;
   left: -147px;
   border-radius: 50vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000bb), to(#2c2c2c75)), url(./gida/speaker.jpg);
-  background: linear-gradient(#000000bb, #2c2c2c75), url(./gida/speaker.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000088), to(#2c2c2c59)), url(./gida/speaker.jpg);
+  background: linear-gradient(#00000088, #2c2c2c59), url(./gida/speaker.jpg);
   background-size: cover;
   background-position: right;
   -webkit-animation: rot2 7s linear infinite forwards normal;
           animation: rot2 7s linear infinite forwards normal;
 }
 
-@keyframes rot2 {
-  0% {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  99% {
-    -webkit-box-shadow: 1px 2px 8px white;
-            box-shadow: 1px 2px 8px white;
-  }
-  100% {
-    -webkit-box-shadow: 1px 2px 10px white;
-            box-shadow: 1px 2px 10px white;
+@media (max-width: 600px) {
+  section.ccc2 .ctext .cir {
+    display: none;
   }
 }
 
@@ -2205,21 +2170,25 @@ section.security .vidabs {
 
 @media (max-width: 370px) {
   section.security .vidabs {
-    padding-bottom: 10px;
+    padding-bottom: b 10px;
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-@media (min-width: 650px) {
+section.security .vidabs h2 {
+  font-size: 2.5em;
+}
+
+@media (max-width: 650px) {
   section.security .vidabs h2 {
     font-size: 1.8em;
   }
 }
 
 section.security .vidabs p {
-  margin-top: 20px;
+  margin-top: 1.3em;
   font-family: gilroy, montserrat;
   font-size: 14px;
   width: 80%;
@@ -2327,18 +2296,20 @@ section.security .lrgh {
 section.security .lrgh h2 {
   font-size: 3em;
   width: 70%;
+  line-height: 1;
 }
 
 @media (max-width: 800px) {
   section.security .lrgh h2 {
-    font-size: 2em;
-    width: 70%;
+    font-size: 2.8em;
+    width: 80%;
   }
 }
 
 section.security .lrgh p {
+  font-size: 1.4em;
   margin-top: 20px;
-  width: 50%;
+  width: 70%;
 }
 
 section.security h1 {
@@ -2510,8 +2481,8 @@ section.intercom p {
 }
 
 section.electrical {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.897)), to(rgba(0, 0, 0, 0.918))), url(./img/ElectricslTool.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.918)), url(./img/ElectricslTool.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(black));
+  background: linear-gradient(black, black);
   padding: 40px 20px;
   background-attachment: fixed;
   color: white;
@@ -2529,18 +2500,6 @@ section.electrical {
   gap: 10px;
 }
 
-section.electrical h3 {
-  font-size: 1.8em;
-  width: 70%;
-  text-align: center;
-}
-
-@media (max-width: 500px) {
-  section.electrical h3 {
-    font-size: 1.5em;
-  }
-}
-
 section.electrical .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2549,15 +2508,77 @@ section.electrical .flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 720px) {
   section.electrical .flex {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    position: relative;
+  }
+}
+
+@media (max-width: 860px) {
+  section.electrical .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+section.electrical .flex img {
+  width: 45vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  position: relative;
+}
+
+@media (max-width: 400px) {
+  section.electrical .flex img {
+    width: 75vw;
+  }
+}
+
+section.electrical .flex .rtxt {
+  position: absolute;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+}
+
+@media (max-width: 860px) {
+  section.electrical .flex .rtxt {
+    position: relative;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+section.electrical .flex .rtxt h2 {
+  font-size: 3em;
+  line-height: 0.9;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 400px) {
+  section.electrical .flex .rtxt {
+    font-size: 1em;
+    line-height: 0.7;
+  }
+}
+
+section.electrical .flex .rtxt p {
+  line-height: 1.1;
+  font-size: 1.6em;
+}
+
+@media (max-width: 400px) {
+  section.electrical .flex .rtxt p {
+    font-size: 1.3em;
+    line-height: 1;
   }
 }
 
@@ -2576,41 +2597,9 @@ section.electrical .lrgh {
   transition: all 0.5s ease-in-out;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   section.electrical .lrgh h2 {
     font-size: 2em;
-  }
-}
-
-section.electrical h1 {
-  position: absolute;
-  left: 15px;
-  top: -20px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  padding: 10px;
-  font-family: gilroy, poppins;
-  font-weight: 600;
-  font-size: 0.8em;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  background-color: black;
-  border-top: 1px solid white;
-  color: #dddddd;
-  z-index: 100;
-}
-
-section.electrical .img img {
-  width: 50vw;
-  z-index: 10;
-  margin-right: 15px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-@media (max-width: 800px) {
-  section.electrical .img img {
-    width: 65vw;
   }
 }
 
@@ -2623,7 +2612,7 @@ section.electrical p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  text-align: left;
   font-family: Gilroy, Roboto, poppins;
   mix-blend-mode: difference;
 }
@@ -2651,22 +2640,13 @@ section.audio {
           flex-direction: column;
 }
 
-@media (min-width: 800px) {
-  section.audio {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
 section.audio .lrgh {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2675,9 +2655,15 @@ section.audio .lrgh {
   transition: all 0.5s ease-in-out;
 }
 
-@media (min-width: 800px) {
+section.audio .lrgh h2 {
+  font-size: 4em;
+  color: #202020;
+  line-height: 1;
+}
+
+@media (max-width: 800px) {
   section.audio .lrgh h2 {
-    font-size: 2em;
+    font-size: 3em;
     color: #252525;
   }
 }
@@ -2710,7 +2696,7 @@ section.audio .img::after {
   right: 0px;
   border: 1px dashed white;
   background-image: url(./gida/speaker.jpg);
-  z-index: 1;
+  z-index: 10;
   background-position: left;
 }
 
@@ -2746,14 +2732,15 @@ section.audio p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  text-align: left;
+  width: 80%;
   font-family: Gilroy, montserrat;
   z-index: 10;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 650px) {
   section.audio p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -2799,12 +2786,14 @@ section.automation .lrgh {
 }
 
 section.automation .lrgh h2 {
-  font-size: 3em;
+  font-size: 3.3em;
+  color: #3b3b3b;
 }
 
 @media (max-width: 600px) {
   section.automation .lrgh h2 {
-    font-size: 2em;
+    font-size: 2.9em;
+    line-height: 1;
   }
 }
 
@@ -2831,6 +2820,12 @@ section.automation .img {
   overflow: hidden;
 }
 
+@media (max-width: 600px) {
+  section.automation .img {
+    height: 60vw;
+  }
+}
+
 section.automation .img img {
   width: 50vw;
   z-index: 10;
@@ -2846,11 +2841,13 @@ section.automation .img img {
 @media (max-width: 800px) {
   section.automation .img img {
     width: 65vw;
+    -webkit-transform: translateY(-105px);
+            transform: translateY(-105px);
   }
 }
 
 section.automation p {
-  font-size: 15px;
+  font-size: 1.8em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2858,14 +2855,14 @@ section.automation p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  text-align: left;
   color: black;
   font-family: Gilroy, montserrat;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 650px) {
   section.automation p {
-    font-size: 18px;
+    font-size: 1.5em;
   }
 }
 
@@ -2903,16 +2900,17 @@ section.solar .solarimg {
 
 section.solar .solarimg h3 {
   font-family: gilroy, montserrat;
-  width: 60%;
+  width: 80%;
   text-align: center !important;
   position: relative;
   text-align: center;
   text-shadow: 0px -1px 7px rgba(255, 255, 255, 0.658);
+  font-size: 2.5em;
 }
 
-@media (min-width: 750px) {
+@media (max-width: 750px) {
   section.solar .solarimg h3 {
-    font-size: 2.8em;
+    font-size: 1.8em;
     text-shadow: 0px -1px 7px rgba(255, 255, 255, 0.63);
   }
 }

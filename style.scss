@@ -803,19 +803,19 @@ section.ccc {
       background-position: right;
       animation: rot2 7s linear infinite forwards normal;
 
-      @keyframes rot2 {
-        0% {
-          box-shadow: none;
-        }
+      // @keyframes rot2 {
+      //   0% {
+      //     box-shadow: none;
+      //   }
 
-        99% {
-          box-shadow: 1px 2px 8px white;
-        }
+      //   99% {
+      //     box-shadow: 1px 2px 8px white;
+      //   }
 
-        100% {
-          box-shadow: 1px 2px 10px white;
-        }
-      }
+      //   100% {
+      //     box-shadow: 1px 2px 10px white;
+      //   }
+      // }
 
       .bcir {
         position: relative;
@@ -854,7 +854,7 @@ section.ccc2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 70px 37px;
+  padding: 100px 37px;
   position: relative;
   overflow: hidden;
 
@@ -865,7 +865,7 @@ section.ccc2 {
     height: 100%;
     z-index: 1;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.692);
+    background-color: rgba(0, 0, 0, 0.055);
   }
 
   @media (max-width: 600px) {
@@ -874,10 +874,9 @@ section.ccc2 {
 
   video {
     position: absolute;
-    // top: -25%;
-
     width: 100vw;
-    // height: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .ctext {
@@ -899,8 +898,9 @@ section.ccc2 {
       text-align: center;
       margin-bottom: 20px;
       color: rgb(255, 255, 255);
-      font-family: lato;
+      font-family: $gil, poppins;
       font-weight: 500;
+      z-index: 10;
 
       @media (max-width: 600px) {
         text-align: center;
@@ -912,7 +912,7 @@ section.ccc2 {
         z-index: 1;
         text-align: center;
         font-size: 2em;
-        color: #cad5d8;
+        color: #ffffff;
 
         @media (max-width: 600px) {
           text-align: center;
@@ -984,24 +984,27 @@ section.ccc2 {
       left: -147px;
       border-radius: 50vw;
 
-      background: linear-gradient(#000000bb, #2c2c2c75), url(./gida/speaker.jpg);
+      background: linear-gradient(#00000088, #2c2c2c59), url(./gida/speaker.jpg);
       background-size: cover;
       background-position: right;
       animation: rot2 7s linear infinite forwards normal;
-
-      @keyframes rot2 {
-        0% {
-          box-shadow: none;
-        }
-
-        99% {
-          box-shadow: 1px 2px 8px white;
-        }
-
-        100% {
-          box-shadow: 1px 2px 10px white;
-        }
+      @media (max-width: 600px) {
+        display: none;
       }
+
+      // @keyframes rot2 {
+      //   0% {
+      //     box-shadow: none;
+      //   }
+
+      //   99% {
+      //     box-shadow: 1px 2px 8px white;
+      //   }
+
+      //   100% {
+      //     box-shadow: 1px 2px 10px white;
+      //   }
+      // }
 
       .bcir {
         position: relative;
@@ -1686,7 +1689,7 @@ section.service {
   .saaa {
     margin-bottom: 20px;
     transition: all 0.4s ease;
-   
+
     h2 {
       width: 70%;
       font-size: 2.9em;
@@ -1700,7 +1703,7 @@ section.service {
   p {
     font-family: gilroy, montserrat;
     font-size: 1.39em;
- line-height: 1.2;
+    line-height: 1.2;
     @media (max-width: 500px) {
       padding: 20px 10px;
       font-size: 1.15em;
@@ -1833,20 +1836,22 @@ section.security {
     }
 
     @media (max-width: 370px) {
-      padding-bottom: 10px;
+      padding-bottom: b 10px;
       padding-top: 20px;
       padding-left: 15px;
       padding-right: 15px;
     }
 
     h2 {
-      @media (min-width: 650px) {
+      font-size: 2.5em;
+    
+      @media (max-width: 650px) {
         font-size: 1.8em;
       }
     }
 
     p {
-      margin-top: 20px;
+      margin-top: 1.3em;
       font-family: gilroy, montserrat;
       font-size: 14px;
       width: 80%;
@@ -1920,16 +1925,20 @@ section.security {
     flex-direction: column;
     transition: all 0.5s ease-in-out;
 
-    h2 { font-size: 3em;
-        width: 70%;
+    h2 {
+      font-size: 3em;
+      width: 70%;
+      line-height: 1;
       @media (max-width: 800px) {
-        font-size: 2em;
-        width: 70%;
+        font-size: 2.8em;
+        width: 80%;
+     
       }
     }
-    p{
+    p {
+      font-size: 1.4em;
       margin-top: 20px;
-      width: 50%;
+      width: 70%;
     }
   }
 
@@ -2061,8 +2070,7 @@ section.intercom {
   }
 }
 section.electrical {
-  background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.918)),
-    url(./img/ElectricslTool.jpg);
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
   padding: 40px 20px;
   background-attachment: fixed;
   color: white;
@@ -2071,14 +2079,7 @@ section.electrical {
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  h3 {
-    font-size: 1.8em;
-    width: 70%;
-    text-align: center;
-    @media (max-width: 500px) {
-      font-size: 1.5em;
-    }
-  }
+
   @media (max-width: 800px) {
     // flex-direction: row;
   }
@@ -2086,10 +2087,51 @@ section.electrical {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 
-    @media (max-width: 800px) {
-      flex-wrap: wrap;
+    // @media (max-width: 800px) {
+    //   flex-wrap: wrap;
+    // }
+    @media (max-width: 720px) {
+      position: relative;
+    }
+    @media (max-width: 860px) {
+      flex-direction: column;
+    }
+    img {
+      width: 45vw;
+      object-fit: cover;
+      object-position: left;
+      position: relative;
+      @media (max-width: 400px) {
+        width: 75vw;
+      }
+    }
+    .rtxt {
+      position: absolute;
+      transform: translateX(60%);
+      @media (max-width: 860px) {
+        position: relative;
+        transform: translateX(0);
+      }
+
+      h2 {
+        font-size: 3em;
+        line-height: 0.9;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 400px) {
+        font-size: 1em;
+        line-height: 0.7;
+      }
+      p {
+        line-height: 1.1;
+        font-size: 1.6em;
+        @media (max-width: 400px) {
+          font-size: 1.3em;
+          line-height: 1;
+        }
+      }
     }
   }
 
@@ -2100,38 +2142,8 @@ section.electrical {
     transition: all 0.5s ease-in-out;
 
     h2 {
-      @media (min-width: 800px) {
-        font-size: 2em;
-      }
-    }
-  }
-
-  h1 {
-    position: absolute;
-    left: 15px;
-    top: -20px;
-    transform: rotate(90deg);
-    padding: 10px;
-    font-family: gilroy, poppins;
-    font-weight: 600;
-    font-size: 0.8em;
-    transform-origin: left;
-    background-color: rgb(0, 0, 0);
-    border-top: 1px solid white;
-    color: #dddddd;
-    z-index: 100;
-  }
-
-  .img {
-    img {
-      width: 50vw;
-      z-index: 10;
-      margin-right: 15px;
-      margin-bottom: 20px;
-      position: relative;
-
       @media (max-width: 800px) {
-        width: 65vw;
+        font-size: 2em;
       }
     }
   }
@@ -2140,7 +2152,7 @@ section.electrical {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     font-family: $gil, Roboto, poppins;
     mix-blend-mode: difference;
 
@@ -2158,19 +2170,23 @@ section.audio {
   align-items: center;
   flex-direction: column;
 
-  @media (min-width: 800px) {
-    flex-direction: row;
+  @media (max-width: 800px) {
+    // flex-direction: row;
   }
 
   .lrgh {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
 
     h2 {
-      @media (min-width: 800px) {
-        font-size: 2em;
+      font-size: 4em;
+      color: #202020;
+      line-height: 1;
+
+      @media (max-width: 800px) {
+        font-size: 3em;
         color: #252525;
       }
     }
@@ -2203,7 +2219,7 @@ section.audio {
       right: 0px;
       border: 1px dashed rgb(255, 255, 255);
       background-image: url(./gida/speaker.jpg);
-      z-index: 1;
+      z-index: 10;
       background-position: left;
       @media (max-width: 400px) {
         width: 100px;
@@ -2230,13 +2246,14 @@ section.audio {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    width: 80%;
     font-family: $gil, montserrat;
     // mix-blend-mode: difference;
     z-index: 10;
 
-    @media (min-width: 650px) {
-      font-size: 18px;
+    @media (max-width: 650px) {
+      font-size: 20px;
     }
   }
 }
@@ -2260,9 +2277,11 @@ section.automation {
     transition: all 0.5s ease-in-out;
 
     h2 {
- font-size: 3em;
+      font-size: 3.3em;
+      color: #3b3b3b;
       @media (max-width: 600px) {
-        font-size: 2em;
+        font-size: 2.9em;
+        line-height: 1;
       }
     }
   }
@@ -2285,7 +2304,10 @@ section.automation {
 
   .img {
     height: 40vw;
-overflow: hidden;
+    overflow: hidden;
+    @media (max-width: 600px) {
+      height: 60vw;
+    }
     img {
       width: 50vw;
       z-index: 10;
@@ -2293,25 +2315,26 @@ overflow: hidden;
       margin-bottom: 20px;
       position: relative;
       object-fit: cover;
-  transform: translateY(-300px);
+      transform: translateY(-300px);
 
       @media (max-width: 800px) {
         width: 65vw;
+        transform: translateY(-105px);
       }
     }
   }
 
   p {
-    font-size: 15px;
+    font-size: 1.8em;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     color: black;
     font-family: $gil, montserrat;
     // mix-blend-mode: difference;
 
-    @media (min-width: 650px) {
-      font-size: 18px;
+    @media (max-width: 650px) {
+      font-size: 1.5em;
     }
   }
 }
@@ -2576,15 +2599,15 @@ section.solar {
 
     h3 {
       font-family: gilroy, montserrat;
-      width: 60%;
+      width: 80%;
       text-align: center !important;
       // font-size: 3em;
       position: relative;
       text-align: center;
       text-shadow: 0px -1px 7px rgba(255, 255, 255, 0.658);
-
-      @media (min-width: 750px) {
-        font-size: 2.8em;
+      font-size: 2.5em;
+      @media (max-width: 750px) {
+        font-size: 1.8em;
         text-shadow: 0px -1px 7px rgba(255, 255, 255, 0.63);
       }
 
