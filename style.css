@@ -1584,6 +1584,12 @@ section.about {
           align-items: center;
 }
 
+@media (max-width: 600px) {
+  section.about {
+    background-position-x: 0px;
+  }
+}
+
 section.about .abtext {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1614,6 +1620,7 @@ section.about .abtext p {
 @media (max-width: 600px) {
   section.about .abtext p {
     font-size: 1.1em;
+    width: 70vw;
   }
 }
 
@@ -1776,8 +1783,8 @@ section.abbb .abbbimg img {
 }
 
 section.about2 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.897)), to(rgba(255, 255, 255, 0.719))), url(./img/worker.jpg);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.719)), url(./img/worker.jpg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.897)), to(rgba(255, 255, 255, 0.719)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.719));
   background-size: cover;
   padding: 175px 15px;
   display: -webkit-box;
@@ -1794,17 +1801,6 @@ section.about2 {
   section.about2 {
     padding: 10vw 20vw;
   }
-}
-
-section.about2::after {
-  width: 100%;
-  content: "";
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(56, 56, 56, 0.856)), to(transparent));
-  background: linear-gradient(0deg, rgba(56, 56, 56, 0.856), transparent);
-  left: 0;
 }
 
 section.about2 .abtext2 {
@@ -1829,7 +1825,7 @@ section.about2 .abtext2 p {
   font-weight: 600;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   section.about2 .abtext2 p {
     font-size: 1.4em;
     line-height: 1.3;
@@ -1867,8 +1863,8 @@ section.about2 .abtext2 p::before {
 
 section.val {
   height: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 96, 96, 0.856)), to(rgba(56, 56, 56, 0.856)));
-  background: linear-gradient(rgba(98, 96, 96, 0.856), rgba(56, 56, 56, 0.856));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.856)), to(rgba(56, 56, 56, 0.856)));
+  background: linear-gradient(rgba(0, 0, 0, 0.856), rgba(56, 56, 56, 0.856));
   width: 100%;
   padding: 40px 10px;
   display: -webkit-box;
