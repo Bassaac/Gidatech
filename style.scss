@@ -235,7 +235,7 @@ nav {
   }
 
   ul {
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -252,6 +252,7 @@ nav {
         font-weight: 700;
         transition: all 0.4s ease;
         position: relative;
+        font-family: $gil, poppins;
 
         &::after {
           content: "";
@@ -1371,9 +1372,9 @@ section.about {
   background-repeat: no-repeat;
   gap: 15px;
   align-items: center;
- @media (max-width: 600px) {
-       background-position-x: 0px
-    }
+  @media (max-width: 600px) {
+    background-position-x: 0px;
+  }
   .abtext {
     display: flex;
     flex-direction: column;
@@ -1447,7 +1448,7 @@ section.abbb {
   }
 
   h3 {
-    z-index: 100;
+    z-index: 10;
     color: white;
     font-family: poppins;
     font-weight: 400;
@@ -1527,20 +1528,16 @@ section.abbb {
 }
 
 section.about2 {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.897),
-    rgba(255, 255, 255, 0.719)
-  );
+  background: linear-gradient(0deg, #e5e3d6, #e5e3d6);
   background-size: cover;
-  padding: 175px 15px;
+  padding: 65px 105px;
   display: flex;
   gap: 15px;
   align-items: center;
   position: relative;
 
-  @media (min-width: 600px) {
-    padding: 10vw 20vw;
+  @media (max-width: 600px) {
+    padding: 10vw 2vw;
   }
 
   // &::after {
@@ -1557,17 +1554,28 @@ section.about2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    align-items: center;
+    img {
+      object-fit: cover;
+      width: 40vw;
+      height: 40vw;
+      position: relative;
+      @media (max-width: 600px) {
+        width: 80vw;
+        height: 80vw;
+      }
+    }
     p {
-      font-family: poppins;
+      font-family: $gil, poppins;
 
-      line-height: 1;
-      font-size: 1.1em;
+      // line-height: ;
+      font-size: 1.6em;
       letter-spacing: -0.8px;
       word-spacing: 2px;
       position: relative;
       margin-bottom: 20px;
-      font-weight: 600;
+      width: 70%;
+      // font-weight: 600;
 
       @media (max-width: 600px) {
         font-size: 1.4em;
@@ -1579,34 +1587,45 @@ section.about2 {
         position: absolute;
         background-color: black;
         height: 2px;
-        width: 80px;
-        left: -10px;
+        width: 100px;
+        left: -30px;
         top: -10px;
         border-radius: 20px;
       }
-
       &::before {
         content: "";
-        // position: sticky;
-        width: 2px;
         position: absolute;
-        background-color: white;
-        mix-blend-mode: difference;
-        right: 50%;
-        transform: translate(0, 220px);
-        height: 122px;
-
-        @media (min-width: 760px) {
-          display: none;
-        }
+        background-color: black;
+        // height: 150px;
+        width: 2px;
+        height: 80px;
+        left: -20px;
+        top: -20px;
+        border-radius: 20px;
       }
+
+      // &::before {
+      //   content: "";
+      //   // position: sticky;
+      //   width: 2px;
+      //   position: absolute;
+      //   background-color: white;
+      //   mix-blend-mode: difference;
+      //   right: 50%;
+      //   transform: translate(0, 220px);
+      //   height: 122px;
+
+      //   @media (min-width: 760px) {
+      //     display: none;
+      //   }
+      // }
     }
   }
 }
 
 section.val {
   height: auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.856), rgba(56, 56, 56, 0.856));
+  background: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.856));
   width: 100%;
   padding: 40px 10px;
   display: flex;
@@ -1615,15 +1634,24 @@ section.val {
   text-align: center;
   gap: 60px;
   color: white;
-
+  img {
+    width: 60vw;
+    object-fit: cover;
+    height: 20vw;
+    @media (max-width: 600px) {
+      width: 100vw;
+      object-fit: cover;
+      height: 30vw;
+    }
+  }
   .valtxt {
     text-align: center;
 
     h2 {
       margin-bottom: 20px;
-      font-size: 2em;
+      font-size: 3em;
 
-      @media (min-width: 600px) {
+      @media (max-width: 600px) {
         font-size: 2.2em;
       }
     }
@@ -1655,11 +1683,12 @@ section.val {
 
   .valtxt2 {
     p {
-      font-family: poppins;
+      font-family: $gil, poppins;
       width: 90%;
-      font-size: 1em;
+      font-size: 1.1em;
       text-align: left;
       color: #dddddd;
+      font-weight: 300;
     }
 
     width: 80%;
@@ -3786,39 +3815,45 @@ section.serauto {
   }
 }
 section.sersec {
-  background: black;
+  background:black;
 
   height: auto;
   width: 100%;
   color: white;
   position: relative;
   overflow: hidden;
-  .abs {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30vw;
-    // z-index: 10;
-    height: 35vw;
-    mix-blend-mode: difference;
-    background: linear-gradient(
-        90deg,
-        black,
-        rgba(0, 0, 0, 0.884),
-        rgba(0, 0, 0, 0)
-      ),
-      url(./gida/cam.png);
-    background-size: cover;
-    transform: translateY(70px);
-    @media (max-width: 500px) {
-      transform: translateY(270px);
-    }
-  }
+
+ 
+  // .abs {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 30vw;
+  //   // z-index: 10;
+  //   height: 35vw;
+  //   mix-blend-mode: difference;
+  //   background: linear-gradient(
+  //       90deg,
+  //       black,
+  //       rgba(0, 0, 0, 0.884),
+  //       rgba(0, 0, 0, 0)
+  //     ),
+  //     url(./gida/cam.png);
+  //   background-size: cover;
+  //   transform: translateY(70px);
+  //   @media (max-width: 500px) {
+  //     transform: translateY(270px);
+  //   }
+  // }
   .txt {
     padding: 10vw 20vw 25vw 20vw;
     z-index: 100;
+    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.349),  rgba(0, 0, 0, 0.349)), url(./gida/secdoor.jpg);
+    background-size: cover;
+    background-position: center;
     @media (max-width: 600px) {
       padding: 25vw 13vw;
+      
     }
 
     h1 {

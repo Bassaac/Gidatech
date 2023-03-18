@@ -262,7 +262,7 @@ nav a:hover {
 }
 
 .menu ul {
-  height: 70vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,6 +287,7 @@ nav a:hover {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   position: relative;
+  font-family: Gilroy, poppins;
 }
 
 .menu ul li a::after {
@@ -1689,7 +1690,7 @@ section.abbb {
 }
 
 section.abbb h3 {
-  z-index: 100;
+  z-index: 10;
   color: white;
   font-family: poppins;
   font-weight: 400;
@@ -1783,10 +1784,10 @@ section.abbb .abbbimg img {
 }
 
 section.about2 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.897)), to(rgba(255, 255, 255, 0.719)));
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.719));
+  background: -webkit-gradient(linear, left bottom, left top, from(#e5e3d6), to(#e5e3d6));
+  background: linear-gradient(0deg, #e5e3d6, #e5e3d6);
   background-size: cover;
-  padding: 175px 15px;
+  padding: 65px 105px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1797,9 +1798,9 @@ section.about2 {
   position: relative;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   section.about2 {
-    padding: 10vw 20vw;
+    padding: 10vw 2vw;
   }
 }
 
@@ -1812,17 +1813,34 @@ section.about2 .abtext2 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about2 .abtext2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40vw;
+  height: 40vw;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  section.about2 .abtext2 img {
+    width: 80vw;
+    height: 80vw;
+  }
 }
 
 section.about2 .abtext2 p {
-  font-family: poppins;
-  line-height: 1;
-  font-size: 1.1em;
+  font-family: Gilroy, poppins;
+  font-size: 1.6em;
   letter-spacing: -0.8px;
   word-spacing: 2px;
   position: relative;
   margin-bottom: 20px;
-  font-weight: 600;
+  width: 70%;
 }
 
 @media (max-width: 600px) {
@@ -1837,34 +1855,27 @@ section.about2 .abtext2 p::after {
   position: absolute;
   background-color: black;
   height: 2px;
-  width: 80px;
-  left: -10px;
+  width: 100px;
+  left: -30px;
   top: -10px;
   border-radius: 20px;
 }
 
 section.about2 .abtext2 p::before {
   content: "";
-  width: 2px;
   position: absolute;
-  background-color: white;
-  mix-blend-mode: difference;
-  right: 50%;
-  -webkit-transform: translate(0, 220px);
-          transform: translate(0, 220px);
-  height: 122px;
-}
-
-@media (min-width: 760px) {
-  section.about2 .abtext2 p::before {
-    display: none;
-  }
+  background-color: black;
+  width: 2px;
+  height: 80px;
+  left: -20px;
+  top: -20px;
+  border-radius: 20px;
 }
 
 section.val {
   height: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.856)), to(rgba(56, 56, 56, 0.856)));
-  background: linear-gradient(rgba(0, 0, 0, 0.856), rgba(56, 56, 56, 0.856));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.856)), to(rgba(0, 0, 0, 0.856)));
+  background: linear-gradient(rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.856));
   width: 100%;
   padding: 40px 10px;
   display: -webkit-box;
@@ -1882,16 +1893,32 @@ section.val {
   color: white;
 }
 
+section.val img {
+  width: 60vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20vw;
+}
+
+@media (max-width: 600px) {
+  section.val img {
+    width: 100vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 30vw;
+  }
+}
+
 section.val .valtxt {
   text-align: center;
 }
 
 section.val .valtxt h2 {
   margin-bottom: 20px;
-  font-size: 2em;
+  font-size: 3em;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   section.val .valtxt h2 {
     font-size: 2.2em;
   }
@@ -1931,11 +1958,12 @@ section.val .valtxt2 {
 }
 
 section.val .valtxt2 p {
-  font-family: poppins;
+  font-family: Gilroy, poppins;
   width: 90%;
-  font-size: 1em;
+  font-size: 1.1em;
   text-align: left;
   color: #dddddd;
+  font-weight: 300;
 }
 
 section.service {
@@ -4334,30 +4362,13 @@ section.sersec {
   overflow: hidden;
 }
 
-section.sersec .abs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30vw;
-  height: 35vw;
-  mix-blend-mode: difference;
-  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(rgba(0, 0, 0, 0.884)), to(rgba(0, 0, 0, 0))), url(./gida/cam.png);
-  background: linear-gradient(90deg, black, rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0)), url(./gida/cam.png);
-  background-size: cover;
-  -webkit-transform: translateY(70px);
-          transform: translateY(70px);
-}
-
-@media (max-width: 500px) {
-  section.sersec .abs {
-    -webkit-transform: translateY(270px);
-            transform: translateY(270px);
-  }
-}
-
 section.sersec .txt {
   padding: 10vw 20vw 25vw 20vw;
   z-index: 100;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0.349)), to(rgba(0, 0, 0, 0.349))), url(./gida/secdoor.jpg);
+  background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(./gida/secdoor.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 600px) {
