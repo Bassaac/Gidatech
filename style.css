@@ -1569,13 +1569,15 @@ footer.faa .gida h2 {
 }
 
 section.about {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.897)), to(rgba(255, 255, 255, 0.719))), url(./img/worker.jpg);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.897), rgba(255, 255, 255, 0.719)), url(./img/worker.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(35%), to(rgba(255, 255, 255, 0))), url(./img/worker.jpg), white;
+  background: linear-gradient(90deg, white, 35%, rgba(255, 255, 255, 0)), url(./img/worker.jpg), white;
   background-size: cover;
   padding: 75px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-position-x: 300px;
+  background-repeat: no-repeat;
   gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1597,35 +1599,39 @@ section.about .abtext {
 
 @media (min-width: 850px) {
   section.about .abtext {
-    padding: 40px 80px;
+    padding: 40px 100px;
   }
 }
 
 section.about .abtext p {
-  font-family: montserrat;
+  font-family: Gilroy, montserrat;
+  line-height: 1.18;
   font-weight: 400;
+  font-size: 1.3em;
+  width: 35vw;
 }
 
-@media (min-width: 850px) {
+@media (max-width: 600px) {
   section.about .abtext p {
     font-size: 1.1em;
   }
 }
 
 section.about .abtext p:nth-child(1) {
-  font-family: poppins;
+  font-family: Gilroy, poppins;
   font-weight: 700;
   line-height: 1.2;
-  font-size: 1.1em;
+  font-size: 2.5em;
   letter-spacing: -0.9px;
   word-spacing: 2px;
   position: relative;
   margin-bottom: 20px;
+  width: 65%;
 }
 
-@media (min-width: 850px) {
+@media (max-width: 600px) {
   section.about .abtext p:nth-child(1) {
-    font-size: 2em;
+    font-size: 1.6em;
     width: 70%;
   }
 }
@@ -1640,20 +1646,9 @@ section.about .abtext p:nth-child(1)::after {
   position: absolute;
   background-color: black;
   height: 2px;
-  width: 80px;
-  left: -10px;
-  top: -10px;
-  border-radius: 20px;
-}
-
-section.about .abtext p:nth-child(1)::before {
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 2px;
-  width: 80px;
-  top: calc(100% + 8px);
-  left: -10px;
+  width: 100px;
+  left: -110px;
+  top: 50%;
   border-radius: 20px;
 }
 
@@ -1687,6 +1682,7 @@ section.abbb {
 }
 
 section.abbb h3 {
+  z-index: 100;
   color: white;
   font-family: poppins;
   font-weight: 400;

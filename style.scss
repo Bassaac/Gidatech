@@ -1357,15 +1357,13 @@ footer.faa {
 
 // About stylings----------------------------------------------------------------------------------------//
 section.about {
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.897),
-      rgba(255, 255, 255, 0.719)
-    ),
-    url(./img/worker.jpg);
+  background: linear-gradient(90deg, rgb(255, 255, 255), 35%, rgba(255, 255, 255, 0)),
+    url(./img/worker.jpg), white;
   background-size: cover;
   padding: 75px 15px;
   display: flex;
+ background-position-x: 300px;
+ background-repeat: no-repeat;
   gap: 15px;
   align-items: center;
 
@@ -1376,31 +1374,34 @@ section.about {
     transition: all 0.4s ease;
 
     @media (min-width: 850px) {
-      padding: 40px 80px;
+      padding: 40px 100px;
     }
 
     p {
-      font-family: montserrat;
-      // line-height: 1.1;
+      font-family: $gil, montserrat;
+      line-height: 1.18;
       font-weight: 400;
+      font-size: 1.3em;
+      width: 35vw;
 
-      @media (min-width: 850px) {
+      @media (max-width: 600px) {
         font-size: 1.1em;
       }
     }
 
     p:nth-child(1) {
-      font-family: poppins;
+      font-family: $gil, poppins;
       font-weight: 700;
       line-height: 1.2;
-      font-size: 1.1em;
+      font-size: 2.5em;
       letter-spacing: -0.9px;
       word-spacing: 2px;
       position: relative;
       margin-bottom: 20px;
+      width: 65%;
 
-      @media (min-width: 850px) {
-        font-size: 2em;
+      @media (max-width: 600px) {
+        font-size: 1.6em;
         width: 70%;
       }
 
@@ -1414,20 +1415,9 @@ section.about {
         position: absolute;
         background-color: black;
         height: 2px;
-        width: 80px;
-        left: -10px;
-        top: -10px;
-        border-radius: 20px;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: black;
-        height: 2px;
-        width: 80px;
-        top: calc(100% + 8px);
-        left: -10px;
+        width: 100px;
+        left: -110px;
+        top: 50%;
         border-radius: 20px;
       }
     }
@@ -1449,6 +1439,7 @@ section.abbb {
   }
 
   h3 {
+    z-index: 100;
     color: white;
     font-family: poppins;
     font-weight: 400;
@@ -4357,9 +4348,9 @@ section.seraud {
         height: 49vw;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
           url(./gida/Hometheatre.jpg);
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
   }
