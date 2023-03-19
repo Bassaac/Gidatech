@@ -3858,13 +3858,6 @@ section.sersec {
     background-position: center;
     @media (max-width: 600px) {
       padding: 25vw 13vw;
-      background: linear-gradient(
-          0deg,
-          black,
-          rgba(0, 0, 0, 0.349),
-          rgba(0, 0, 0, 0.349)
-        ),
-        url(./gida/secdoor.jpg);
     }
 
     h1 {
@@ -3904,274 +3897,276 @@ section.sersec {
       flex-direction: column-reverse;
     }
     div {
-      width: 50%;
+      width: auto;
+
       @media (max-width: 900px) {
         width: 70vw;
       }
-      p {
-        width: 100%;
-        font-size: 1.3em;
-        font-family: $gil, lato;
-        line-height: 1.3;
-        font-weight: 300;
-        margin-bottom: 20px;
-        @media (max-width: 900px) {
-          text-align: center;
-          font-size: 1.1em;
-        }
-      }
-      a {
-        font-size: 1.2em;
-      }
-      h2 {
-        font-size: 2.3em;
-        margin-bottom: 20px;
-        // width: 70%;
-        line-height: 1;
-        @media (max-width: 900px) {
-          text-align: center;
-          //  width: 85%;
-          font-size: 1.7em;
-        }
-      }
     }
-
-    .img {
-      // width: 100vw;
-      height: 50vw;
-      position: relative;
-      background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-        url(./gida/security-bigphone-big@2x.jpg);
-
-      background-size: cover;
-      background-position: right;
-      @media (max-width: 600px) {
-        // width: 55vw;
-        // height: 87vw;
-        height: 70vw;
-      }
-    }
-  }
-  .sec1b {
-    display: flex;
-    position: relative;
-    padding: 10px 60px;
-    align-items: center;
-    gap: 50px;
-    flex-direction: row-reverse;
-    @media (max-width: 900px) {
-      flex-direction: column;
-    }
-    div {
-      width: 50%;
+    p {
+      width: 100%;
+      font-size: 1.3em;
+      font-family: $gil, lato;
+      line-height: 1.3;
+      font-weight: 300;
+      margin-bottom: 20px;
       @media (max-width: 900px) {
-        width: 70vw;
-      }
-      p {
-        width: 100%;
-        font-size: 1.3em;
-        font-family: $gil, lato;
-        line-height: 1.3;
-        font-weight: 300;
-        margin-bottom: 20px;
-        @media (max-width: 900px) {
-          text-align: center;
-          font-size: 1.1em;
-        }
-      }
-      a {
-        font-size: 1.2em;
-      }
-      h2 {
-        font-size: 2.3em;
-        margin-bottom: 20px;
-        // width: 70%;
-        line-height: 1;
-        @media (max-width: 900px) {
-          text-align: center;
-          //  width: 85%;
-          font-size: 1.7em;
-        }
+        text-align: center;
+        font-size: 1.1em;
       }
     }
-
-    .img {
-      width: 45vw;
-      height: 50vw;
-      position: relative;
-      background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-        url(./gida/intercomdoor.jpg);
-
-      background-size: cover;
-      background-position: right;
-      @media (max-width: 600px) {
-        width: 55vw;
-        height: 87vw;
-      }
+    a {
+      font-size: 1.2em;
     }
-  }
-  .sec2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    padding: 110px 10px;
-    position: relative;
-    h3 {
-      width: 60vw;
-      text-align: center;
-      font-size: 2.9em;
+    h2 {
+      font-size: 2.3em;
+      margin-bottom: 20px;
+      // width: 70%;
       line-height: 1;
-      color: #0cd2e4;
-      @media (max-width: 600px) {
-        font-size: 2em;
-        width: 80vw;
+      @media (max-width: 900px) {
+        text-align: center;
+        //  width: 85%;
+        font-size: 1.7em;
       }
     }
-    .abs2 {
-      position: absolute;
-      width: 2px;
-      height: 100px;
-      background-color: #0cd2e4;
-      top: 0;
-      right: 50%;
-      z-index: 10;
+  }
+
+  .img {
+    // width: 100vw;
+    height: 50vw;
+    position: relative;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+      url(./gida/phone.jpg);
+
+    background-size: cover;
+    background-position: right;
+    @media (max-width: 600px) {
+      // width: 55vw;
+      // height: 87vw;
+      height: 70vw;
+    }
+  }
+}
+.sec1b {
+  display: flex;
+  position: relative;
+  padding: 10px 60px;
+  align-items: center;
+  gap: 50px;
+  flex-direction: row-reverse;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+  div {
+    width: 50%;
+    @media (max-width: 900px) {
+      width: 70vw;
+    }
+    p {
+      width: 100%;
+      font-size: 1.3em;
+      font-family: $gil, lato;
+      line-height: 1.3;
+      font-weight: 300;
+      margin-bottom: 20px;
+      @media (max-width: 900px) {
+        text-align: center;
+        font-size: 1.1em;
+      }
+    }
+    a {
+      font-size: 1.2em;
+    }
+    h2 {
+      font-size: 2.3em;
+      margin-bottom: 20px;
+      // width: 70%;
+      line-height: 1;
+      @media (max-width: 900px) {
+        text-align: center;
+        //  width: 85%;
+        font-size: 1.7em;
+      }
+    }
+  }
+
+  .img {
+    width: 45vw;
+    height: 50vw;
+    position: relative;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+      url(./gida/intercomdoor.jpg);
+
+    background-size: cover;
+    background-position: right;
+    @media (max-width: 600px) {
+      width: 55vw;
+      height: 87vw;
+    }
+  }
+}
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 110px 10px;
+  position: relative;
+  h3 {
+    width: 60vw;
+    text-align: center;
+    font-size: 2.9em;
+    line-height: 1;
+    color: #0cd2e4;
+    @media (max-width: 600px) {
+      font-size: 2em;
+      width: 80vw;
+    }
+  }
+  .abs2 {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: #0cd2e4;
+    top: 0;
+    right: 50%;
+    z-index: 10;
+  }
+
+  p {
+    font-size: 1.5em;
+    width: 70vw;
+    text-align: center;
+    font-weight: 300;
+    font-family: $gil, lato;
+    position: relative;
+    @media (max-width: 600px) {
+      font-size: 1.1em;
+      width: 85vw;
     }
 
+    // &::after {
+    //   content: "";
+    //   height: 20vw;
+    //   width: 2px;
+    //   background-color: #037c84;
+    //   position: absolute;
+    //   right: 50%;
+    //  bottom: 0;
+    //   z-index: 10;
+    //   @media (max-width: 500px) {
+    //     transform: translateY(19%);
+    //     height: 30vw;
+    //     transform-origin: center;
+    //   }
+    // }
+  }
+
+  .img {
+    width: 40vw;
+    height: 60vw;
+    position: relative;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.726),
+        rgb(0, 0, 0)
+      ),
+      url(./gida/intercomdoor2.jpg);
+
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 600px) {
+      width: 70vw;
+      height: 70vw;
+    }
+  }
+}
+.lrnm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  padding: 10px 110px;
+  a {
+    font-size: 1.1em;
+  }
+  @media (max-width: 600px) {
+    padding: 15px 20px;
+  }
+  .secp {
+    width: 70%;
     p {
       font-size: 1.5em;
-      width: 70vw;
+      width: 100%;
       text-align: center;
       font-weight: 300;
       font-family: $gil, lato;
-      position: relative;
       @media (max-width: 600px) {
-        font-size: 1.1em;
-        width: 85vw;
-      }
-
-      // &::after {
-      //   content: "";
-      //   height: 20vw;
-      //   width: 2px;
-      //   background-color: #037c84;
-      //   position: absolute;
-      //   right: 50%;
-      //  bottom: 0;
-      //   z-index: 10;
-      //   @media (max-width: 500px) {
-      //     transform: translateY(19%);
-      //     height: 30vw;
-      //     transform-origin: center;
-      //   }
-      // }
-    }
-
-    .img {
-      width: 40vw;
-      height: 60vw;
-      position: relative;
-      background: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0.726),
-          rgb(0, 0, 0)
-        ),
-        url(./gida/intercomdoor2.jpg);
-
-      background-size: cover;
-      background-position: center;
-      @media (max-width: 600px) {
-        width: 70vw;
-        height: 70vw;
+        font-size: 1.2em;
       }
     }
   }
-  .lrnm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-    padding: 10px 110px;
-    a {
-      font-size: 1.1em;
-    }
+}
+section.disc {
+  background-color: #1b1b1b;
+  // padding: 15vw 20vw;
+  padding: 170px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  .line {
+    width: 2px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+  }
+  h3 {
+    font-size: 3em;
+    text-align: center;
     @media (max-width: 600px) {
-      padding: 15px 20px;
-    }
-    .secp {
-      width: 70%;
-      p {
-        font-size: 1.5em;
-        width: 100%;
-        text-align: center;
-        font-weight: 300;
-        font-family: $gil, lato;
-        @media (max-width: 600px) {
-          font-size: 1.2em;
-        }
-      }
+      font-size: 2em;
     }
   }
-  section.disc {
-    background-color: #1b1b1b;
-    // padding: 15vw 20vw;
-    padding: 170px 20px;
+  ul {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: relative;
-    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0 30px;
     justify-content: center;
-    .line {
-      width: 2px;
-      height: 150px;
-      background-color: white;
-      position: absolute;
-      top: 0;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 30px 30px;
     }
-    h3 {
-      font-size: 3em;
-      text-align: center;
-      @media (max-width: 600px) {
-        font-size: 2em;
-      }
-    }
-    ul {
-      display: flex;
-      width: 100vw;
-      flex-wrap: wrap;
-      gap: 25px;
-      padding: 0 30px;
-      justify-content: center;
-      @media (max-width: 600px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 30px 30px;
-      }
-      li {
-        list-style: none;
+    li {
+      list-style: none;
 
-        a {
-          font-size: 1.3em;
-          text-decoration: none !important;
-          transition: 0.5s ease;
-          &:hover {
-            color: white;
-            font-size: 1.4em;
-          }
-          span {
-            @media (max-width: 600px) {
-              display: none;
-            }
+      a {
+        font-size: 1.3em;
+        text-decoration: none !important;
+        transition: 0.5s ease;
+        &:hover {
+          color: white;
+          font-size: 1.4em;
+        }
+        span {
+          @media (max-width: 600px) {
+            display: none;
           }
         }
       }
     }
   }
 }
+
 section.serelec {
   background: black;
 
@@ -4216,13 +4211,6 @@ section.serelec {
     background-position: center;
     @media (max-width: 600px) {
       padding: 25vw 13vw;
-      background: linear-gradient(
-          0deg,
-          black,
-          rgba(0, 0, 0, 0.349),
-          rgba(0, 0, 0, 0.349)
-        ),
-        url(./gida/secdoor.jpg);
     }
 
     h1 {
@@ -4472,21 +4460,20 @@ section.serelec {
     gap: 20px;
 
     padding: 10px 110px;
-    p{
+    p {
       font-family: $gil, poppins;
       font-size: 1.5em;
       text-align: center;
-      width: 90%;   
+      width: 90%;
       @media (max-width: 600px) {
-         font-size: 1.1em;
+        font-size: 1.1em;
+      }
     }
-    }
-    img{
+    img {
       width: 70vw;
       @media (max-width: 600px) {
-       width: 80vw;
-    }
-    
+        width: 80vw;
+      }
     }
     a {
       font-size: 1.1em;
@@ -4506,7 +4493,6 @@ section.serelec {
           font-size: 1.2em;
         }
       }
-     
     }
   }
   section.disc {

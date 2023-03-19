@@ -4374,8 +4374,6 @@ section.sersec .txt {
 @media (max-width: 600px) {
   section.sersec .txt {
     padding: 25vw 13vw;
-    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0.349)), to(rgba(0, 0, 0, 0.349))), url(./gida/secdoor.jpg);
-    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(./gida/secdoor.jpg);
   }
 }
 
@@ -4436,7 +4434,7 @@ section.sersec .sec1a {
 }
 
 section.sersec .sec1a div {
-  width: 50%;
+  width: auto;
 }
 
 @media (max-width: 900px) {
@@ -4445,7 +4443,7 @@ section.sersec .sec1a div {
   }
 }
 
-section.sersec .sec1a div p {
+section.sersec .sec1a p {
   width: 100%;
   font-size: 1.3em;
   font-family: Gilroy, lato;
@@ -4455,45 +4453,45 @@ section.sersec .sec1a div p {
 }
 
 @media (max-width: 900px) {
-  section.sersec .sec1a div p {
+  section.sersec .sec1a p {
     text-align: center;
     font-size: 1.1em;
   }
 }
 
-section.sersec .sec1a div a {
+section.sersec .sec1a a {
   font-size: 1.2em;
 }
 
-section.sersec .sec1a div h2 {
+section.sersec .sec1a h2 {
   font-size: 2.3em;
   margin-bottom: 20px;
   line-height: 1;
 }
 
 @media (max-width: 900px) {
-  section.sersec .sec1a div h2 {
+  section.sersec .sec1a h2 {
     text-align: center;
     font-size: 1.7em;
   }
 }
 
-section.sersec .sec1a .img {
+section.sersec .img {
   height: 50vw;
   position: relative;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(black)), url(./gida/security-bigphone-big@2x.jpg);
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0), black), url(./gida/security-bigphone-big@2x.jpg);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(black)), url(./gida/phone.jpg);
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0), black), url(./gida/phone.jpg);
   background-size: cover;
   background-position: right;
 }
 
 @media (max-width: 600px) {
-  section.sersec .sec1a .img {
+  section.sersec .img {
     height: 70vw;
   }
 }
 
-section.sersec .sec1b {
+.sec1b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4510,7 +4508,7 @@ section.sersec .sec1b {
 }
 
 @media (max-width: 900px) {
-  section.sersec .sec1b {
+  .sec1b {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4518,17 +4516,17 @@ section.sersec .sec1b {
   }
 }
 
-section.sersec .sec1b div {
+.sec1b div {
   width: 50%;
 }
 
 @media (max-width: 900px) {
-  section.sersec .sec1b div {
+  .sec1b div {
     width: 70vw;
   }
 }
 
-section.sersec .sec1b div p {
+.sec1b div p {
   width: 100%;
   font-size: 1.3em;
   font-family: Gilroy, lato;
@@ -4538,30 +4536,30 @@ section.sersec .sec1b div p {
 }
 
 @media (max-width: 900px) {
-  section.sersec .sec1b div p {
+  .sec1b div p {
     text-align: center;
     font-size: 1.1em;
   }
 }
 
-section.sersec .sec1b div a {
+.sec1b div a {
   font-size: 1.2em;
 }
 
-section.sersec .sec1b div h2 {
+.sec1b div h2 {
   font-size: 2.3em;
   margin-bottom: 20px;
   line-height: 1;
 }
 
 @media (max-width: 900px) {
-  section.sersec .sec1b div h2 {
+  .sec1b div h2 {
     text-align: center;
     font-size: 1.7em;
   }
 }
 
-section.sersec .sec1b .img {
+.sec1b .img {
   width: 45vw;
   height: 50vw;
   position: relative;
@@ -4572,13 +4570,13 @@ section.sersec .sec1b .img {
 }
 
 @media (max-width: 600px) {
-  section.sersec .sec1b .img {
+  .sec1b .img {
     width: 55vw;
     height: 87vw;
   }
 }
 
-section.sersec .sec2 {
+.sec2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4594,7 +4592,7 @@ section.sersec .sec2 {
   position: relative;
 }
 
-section.sersec .sec2 h3 {
+.sec2 h3 {
   width: 60vw;
   text-align: center;
   font-size: 2.9em;
@@ -4603,13 +4601,13 @@ section.sersec .sec2 h3 {
 }
 
 @media (max-width: 600px) {
-  section.sersec .sec2 h3 {
+  .sec2 h3 {
     font-size: 2em;
     width: 80vw;
   }
 }
 
-section.sersec .sec2 .abs2 {
+.sec2 .abs2 {
   position: absolute;
   width: 2px;
   height: 100px;
@@ -4619,7 +4617,7 @@ section.sersec .sec2 .abs2 {
   z-index: 10;
 }
 
-section.sersec .sec2 p {
+.sec2 p {
   font-size: 1.5em;
   width: 70vw;
   text-align: center;
@@ -4629,13 +4627,13 @@ section.sersec .sec2 p {
 }
 
 @media (max-width: 600px) {
-  section.sersec .sec2 p {
+  .sec2 p {
     font-size: 1.1em;
     width: 85vw;
   }
 }
 
-section.sersec .sec2 .img {
+.sec2 .img {
   width: 40vw;
   height: 60vw;
   position: relative;
@@ -4646,13 +4644,13 @@ section.sersec .sec2 .img {
 }
 
 @media (max-width: 600px) {
-  section.sersec .sec2 .img {
+  .sec2 .img {
     width: 70vw;
     height: 70vw;
   }
 }
 
-section.sersec .lrnm {
+.lrnm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4667,21 +4665,21 @@ section.sersec .lrnm {
   padding: 10px 110px;
 }
 
-section.sersec .lrnm a {
+.lrnm a {
   font-size: 1.1em;
 }
 
 @media (max-width: 600px) {
-  section.sersec .lrnm {
+  .lrnm {
     padding: 15px 20px;
   }
 }
 
-section.sersec .lrnm .secp {
+.lrnm .secp {
   width: 70%;
 }
 
-section.sersec .lrnm .secp p {
+.lrnm .secp p {
   font-size: 1.5em;
   width: 100%;
   text-align: center;
@@ -4690,12 +4688,12 @@ section.sersec .lrnm .secp p {
 }
 
 @media (max-width: 600px) {
-  section.sersec .lrnm .secp p {
+  .lrnm .secp p {
     font-size: 1.2em;
   }
 }
 
-section.sersec section.disc {
+section.disc {
   background-color: #1b1b1b;
   padding: 170px 20px;
   display: -webkit-box;
@@ -4715,7 +4713,7 @@ section.sersec section.disc {
           justify-content: center;
 }
 
-section.sersec section.disc .line {
+section.disc .line {
   width: 2px;
   height: 150px;
   background-color: white;
@@ -4723,18 +4721,18 @@ section.sersec section.disc .line {
   top: 0;
 }
 
-section.sersec section.disc h3 {
+section.disc h3 {
   font-size: 3em;
   text-align: center;
 }
 
 @media (max-width: 600px) {
-  section.sersec section.disc h3 {
+  section.disc h3 {
     font-size: 2em;
   }
 }
 
-section.sersec section.disc ul {
+section.disc ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4749,7 +4747,7 @@ section.sersec section.disc ul {
 }
 
 @media (max-width: 600px) {
-  section.sersec section.disc ul {
+  section.disc ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4762,24 +4760,24 @@ section.sersec section.disc ul {
   }
 }
 
-section.sersec section.disc ul li {
+section.disc ul li {
   list-style: none;
 }
 
-section.sersec section.disc ul li a {
+section.disc ul li a {
   font-size: 1.3em;
   text-decoration: none !important;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-section.sersec section.disc ul li a:hover {
+section.disc ul li a:hover {
   color: white;
   font-size: 1.4em;
 }
 
 @media (max-width: 600px) {
-  section.sersec section.disc ul li a span {
+  section.disc ul li a span {
     display: none;
   }
 }
@@ -4805,8 +4803,6 @@ section.serelec .txt {
 @media (max-width: 600px) {
   section.serelec .txt {
     padding: 25vw 13vw;
-    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0.349)), to(rgba(0, 0, 0, 0.349))), url(./gida/secdoor.jpg);
-    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(./gida/secdoor.jpg);
   }
 }
 
