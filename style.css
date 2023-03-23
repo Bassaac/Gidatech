@@ -97,7 +97,7 @@ nav a:hover {
   position: relative;
   z-index: 100000;
   top: 0;
-  right: 10px;
+  right: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -118,7 +118,7 @@ nav a:hover {
 .icon .icon-btn {
   width: 20px;
   background-color: white;
-  height: 2px;
+  height: 3px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -134,7 +134,7 @@ nav a:hover {
   content: "";
   position: absolute;
   width: 28px;
-  height: 2px;
+  height: 3px;
   background-color: white;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
@@ -151,7 +151,7 @@ nav a:hover {
   content: "";
   position: absolute;
   width: 28px;
-  height: 2px;
+  height: 3px;
   background-color: white;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
@@ -242,7 +242,7 @@ nav a:hover {
 
 .menu {
   height: auto;
-  width: 25vw;
+  width: 35vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +341,7 @@ section.home .text-over-wr {
 
 section.home .text-over-wr .text-over {
   height: 65vh;
-  background-color: #00000023;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,7 +495,7 @@ section.home1 .text-over-wr {
 section.home1 .text-over-wr .text-over {
   padding: 10px 40px;
   height: 100%;
-  background-color: #00000005;
+  background-color: #00000083;
   gap: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,7 +719,7 @@ section.bbb .b1 {
 section.bbb .b1 h2 {
   font-family: poppins;
   font-weight: 400;
-  width: calc(43vw + 109px);
+  width: calc(43vw + 10px);
   font-size: 1.9em;
   color: white;
   text-align: right;
@@ -851,6 +851,7 @@ section.ccc .ctext h2 {
   margin-bottom: 20px;
   color: #44492f;
   font-weight: 400;
+  width: auto;
 }
 
 @media (min-width: 900px) {
@@ -860,14 +861,14 @@ section.ccc .ctext h2 {
   }
 }
 
-section.ccc .ctext h2 span:not(:nth-child(4)) {
+section.ccc .ctext h2 span {
   font-weight: 800;
   z-index: 1;
   text-align: center;
 }
 
 @media (max-width: 600px) {
-  section.ccc .ctext h2 span:not(:nth-child(4)) {
+  section.ccc .ctext h2 span {
     font-size: 0.8em;
   }
 }
@@ -896,17 +897,17 @@ section.ccc .ctext h2 span .und {
 
 section.ccc .ctext .rect {
   position: relative;
-  width: 64vw;
-  height: 55vw;
+  width: 75vw;
+  height: 35vw;
   background: url(./gida/smartcont2.jpg);
   background-size: cover;
   padding: 20px;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 600px) {
   section.ccc .ctext .rect {
     width: 44vw;
-    height: 35vw;
+    height: 30vw;
     margin-right: 35px;
   }
 }
@@ -3834,6 +3835,128 @@ section.packsound .flex .rightwr p i {
   margin-right: 10px;
 }
 
+section.packsound3 {
+  background-color: white;
+  padding: 70px 50px;
+}
+
+section.packsound3 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+  section.packsound3 .flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+section.packsound3 .flex .leftwr .left {
+  width: 210px;
+  height: 400px;
+  background: url(./gida/cinema.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 400px) {
+  section.packsound3 .flex .leftwr .left {
+    width: 80vw;
+  }
+}
+
+section.packsound3 .flex .rightwr p {
+  text-transform: lowercase;
+  margin-bottom: 5px;
+}
+
+section.packsound3 .flex .rightwr p:nth-child(even) {
+  background-color: gray;
+  color: white;
+  padding: 8px;
+}
+
+section.packsound3 .flex .rightwr p i {
+  margin-right: 10px;
+}
+
+section.packsound3b {
+  background-color: black;
+  padding: 70px 50px;
+  color: white;
+}
+
+section.packsound3b .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+  section.packsound3b .flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+section.packsound3b .flex .leftwr .left {
+  width: 400px;
+  height: 400px;
+  background: url(./gida/cinema2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 400px) {
+  section.packsound3b .flex .leftwr .left {
+    width: 80vw;
+  }
+}
+
+section.packsound3b .flex .rightwr {
+  width: 50vw;
+  margin-right: 50px;
+}
+
+@media (max-width: 900px) {
+  section.packsound3b .flex .rightwr {
+    margin-right: 0px;
+    width: 60vw;
+  }
+}
+
+section.packsound3b .flex .rightwr p {
+  text-transform: lowercase;
+  margin-bottom: 5px;
+  color: white;
+}
+
+section.packsound3b .flex .rightwr p:nth-child(even) {
+  background-color: gray;
+  color: white;
+  padding: 8px;
+}
+
+section.packsound3b .flex .rightwr p i {
+  margin-right: 10px;
+}
+
 section.packsound2 {
   background-color: black;
   padding: 70px 50px;
@@ -4434,7 +4557,7 @@ section.sersec .sec1a {
 }
 
 section.sersec .sec1a div {
-  width: auto;
+  width: 70vw;
 }
 
 @media (max-width: 900px) {
@@ -4476,7 +4599,7 @@ section.sersec .sec1a h2 {
   }
 }
 
-section.sersec .img {
+section.sersec .img2 {
   height: 50vw;
   position: relative;
   background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(black)), url(./gida/phone.jpg);
@@ -4486,7 +4609,7 @@ section.sersec .img {
 }
 
 @media (max-width: 600px) {
-  section.sersec .img {
+  section.sersec .img2 {
     height: 70vw;
   }
 }
@@ -4918,6 +5041,7 @@ section.serelec .sec1a div h2::after {
 }
 
 section.serelec .sec1a .img {
+  width: 70vw;
   height: 50vw;
   position: relative;
   background: url(./gida/light2forelec.jpg);
