@@ -97,16 +97,16 @@ nav a:hover {
   position: relative;
   z-index: 100000;
   top: 0;
-  right: 20px;
+  right: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40px;
-  height: 40px;
-  margin: 7px 20px 0 0;
+  width: 50px;
+  height: 50px;
+  margin: 7px 10px 0 0;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -116,97 +116,35 @@ nav a:hover {
 }
 
 .icon .icon-btn {
-  width: 20px;
-  background-color: white;
-  height: 3px;
+  width: 25px;
+  background-image: url(./img/menu.png);
+  height: 25px;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
   justify-items: center;
-  border-radius: 5px;
-  -webkit-transform: all 0.5s ease-in-out;
-          transform: all 0.5s ease-in-out;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-}
-
-.icon-btn::before {
-  content: "";
-  position: absolute;
-  width: 28px;
-  height: 3px;
-  background-color: white;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  border-radius: 5px;
-  -webkit-transform: all 0.5s ease-in-out;
-          transform: all 0.5s ease-in-out;
-}
-
-.icon-btn::after {
-  content: "";
-  position: absolute;
-  width: 28px;
-  height: 3px;
-  background-color: white;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  border-radius: 5px;
   -webkit-transform: all 0.5s ease-in-out;
           transform: all 0.5s ease-in-out;
 }
 
 .icon-btn:hover {
-  background-color: white;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.icon-btn:hover::after {
-  background-color: white;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.icon-btn:hover::before {
-  background-color: white;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .icon.open .icon-btn {
-  -webkit-transform: translateX(-40px);
-          transform: translateX(-40px);
-  background-color: transparent;
+  background-image: url(./img/close.png);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-.icon.open .icon-btn::after {
-  -webkit-transform: rotate(-45deg) translate(30px, 30px);
-          transform: rotate(-45deg) translate(30px, 30px);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  background-color: white;
-}
-
-.icon.open .icon-btn::before {
-  -webkit-transform: rotate(45deg) translate(30px, -30px);
-          transform: rotate(45deg) translate(30px, -30px);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  background-color: white;
 }
 
 .content {
@@ -341,7 +279,7 @@ section.home .text-over-wr {
 
 section.home .text-over-wr .text-over {
   height: 65vh;
-  background-color: #000000;
+  background-color: #000000d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,6 +669,7 @@ section.bbb .b1 h2 {
 @media (max-width: 800px) {
   section.bbb .b1 h2 {
     font-size: 1.5em;
+    text-align: center;
   }
 }
 
@@ -849,6 +788,7 @@ section.ccc .ctext h2 {
   font-size: 2.3em;
   font-family: poppins;
   margin-bottom: 20px;
+  margin-left: 15px;
   color: #44492f;
   font-weight: 400;
   width: auto;
@@ -865,11 +805,12 @@ section.ccc .ctext h2 span {
   font-weight: 800;
   z-index: 1;
   text-align: center;
+  margin-left: 30px;
 }
 
 @media (max-width: 600px) {
   section.ccc .ctext h2 span {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 }
 
@@ -879,6 +820,7 @@ section.ccc .ctext h2 span:nth-child(4) {
   font-weight: 400;
   color: #8f8f8f;
   text-align: center;
+  margin-left: 15px;
 }
 
 @media (max-width: 600px) {
@@ -899,16 +841,17 @@ section.ccc .ctext .rect {
   position: relative;
   width: 75vw;
   height: 35vw;
-  background: url(./gida/smartcont2.jpg);
+  background: url(./gida/monitorhouse.jpg);
   background-size: cover;
   padding: 20px;
 }
 
 @media (max-width: 600px) {
   section.ccc .ctext .rect {
-    width: 44vw;
-    height: 30vw;
-    margin-right: 35px;
+    width: 84vw;
+    height: 49vw;
+    margin-right: 15px;
+    background: none;
   }
 }
 
@@ -923,7 +866,17 @@ section.ccc .ctext .rect::after {
   border-right: 2px dashed black;
   border-bottom: 2px dashed black;
   border-spacing: 10;
-  mix-blend-mode: hard-light;
+  background: url(./gida/monitor2.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  section.ccc .ctext .rect::after {
+    width: 84vw;
+    height: 65vw;
+    background: url(./gida/monitorhouse.jpg);
+    background-size: cover;
+  }
 }
 
 section.ccc .ctext .cir {
@@ -1342,26 +1295,24 @@ section.ddd .dtext h2 {
   margin-bottom: 20px;
   font-family: Gilroy, roboto, lato;
   font-weight: 800;
+  width: 60%;
+  margin-right: 20px;
   color: white;
 }
 
 @media (max-width: 600px) {
   section.ddd .dtext h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 700;
+    width: 100%;
   }
 }
 
-section.ddd .dtext h2 span:not(:nth-child(4)) {
-  z-index: 1;
-  text-align: right;
-}
-
-section.ddd .dtext h2 span:nth-child(4) {
+section.ddd .dtext h2 span {
   font-weight: 600;
-  font-size: 1.3em;
-  color: #1b1b1b;
-  text-align: right;
+  color: #ffffff;
+  text-align: left;
+  width: 100%;
 }
 
 section.ddd .dtext h2 span .und {
@@ -1381,10 +1332,10 @@ section.ddd .dtext .rect {
   padding: 20px 0;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   section.ddd .dtext .rect {
-    width: 44vw;
-    height: 35vw;
+    width: 74vw;
+    height: 60vw;
     margin-left: 10px;
   }
 }
@@ -2005,8 +1956,8 @@ section.service .saaa h2 {
 
 @media (max-width: 650px) {
   section.service .saaa h2 {
-    font-size: 2.3em;
-    width: 89%;
+    font-size: 1.8em;
+    width: 90%;
   }
 }
 
@@ -2288,6 +2239,7 @@ section.security {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 20px;
 }
 
 @media (min-width: 800px) {
@@ -2323,7 +2275,7 @@ section.security .lrgh h2 {
 @media (max-width: 800px) {
   section.security .lrgh h2 {
     font-size: 2.6em;
-    width: 80%;
+    width: 100%;
   }
 }
 
