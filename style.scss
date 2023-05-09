@@ -164,7 +164,7 @@ nav {
 .icon.open .icon-btn {
     background-image: url(./img/close.png);
     // transform: translateX(-40px);
-    transform: scale(1);
+    // transform: scale(1);
     // background-color: transparent;
     transition: all 0.5s ease-in-out;
     //   background-color: white;
@@ -539,16 +539,17 @@ section.bbb {
             width: calc(43vw + 10px);
             font-size: 1.9em;
             color: white;
-            text-align: right;
+            text-align: center;
             transition: all 0.4s ease;
             margin-right: 20px;
             @media (max-width: 800px) {
                 font-size: 1.5em;
                 text-align: center;
+                margin-right: 0;
             }
-            @media (min-width: 1000px) {
-                font-size: 3.2em;
-            }
+            // @media (min-width: 1000px) {
+            //     font-size: 3.2em;
+            // }
         }
         &::after {
             content: "";
@@ -701,7 +702,7 @@ section.ccc {
                     // 
                     width: 84vw;
                     height: 65vw;
-                    background: url(./gida/monitorhouse.jpg);
+                    background: url(./gida/smart3.jpg);
                     // background-size: contain;
                     // background-repeat: no-repeat;
                     // background-position: center;
@@ -716,7 +717,7 @@ section.ccc {
             top: -91px;
             left: -147px;
             border-radius: 50vw;
-            background: linear-gradient(#6d7743ab, #525a34c4), url(./img/lock.jpg);
+            background: linear-gradient(#1f1f1fab, #3a3a3ac4), url(./img/lock.jpg);
             background-size: contain;
             background-position: right;
             animation: rot2 7s linear infinite forwards normal;
@@ -1312,7 +1313,7 @@ section.abbb {
         height: 370px;
         width: 267px;
         padding: 30px;
-        background: linear-gradient(#4a5764, #4a576400);
+        // background: linear-gradient(#4a5764, #4a576400);
         &::after {
             content: "";
             position: absolute;
@@ -1337,10 +1338,11 @@ section.abbb {
         }
         img {
             position: absolute;
-            object-fit: cover;
+            object-fit: contain;
             // top: 10px;
             // left: 10px;
             width: 280px;
+            bottom: -50px;
             height: 350px;
             @media (max-width: 341px) {
                 width: 76vw;
@@ -1715,7 +1717,7 @@ section.security {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     @media (min-width: 800px) {
         flex-direction: row;
     }
@@ -1728,6 +1730,7 @@ section.security {
             font-size: 3em;
             width: 70%;
             line-height: 1;
+            text-align: left;
             @media (max-width: 800px) {
                 font-size: 2.6em;
                 width: 100%;
@@ -1737,6 +1740,10 @@ section.security {
             font-size: 1.4em;
             margin-top: 20px;
             width: 70%;
+            text-align: left;
+            @media (max-width: 600px) {
+                width: 100%;
+            }
         }
     }
     h1 {
@@ -2035,17 +2042,22 @@ section.automation {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
     @media (min-width: 800px) {
         flex-direction: row;
     }
     .lrgh {
         display: flex;
-        align-items: center;
+        align-items: left;
         flex-direction: column;
         transition: all 0.5s ease-in-out;
+        @media (max-width: 600px) {
+            align-items: left;
+        }
         h2 {
             font-size: 3.3em;
             color: #3b3b3b;
+            text-align: left;
             @media (max-width: 600px) {
                 font-size: 2.9em;
                 line-height: 1;
@@ -2091,7 +2103,7 @@ section.automation {
         font-size: 1.8em;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         color: black;
         font-family: $gil, montserrat;
         // mix-blend-mode: difference;
@@ -2391,7 +2403,7 @@ section.form {
     }
     p {
         color: white;
-        font-size: 2em;
+        font-size: 1.5em;
         font-family: montserrat;
         margin-bottom: 10px;
     }
@@ -2429,11 +2441,11 @@ section.form {
                     /* Set font size */
                     width: 40vw;
                     /* Set width */
-                    -webkit-appearance: none;
+                    // -webkit-appearance: media-fullscreen-button;
                     /* Remove default arrow icon in Safari */
-                    -moz-appearance: none;
+                    // -moz-appearance: none;
                     /* Remove default arrow icon in Firefox */
-                    appearance: none;
+                    // appearance: none;
                     /* Remove default arrow icon in other browsers */
                     &:focus-visible {
                         outline: none;
@@ -4308,7 +4320,7 @@ section.seraud {
             // width: 100vw;
             height: 50vw;
             position: relative;
-            background: linear-gradient(270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(./gida/speaker1foraud.jpg);
+            background: linear-gradient(-270deg, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(./gida/full-shot-man-dancing-with-speakers.jpg);
             background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -4328,12 +4340,16 @@ section.seraud {
         gap: 50px;
         flex-direction: row-reverse;
         background: black;
+        justify-content: center;
         color: rgb(206, 206, 206);
         @media (max-width: 900px) {
             flex-direction: column;
         }
         div {
-            width: 50%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             @media (max-width: 900px) {
                 width: 70vw;
             }
@@ -4343,6 +4359,7 @@ section.seraud {
                 font-family: $gil, lato;
                 line-height: 1.3;
                 font-weight: 300;
+                text-align: center;
                 margin-bottom: 20px;
                 @media (max-width: 900px) {
                     text-align: center;
@@ -4357,6 +4374,7 @@ section.seraud {
                 margin-bottom: 20px;
                 // width: 70%;
                 line-height: 1;
+                text-align: center;
                 @media (max-width: 900px) {
                     text-align: center;
                     //  width: 85%;

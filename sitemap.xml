@@ -8,24 +8,59 @@
 
 
 <url>
-  <loc>http://gidatech.ng/</loc>
-  <lastmod>2023-02-24T19:00:37+00:00</lastmod>
+  <loc>https://gidatech.ng/</loc>
+  <lastmod>2023-04-10T06:06:11+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://gidatech.ng/index.html</loc>
-  <lastmod>2023-02-24T19:00:37+00:00</lastmod>
+  <loc>https://gidatech.ng/index.html</loc>
+  <lastmod>2023-04-10T06:06:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://gidatech.ng/about.html</loc>
-  <lastmod>2023-02-24T19:00:37+00:00</lastmod>
+  <loc>https://gidatech.ng/about.html</loc>
+  <lastmod>2023-04-10T06:06:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://gidatech.ng/services.html</loc>
-  <lastmod>2023-02-24T19:00:37+00:00</lastmod>
+  <loc>https://gidatech.ng/services.html</loc>
+  <lastmod>2023-04-10T06:06:11+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gidatech.ng/contact.html</loc>
+  <lastmod>2023-03-14T22:35:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gidatech.ng/services/audio.html</loc>
+  <lastmod>2023-03-18T09:39:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gidatech.ng/services/security.html</loc>
+  <lastmod>2023-04-10T06:06:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gidatech.ng/services/auto.html</loc>
+  <lastmod>2023-04-10T06:06:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gidatech.ng/services/electrical.html</loc>
+  <lastmod>2023-04-10T06:06:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gidatech.ng/projects.html</loc>
+  <lastmod>2023-03-14T22:35:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gidatech.ng/packages.html</loc>
+  <lastmod>2023-03-14T22:35:39+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
